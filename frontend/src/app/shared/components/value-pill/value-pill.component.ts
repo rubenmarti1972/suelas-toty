@@ -12,13 +12,14 @@ import { Component, Input } from '@angular/core';
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 0.4rem 1.2rem;
+        padding: 0.45rem 1.35rem;
         border-radius: 999px;
-        background: linear-gradient(120deg, rgba(45, 212, 191, 0.25), rgba(14, 116, 144, 0.25));
+        background: linear-gradient(135deg, rgba(45, 212, 191, 0.35), rgba(56, 189, 248, 0.35));
         color: var(--color-primary);
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.1em;
+        box-shadow: 0 12px 24px rgba(45, 212, 191, 0.25);
       }
     `
   ]

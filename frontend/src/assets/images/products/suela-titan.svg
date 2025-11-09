@@ -1,0 +1,25 @@
+<svg width="240" height="160" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="titan-bg" x1="16" y1="22" x2="224" y2="138" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1D3A" stop-opacity="0.7" />
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="titan-sole" x1="68" y1="34" x2="190" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FBFF" />
+      <stop offset="1" stop-color="#C8DFFE" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="18" width="216" height="124" rx="32" fill="url(#titan-bg)" />
+  <path
+    d="M62 118C52 94 62 58 94 38C122 22 166 28 194 50C214 66 216 100 198 120C180 142 144 146 112 138C86 132 72 126 62 118Z"
+    fill="url(#titan-sole)"
+  />
+  <path
+    d="M92 88C110 74 142 76 164 92"
+    stroke="#38BDF8"
+    stroke-width="5"
+    stroke-linecap="round"
+    opacity="0.7"
+  />
+  <path d="M100 106C118 110 138 110 154 104" stroke="#2DD4BF" stroke-width="4" stroke-linecap="round" opacity="0.7" />
+</svg>
