@@ -31,7 +31,7 @@ interface NavigationLink {
         </a>
       </nav>
       <div class="header__actions">
-        <a routerLink="/productos" class="header__cta">Catálogo</a>
+        <a routerLink="/contacto" class="header__cta">Solicitar cotización</a>
         <button type="button" class="header__cart" aria-label="Ver carrito de compras">
           <span class="header__cart-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false">
@@ -58,18 +58,18 @@ interface NavigationLink {
         grid-template-columns: auto 1fr auto;
         align-items: center;
         gap: 1.5rem;
-        padding: 1rem clamp(1.25rem, 4vw, 2.5rem);
-        background: radial-gradient(circle at top left, rgba(45, 212, 191, 0.22), transparent 55%),
-          linear-gradient(120deg, rgba(7, 24, 46, 0.92), rgba(11, 29, 58, 0.88) 35%, rgba(15, 76, 117, 0.92));
-        backdrop-filter: blur(18px);
-        border-radius: 1.75rem;
-        box-shadow: 0 24px 40px rgba(5, 18, 36, 0.35);
+        padding: 1.15rem clamp(1.5rem, 3vw, 3rem);
+        background: linear-gradient(135deg, rgba(20, 37, 63, 0.92), rgba(11, 29, 58, 0.98));
+        border: 1px solid rgba(245, 246, 250, 0.08);
+        border-radius: 1.9rem;
+        box-shadow: 0 24px 50px rgba(3, 8, 18, 0.45);
         position: sticky;
-        top: 1.25rem;
+        top: 1.35rem;
         z-index: 50;
-        width: min(1180px, calc(100% - 3rem));
-        margin: 1.25rem auto 2.5rem;
-        color: rgba(235, 247, 255, 0.96);
+        width: min(1800px, calc(100% - 3rem));
+        margin: 1.35rem auto 2.75rem;
+        color: var(--color-text);
+        backdrop-filter: blur(14px);
       }
       .header__brand {
         display: inline-flex;
@@ -81,10 +81,11 @@ interface NavigationLink {
       .header__logo {
         width: clamp(90px, 12vw, 132px);
         height: auto;
-        border-radius: 1.75rem;
-        padding: 0.35rem 0.75rem;
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.28), rgba(56, 189, 248, 0.24));
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+        border-radius: 1.45rem;
+        padding: 0.45rem 0.95rem;
+        background: linear-gradient(135deg, rgba(244, 247, 250, 0.95), rgba(201, 211, 229, 0.8));
+        border: 1px solid rgba(244, 247, 250, 0.35);
+        box-shadow: 0 14px 28px rgba(4, 9, 19, 0.4);
       }
       .header__identity {
         display: flex;
@@ -95,14 +96,14 @@ interface NavigationLink {
         margin: 0;
         font-weight: 700;
         font-size: 1.55rem;
-        color: #ffffff;
+        color: #f9fbff;
         letter-spacing: 0.02em;
       }
       .header__slogan {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: rgba(215, 235, 255, 0.78);
+        color: rgba(244, 247, 250, 0.6);
       }
       .header__nav {
         display: flex;
@@ -115,17 +116,18 @@ interface NavigationLink {
         position: relative;
         text-decoration: none;
         font-weight: 600;
-        color: rgba(226, 242, 255, 0.85);
+        color: rgba(244, 247, 250, 0.78);
         padding: 0.55rem 1.2rem;
         border-radius: 999px;
         transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(244, 247, 250, 0.05);
       }
       .header__nav-link:hover,
       .header__nav-link--active {
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.85), rgba(56, 189, 248, 0.85));
-        color: #041023;
+        background: linear-gradient(135deg, rgba(245, 165, 36, 0.92), rgba(244, 184, 61, 0.98));
+        color: #0b1d3a;
         transform: translateY(-1px);
+        box-shadow: 0 18px 30px rgba(4, 9, 19, 0.45);
       }
       .header__actions {
         display: flex;
@@ -135,15 +137,16 @@ interface NavigationLink {
       .header__cta {
         text-decoration: none;
         font-weight: 600;
-        padding: 0.65rem 1.4rem;
+        padding: 0.7rem 1.65rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, #2dd4bf, #38bdf8);
-        color: #041023;
-        box-shadow: 0 18px 32px rgba(45, 212, 191, 0.32);
-        transition: transform 0.2s ease;
+        background: linear-gradient(135deg, var(--color-accent), #ffc861);
+        color: #0b1d3a;
+        box-shadow: 0 22px 42px rgba(4, 9, 19, 0.4);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cta:hover {
         transform: translateY(-2px);
+        box-shadow: 0 26px 46px rgba(4, 9, 19, 0.46);
       }
       .header__cart {
         display: inline-flex;
@@ -151,16 +154,17 @@ interface NavigationLink {
         gap: 0.45rem;
         padding: 0.5rem 0.9rem;
         border-radius: 999px;
-        border: 1px solid rgba(255, 255, 255, 0.24);
-        background: rgba(4, 16, 35, 0.35);
-        color: inherit;
+        border: 1px solid rgba(245, 246, 250, 0.15);
+        background: rgba(20, 37, 63, 0.6);
+        color: rgba(244, 247, 250, 0.85);
         cursor: pointer;
         font-weight: 600;
-        transition: background 0.2s ease, transform 0.2s ease;
+        transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cart:hover {
-        background: rgba(255, 255, 255, 0.12);
+        background: rgba(244, 247, 250, 0.1);
         transform: translateY(-2px);
+        box-shadow: 0 18px 30px rgba(4, 9, 19, 0.45);
       }
       .header__cart-icon svg {
         width: 22px;
@@ -180,10 +184,11 @@ interface NavigationLink {
         height: 1.5rem;
         padding: 0 0.35rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.85), rgba(56, 189, 248, 0.85));
-        color: #041023;
+        background: linear-gradient(135deg, var(--color-accent), #ffc861);
+        color: #0b1d3a;
         font-size: 0.8rem;
         font-weight: 700;
+        box-shadow: 0 12px 24px rgba(4, 9, 19, 0.45);
       }
       @media (max-width: 1024px) {
         .header {
