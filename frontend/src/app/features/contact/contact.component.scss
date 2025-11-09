@@ -5,14 +5,12 @@
       }
       .contact header h1 {
         margin: 0;
-        color: #2c3e50;
-        font-size: 2.5rem;
+        color: #183153;
       }
       .contact header p {
         margin: 0.75rem 0 0;
         max-width: 40rem;
         line-height: 1.6;
-        color: rgba(50, 70, 90, 0.85);
       }
       .contact__grid {
         display: grid;
@@ -26,46 +24,35 @@
         background: #ffffff;
         border-radius: 1.5rem;
         padding: 2rem;
-        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.12);
-        border: 1px solid rgba(74, 144, 226, 0.1);
+        box-shadow: 0 15px 45px rgba(15, 40, 70, 0.08);
       }
       .contact__form label {
         display: grid;
         gap: 0.5rem;
         font-weight: 600;
-        color: #2c3e50;
       }
       .contact__form input,
       .contact__form textarea {
-        border: 1px solid rgba(74, 144, 226, 0.25);
+        border: 1px solid rgba(24, 49, 83, 0.15);
         border-radius: 0.75rem;
         padding: 0.75rem 1rem;
         font-family: inherit;
         font-size: 1rem;
-        color: #2c3e50;
-        background: #fafbfd;
       }
       .contact__form input:focus,
       .contact__form textarea:focus {
-        outline: 2px solid rgba(74, 144, 226, 0.5);
+        outline: 2px solid rgba(24, 49, 83, 0.25);
         outline-offset: 1px;
-        background: #ffffff;
       }
       .contact__form button {
         margin-top: 0.5rem;
-        background: linear-gradient(135deg, #4a90e2, #6ba3e8);
+        background: #33658a;
         color: #ffffff;
         border: none;
         border-radius: 0.75rem;
         padding: 0.9rem 1.4rem;
         font-weight: 600;
         cursor: pointer;
-        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-      .contact__form button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(74, 144, 226, 0.4);
       }
       .contact__cards {
         display: grid;
@@ -75,22 +62,15 @@
         background: #ffffff;
         border-radius: 1.25rem;
         padding: 1.75rem;
-        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.12);
-        border: 1px solid rgba(74, 144, 226, 0.1);
+        box-shadow: 0 12px 35px rgba(15, 40, 70, 0.08);
       }
       .contact__cards h2 {
         margin-top: 0;
-        color: #2c3e50;
-        font-size: 1.5rem;
+        color: #12263a;
       }
       .contact__cards ul {
         margin: 0;
         padding-left: 1rem;
-        line-height: 1.7;
-        color: rgba(50, 70, 90, 0.85);
-      }
-      .contact__cards p {
-        color: rgba(50, 70, 90, 0.85);
         line-height: 1.7;
       }
     

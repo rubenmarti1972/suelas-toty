@@ -5,10 +5,10 @@
         align-items: center;
         gap: 1.5rem;
         padding: 1.15rem clamp(1.5rem, 3vw, 3rem);
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(245, 250, 255, 0.98));
-        border: 1px solid rgba(74, 144, 226, 0.15);
+        background: linear-gradient(135deg, rgba(20, 37, 63, 0.92), rgba(11, 29, 58, 0.98));
+        border: 1px solid rgba(245, 246, 250, 0.08);
         border-radius: 1.9rem;
-        box-shadow: 0 8px 24px rgba(74, 144, 226, 0.15);
+        box-shadow: 0 24px 50px rgba(3, 8, 18, 0.45);
         position: sticky;
         top: 1.35rem;
         z-index: 50;
@@ -29,9 +29,9 @@
         height: auto;
         border-radius: 1.45rem;
         padding: 0.45rem 0.95rem;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(245, 250, 255, 0.9));
-        border: 1px solid rgba(74, 144, 226, 0.2);
-        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+        background: linear-gradient(135deg, rgba(244, 247, 250, 0.95), rgba(201, 211, 229, 0.8));
+        border: 1px solid rgba(244, 247, 250, 0.35);
+        box-shadow: 0 14px 28px rgba(4, 9, 19, 0.4);
       }
       .header__identity {
         display: flex;
@@ -42,14 +42,14 @@
         margin: 0;
         font-weight: 700;
         font-size: 1.55rem;
-        color: #2c3e50;
+        color: #f9fbff;
         letter-spacing: 0.02em;
       }
       .header__slogan {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: rgba(50, 70, 90, 0.7);
+        color: rgba(244, 247, 250, 0.6);
       }
       .header__nav {
         display: flex;
@@ -62,18 +62,18 @@
         position: relative;
         text-decoration: none;
         font-weight: 600;
-        color: #5a6c7d;
+        color: rgba(244, 247, 250, 0.78);
         padding: 0.55rem 1.2rem;
         border-radius: 999px;
         transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        background: rgba(74, 144, 226, 0.08);
+        background: rgba(244, 247, 250, 0.05);
       }
       .header__nav-link:hover,
       .header__nav-link--active {
-        background: linear-gradient(135deg, rgba(245, 165, 36, 0.95), rgba(244, 184, 61, 1));
-        color: #ffffff;
+        background: linear-gradient(135deg, rgba(245, 165, 36, 0.92), rgba(244, 184, 61, 0.98));
+        color: #0b1d3a;
         transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(245, 165, 36, 0.3);
+        box-shadow: 0 18px 30px rgba(4, 9, 19, 0.45);
       }
       .header__actions {
         display: flex;
@@ -86,13 +86,13 @@
         padding: 0.7rem 1.65rem;
         border-radius: 999px;
         background: linear-gradient(135deg, var(--color-accent), #ffc861);
-        color: #ffffff;
-        box-shadow: 0 4px 12px rgba(245, 165, 36, 0.3);
+        color: #0b1d3a;
+        box-shadow: 0 22px 42px rgba(4, 9, 19, 0.4);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cta:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(245, 165, 36, 0.4);
+        box-shadow: 0 26px 46px rgba(4, 9, 19, 0.46);
       }
       .header__cart {
         display: inline-flex;
@@ -100,17 +100,17 @@
         gap: 0.45rem;
         padding: 0.5rem 0.9rem;
         border-radius: 999px;
-        border: 1px solid rgba(74, 144, 226, 0.25);
-        background: rgba(74, 144, 226, 0.1);
-        color: #2c3e50;
+        border: 1px solid rgba(245, 246, 250, 0.15);
+        background: rgba(20, 37, 63, 0.6);
+        color: rgba(244, 247, 250, 0.85);
         cursor: pointer;
         font-weight: 600;
         transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cart:hover {
-        background: rgba(74, 144, 226, 0.2);
+        background: rgba(244, 247, 250, 0.1);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+        box-shadow: 0 18px 30px rgba(4, 9, 19, 0.45);
       }
       .header__cart-icon svg {
         width: 22px;
@@ -131,10 +131,10 @@
         padding: 0 0.35rem;
         border-radius: 999px;
         background: linear-gradient(135deg, var(--color-accent), #ffc861);
-        color: #ffffff;
+        color: #0b1d3a;
         font-size: 0.8rem;
         font-weight: 700;
-        box-shadow: 0 2px 8px rgba(245, 165, 36, 0.3);
+        box-shadow: 0 12px 24px rgba(4, 9, 19, 0.45);
       }
       @media (max-width: 1024px) {
         .header {
