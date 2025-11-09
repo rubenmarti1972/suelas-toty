@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { Component, inject, signal, computed } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { ValuePillComponent } from '../../shared/components/value-pill/value-pill.component';
+import { Router } from '@angular/router';
+import productsData from '../../../assets/data/products.json';
 
 interface ProcessStep {
   order: string;
@@ -18,85 +18,12 @@ interface Differentiator {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgFor, RouterLink, ValuePillComponent],
-  template: `
-    <section class="hero">
-      <div class="hero__content">
-        <p class="hero__badge">Excelencia colombiana en suelas</p>
-        <h1>Suelas Toty: ingeniería, estilo y sostenibilidad para tu marca</h1>
-        <p class="hero__copy">
-          Combinamos materiales certificados, maquinaria de última tecnología y procesos circulares para
-          producir suelas de alto impacto visual y funcional. Cada colección recibe acompañamiento experto,
-          tiempos controlados y trazabilidad total.
-        </p>
-        <div class="hero__actions">
-          <a routerLink="/productos" class="hero__cta hero__cta--primary">Explorar catálogo</a>
-          <a routerLink="/contacto" class="hero__cta hero__cta--ghost">Hablar con un especialista</a>
-        </div>
-        <div class="hero__stats">
-          <article *ngFor="let highlight of heroHighlights" class="hero__stat-card">
-            <span class="hero__stat-value">{{ highlight.value }}</span>
-            <span class="hero__stat-label">{{ highlight.label }}</span>
-          </article>
-        </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__visual-card">
-          <img
-            src="assets/images/products/suela-aurora.svg"
-            alt="Suela performance Suelas Toty"
-            loading="lazy"
-          />
-          <div class="hero__visual-caption">
-            <span>Serie Performance</span>
-            <p>Compuestos reciclados, agarre superior y confort duradero en cada paso.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="objective" id="objetivo">
-      <header class="section-heading">
-        <p class="section-heading__eyebrow">Objetivo específico</p>
-        <h2>Producir suelas con la más alta calidad en diseños, pesos y colores</h2>
-        <p class="section-heading__description">
-          Nuestros pilares estratégicos garantizan operaciones sólidas, sostenibles y listos para el mercado.
-        </p>
-      </header>
-      <ul class="objective__list">
-        <li *ngFor="let item of objectiveBullets">
-          <span class="objective__marker" aria-hidden="true"></span>
-          <p>{{ item }}</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="purpose" aria-label="Misión y visión">
-      <article class="purpose__card">
-        <h3>Misión</h3>
-        <p>{{ mission }}</p>
-      </article>
-      <article class="purpose__card">
-        <h3>Visión</h3>
-        <p>{{ vision }}</p>
-      </article>
-    </section>
-
-    <section class="values" aria-label="Valores corporativos">
-      <header class="section-heading section-heading--center">
-        <p class="section-heading__eyebrow">Cultura Toty</p>
-        <h2>Valores que acompañan cada proyecto</h2>
-        <p class="section-heading__description">
-          Creamos alianzas duraderas con marcas que buscan un socio confiable y humano en cada producción.
-        </p>
-      </header>
-      <div class="values__grid">
-        <article *ngFor="let value of valuesDetailed" class="values__card">
-          <app-value-pill [label]="value.title"></app-value-pill>
-          <p>{{ value.description }}</p>
-        </article>
-      </div>
-    </section>
+  imports: [RouterLink],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
+})
+export class HomeComponent {
+  private router = inject(Router);
 
     <section class="process" aria-label="Proceso industrial Toty">
       <header class="section-heading section-heading--center">

@@ -2,6 +2,7 @@
   {
     "reference": "ST-2101",
     "name": "Suelas deportivas NeoFlex",
+    "description": "Diseñadas para máximo rendimiento y comodidad. Ideales para calzado deportivo con tecnología de absorción de impacto.",
     "price": 22.5,
     "currency": "USD",
     "stock": 340,
@@ -12,6 +13,7 @@
   {
     "reference": "ST-3104",
     "name": "Suelas casual UrbanGrip",
+    "description": "Perfectas para uso diario urbano. Diseño versátil con excelente tracción y durabilidad para calzado casual.",
     "price": 18.75,
     "currency": "USD",
     "stock": 120,
@@ -22,6 +24,7 @@
   {
     "reference": "ST-5110",
     "name": "Suelas sandalia Breeze",
+    "description": "Livianas y cómodas para sandalias de verano. Material flexible con excelente ventilación y confort.",
     "price": 11.4,
     "currency": "USD",
     "stock": 620,
@@ -32,6 +35,7 @@
   {
     "reference": "ST-7202",
     "name": "Suelas seguridad SteelPro",
+    "description": "Máxima protección para calzado industrial. Resistente a aceites, antideslizante y con refuerzo de acero.",
     "price": 31.8,
     "currency": "USD",
     "stock": 45,

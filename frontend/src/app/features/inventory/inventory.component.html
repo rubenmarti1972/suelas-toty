@@ -1,0 +1,29 @@
+
+    <section class="inventory">
+      <header>
+        <h1>Control de inventario</h1>
+        <p>
+          Zona exclusiva para administradores. Desde aquí se monitorean existencias, lotes, trazabilidad y
+          planes de producción para satisfacer la demanda de los clientes.
+        </p>
+      </header>
+
+      <div class="inventory__kpis">
+        <article *ngFor="let kpi of kpis">
+          <h2>{{ kpi.label }}</h2>
+          <p class="inventory__value">{{ kpi.value }}</p>
+          <span class="inventory__trend" [attr.data-trend]="kpi.trend">{{ trendLabel(kpi.trend) }}</span>
+          <p class="inventory__description">{{ kpi.description }}</p>
+        </article>
+      </div>
+
+      <section class="inventory__process">
+        <h2>Procesos clave</h2>
+        <ul>
+          <li>Conciliación automática de inventario contra ventas y producción cada hora.</li>
+          <li>Gestión de lotes con fechas de fabricación, proveedor y número de molde.</li>
+          <li>Alertas de cumplimiento para pedidos críticos y compromisos con clientes estratégicos.</li>
+        </ul>
+      </section>
+    </section>
+  

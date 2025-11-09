@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <linearGradient id="safetyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a7a7a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7a7a7a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="400" fill="#f4f7fa" rx="15"/>
+
+  <!-- Main sole shape - Heavy duty safety boot -->
+  <g transform="translate(45, 45)">
+    <!-- Base sole - thick and robust -->
+    <path d="M 145 18 C 165 18 185 22 200 30 C 215 38 220 50 220 68
+             C 220 90 215 120 205 155 C 195 190 180 225 165 255
+             C 150 285 135 310 115 325 C 95 340 75 345 55 340
+             C 35 335 20 320 15 295 C 10 270 10 240 12 210
+             C 14 180 20 150 30 120 C 40 90 55 65 75 45
+             C 95 25 120 20 140 18 C 142 18 143 18 145 18 Z"
+          fill="url(#safetyGrad)"
+          stroke="#f5a524"
+          stroke-width="3.5"/>
+
+    <!-- Steel toe cap area -->
+    <ellipse cx="155" cy="55" rx="45" ry="28" fill="url(#steelGrad)" opacity="0.7" stroke="#c0c0c0" stroke-width="2"/>
+    <ellipse cx="155" cy="55" rx="35" ry="20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+
+    <!-- Deep lug tread pattern -->
+    <g opacity="0.8">
+      <!-- Chunky rectangular lugs -->
+      <rect x="60" y="100" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="95" y="100" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="130" y="100" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="165" y="100" width="20" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="55" y="125" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="90" y="125" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="125" y="125" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="160" y="125" width="22" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="50" y="150" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="85" y="150" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="120" y="150" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="155" y="150" width="20" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="48" y="175" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="83" y="175" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="118" y="175" width="25" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="45" y="200" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="80" y="200" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="115" y="200" width="25" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="42" y="225" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="77" y="225" width="25" height="12" rx="2" fill="#f5a524"/>
+      <rect x="110" y="225" width="20" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="42" y="250" width="22" height="12" rx="2" fill="#f5a524"/>
+      <rect x="73" y="250" width="22" height="12" rx="2" fill="#f5a524"/>
+      <rect x="102" y="250" width="20" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="45" y="275" width="20" height="12" rx="2" fill="#f5a524"/>
+      <rect x="73" y="275" width="20" height="12" rx="2" fill="#f5a524"/>
+
+      <rect x="48" y="300" width="18" height="10" rx="2" fill="#f5a524"/>
+      <rect x="73" y="300" width="18" height="10" rx="2" fill="#f5a524"/>
+    </g>
+
+    <!-- Oil resistant indicator groove -->
+    <path d="M 25 100 L 25 300" stroke="#ff4444" stroke-width="3" stroke-dasharray="8,8" opacity="0.6"/>
+
+    <!-- Edge reinforcement -->
+    <path d="M 145 18 C 165 18 185 22 200 30 C 215 38 220 50 220 68"
+          stroke="#ffffff"
+          stroke-width="2"
+          fill="none"
+          opacity="0.2"/>
+  </g>
+
+  <!-- Label -->
+  <text x="150" y="370" font-family="Montserrat, sans-serif" font-size="16" font-weight="600" fill="#0b1d3a" text-anchor="middle">
+    SteelPro Seguridad
+  </text>
+</svg>

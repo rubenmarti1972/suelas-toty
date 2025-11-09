@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CurrencyPipe, DecimalPipe, NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import productsData from '../../../assets/data/products.json';
+import { CartService } from '../../core/services/cart.service';
 
 interface Product {
   reference: string;
   name: string;
+  description?: string;
   price: number;
   currency: string;
   stock: number;
@@ -321,6 +324,19 @@ interface Product {
 })
 export class ProductsComponent {
   protected readonly products: Product[] = productsData;
+  public cartService = inject(CartService);
+
+  // State for selected colors and quantities
+  private selectedColors = signal<Map<string, string>>(new Map());
+  private quantities = signal<Map<string, number>>(new Map());
+
+  constructor() {
+    // Initialize default quantities and colors
+    this.products.forEach(product => {
+      this.quantities().set(product.reference, 1);
+      this.selectedColors().set(product.reference, product.colors[0]);
+    });
+  }
 
   protected statusBadge(status: string): 'ok' | 'low' | 'scheduled' {
     if (status.toLowerCase().includes('bajo')) {

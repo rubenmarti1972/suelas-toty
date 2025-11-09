@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <linearGradient id="sandalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5b7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c9a86a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sandalShine">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="400" fill="#f4f7fa" rx="15"/>
+
+  <!-- Main sole shape - Sandal (flatter, wider) -->
+  <g transform="translate(40, 60)">
+    <!-- Base sole - sandal shape -->
+    <path d="M 140 15 C 160 15 180 18 195 25 C 210 32 215 45 215 60
+             C 215 80 210 105 200 130 C 190 155 175 180 160 200
+             C 145 220 130 235 115 245 C 100 255 85 260 70 260
+             C 50 260 35 250 25 235 C 15 220 10 200 10 180
+             C 10 155 15 130 25 105 C 35 80 50 60 70 45
+             C 90 30 115 18 135 16 C 137 15 138 15 140 15 Z"
+          fill="url(#sandalGrad)"
+          stroke="#f5a524"
+          stroke-width="2"/>
+
+    <!-- Wavy tread pattern for sandals -->
+    <g opacity="0.6" stroke="#8b6f47" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <!-- Wave lines -->
+      <path d="M 50 70 Q 80 65 110 70 Q 140 75 170 70 Q 190 67 200 70"/>
+      <path d="M 48 90 Q 78 85 108 90 Q 138 95 168 90 Q 188 87 195 90"/>
+      <path d="M 45 110 Q 75 105 105 110 Q 135 115 165 110 Q 185 107 190 110"/>
+      <path d="M 42 130 Q 72 125 102 130 Q 132 135 162 130 Q 180 127 185 130"/>
+      <path d="M 40 150 Q 70 145 100 150 Q 130 155 155 150 Q 170 147 175 150"/>
+      <path d="M 38 170 Q 68 165 95 170 Q 120 175 142 170 Q 155 167 160 170"/>
+      <path d="M 37 190 Q 65 185 90 190 Q 112 195 130 190 Q 140 187 145 190"/>
+      <path d="M 38 210 Q 63 205 85 210 Q 102 215 115 210 Q 123 207 128 210"/>
+      <path d="M 42 230 Q 62 225 78 230 Q 90 235 100 230 Q 107 227 110 230"/>
+    </g>
+
+    <!-- Circular comfort zones -->
+    <g opacity="0.4" fill="#f5a524">
+      <circle cx="100" cy="80" r="8"/>
+      <circle cx="130" cy="100" r="7"/>
+      <circle cx="95" cy="130" r="8"/>
+      <circle cx="120" cy="150" r="7"/>
+      <circle cx="85" cy="170" r="7"/>
+      <circle cx="100" cy="195" r="6"/>
+    </g>
+
+    <!-- Highlight shine -->
+    <ellipse cx="120" cy="90" rx="70" ry="50" fill="url(#sandalShine)"/>
+
+    <!-- Toe strap channel -->
+    <ellipse cx="155" cy="50" rx="25" ry="12" fill="none" stroke="#8b6f47" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Label -->
+  <text x="150" y="370" font-family="Montserrat, sans-serif" font-size="16" font-weight="600" fill="#0b1d3a" text-anchor="middle">
+    Breeze Sandalia
+  </text>
+</svg>

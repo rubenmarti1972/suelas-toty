@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgFor } from '@angular/common';
+import { CartService } from '../services/cart.service';
+import { CartComponent } from '../../shared/components/cart/cart.component';
 
 interface NavigationLink {
   label: string;
@@ -230,13 +232,21 @@ interface NavigationLink {
   ]
 })
 export class HeaderComponent {
+  public cartService = inject(CartService);
+  public isCartOpen = signal(false);
+
   protected readonly links: NavigationLink[] = [
     { label: 'Inicio', route: '/' },
     { label: 'Catálogo', route: '/productos' },
     { label: 'Servicio al cliente', route: '/servicio-al-cliente' },
-    { label: 'Contacto', route: '/contacto' },
-    { label: 'Inventario', route: '/inventario' },
-    { label: 'Administración', route: '/admin' }
+    { label: 'Contacto', route: '/contacto' }
   ];
-  protected readonly cartItems = 0;
+
+  openCart(): void {
+    this.isCartOpen.set(true);
+  }
+
+  closeCart(): void {
+    this.isCartOpen.set(false);
+  }
 }
