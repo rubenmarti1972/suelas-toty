@@ -1,13 +1,33 @@
 :root {
-  color-scheme: dark;
-  --color-primary: #0b1d3a;
-  --color-secondary: #1f3b63;
-  --color-accent: #f5a524;
-  --color-surface: #14253f;
-  --color-surface-alt: #1c3152;
-  --color-background: #070f1f;
-  --color-muted: rgba(244, 247, 250, 0.65);
-  --color-text: #f4f7fa;
+  color-scheme: light;
+  /* Paleta principal: 60% Azul, 20% Blanco, 10% Verde, 10% Aquamarina */
+
+  /* Azul (60% - color dominante) */
+  --color-primary: #1e3a8a;           /* Azul oscuro profundo */
+  --color-primary-light: #3b82f6;     /* Azul medio */
+  --color-primary-lighter: #60a5fa;   /* Azul claro */
+  --color-primary-dark: #1e40af;      /* Azul muy oscuro */
+
+  /* Blanco (20% - fondos y texto) */
+  --color-white: #ffffff;
+  --color-surface: #f8fafc;           /* Blanco off-white */
+  --color-surface-alt: #f1f5f9;       /* Gris muy claro */
+
+  /* Verde (10% - acentos secundarios) */
+  --color-accent-green: #10b981;      /* Verde esmeralda */
+  --color-accent-green-light: #34d399;
+
+  /* Aquamarina (10% - detalles y highlights) */
+  --color-accent-aqua: #06b6d4;       /* Cyan/Aquamarina */
+  --color-accent-aqua-light: #22d3ee;
+
+  /* Colores de texto */
+  --color-text: #1e293b;              /* Gris oscuro azulado */
+  --color-text-light: #475569;        /* Gris medio */
+  --color-text-muted: #64748b;        /* Gris suave */
+
+  /* Fondo principal */
+  --color-background: #ffffff;
 }
 
 *, *::before, *::after {
@@ -16,8 +36,7 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at top left, rgba(31, 59, 99, 0.45), transparent 55%),
-    linear-gradient(180deg, var(--color-background) 0%, #040913 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #f0fdfa 100%);
   color: var(--color-text);
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
   line-height: 1.5;

@@ -8,7 +8,7 @@
     "stock": 340,
     "colors": ["Negro", "Gris", "Blanco", "Azul"],
     "status": "Disponible",
-    "image": "/assets/images/products/suela-deportiva.svg",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80&fit=crop",
     "category": "Deportivo"
   },
   {
@@ -20,7 +20,7 @@
     "stock": 120,
     "colors": ["Caramelo", "Negro", "Marrón"],
     "status": "Bajo inventario",
-    "image": "/assets/images/products/suela-casual.svg",
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&q=80&fit=crop",
     "category": "Casual"
   },
   {
@@ -32,7 +32,7 @@
     "stock": 620,
     "colors": ["Arena", "Azul", "Blanco", "Coral"],
     "status": "Disponible",
-    "image": "/assets/images/products/suela-sandalia.svg",
+    "image": "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=400&q=80&fit=crop",
     "category": "Sandalia"
   },
   {
@@ -44,7 +44,7 @@
     "stock": 45,
     "colors": ["Negro", "Amarillo"],
     "status": "Producción programada",
-    "image": "/assets/images/products/suela-seguridad.svg",
+    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&q=80&fit=crop",
     "category": "Seguridad"
   },
   {
@@ -56,7 +56,7 @@
     "stock": 215,
     "colors": ["Azul", "Negro", "Rojo", "Verde"],
     "status": "Disponible",
-    "image": "/assets/images/products/suela-running.svg",
+    "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=400&q=80&fit=crop",
     "category": "Running"
   },
   {
@@ -68,7 +68,7 @@
     "stock": 180,
     "colors": ["Negro", "Marrón", "Borgoña"],
     "status": "Disponible",
-    "image": "/assets/images/products/suela-formal.svg",
+    "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=400&q=80&fit=crop",
     "category": "Formal"
   }
 ]
