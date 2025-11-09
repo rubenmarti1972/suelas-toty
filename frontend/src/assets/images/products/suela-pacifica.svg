@@ -1,0 +1,25 @@
+<svg width="240" height="160" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pacifica-bg" x1="14" y1="20" x2="226" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="pacifica-sole" x1="72" y1="32" x2="190" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#CCFBF1" />
+    </linearGradient>
+  </defs>
+  <rect x="10" y="16" width="220" height="128" rx="34" fill="url(#pacifica-bg)" />
+  <path
+    d="M60 118C48 94 58 60 86 40C116 20 158 26 186 48C208 68 212 100 196 120C180 142 146 148 112 138C86 132 70 126 60 118Z"
+    fill="url(#pacifica-sole)"
+  />
+  <path
+    d="M88 88C106 74 140 76 162 92"
+    stroke="#2DD4BF"
+    stroke-width="4"
+    stroke-linecap="round"
+    opacity="0.7"
+  />
+  <path d="M96 104C114 110 138 110 154 104" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+</svg>

@@ -1,0 +1,25 @@
+<svg width="240" height="160" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aurora-bg" x1="20" y1="10" x2="220" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DD4BF" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="aurora-sole" x1="60" y1="20" x2="200" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFF" />
+      <stop offset="1" stop-color="#C6F6FF" />
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="224" height="144" rx="36" fill="url(#aurora-bg)" />
+  <path
+    d="M54 118C46 98 46 66 64 46C84 22 124 18 162 30C194 40 210 76 198 104C188 126 160 140 130 142C104 144 76 138 54 118Z"
+    fill="url(#aurora-sole)"
+  />
+  <path
+    d="M82 72C94 58 122 54 148 62C170 68 182 86 174 104"
+    stroke="#38BDF8"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-dasharray="18 10"
+    opacity="0.6"
+  />
+</svg>
