@@ -50,6 +50,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "suelas-toty:build"
+          },
           "configurations": {
             "production": {
               "buildTarget": "suelas-toty:build:production"
