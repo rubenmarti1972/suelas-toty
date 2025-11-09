@@ -12,7 +12,7 @@
       grid-template-columns: 1.2fr 1fr;
       gap: 4rem;
       align-items: center;
-      background: linear-gradient(135deg, rgba(20, 37, 63, 0.95), rgba(11, 29, 58, 1));
+      background: linear-gradient(135deg, rgba(176, 210, 248, 0.95), rgba(173, 203, 244, 1));
       border-radius: 2rem;
       padding: 4rem;
       margin-bottom: 5rem;
@@ -172,7 +172,7 @@
     }
 
     .product-card {
-      background: linear-gradient(135deg, rgba(20, 37, 63, 0.9), rgba(11, 29, 58, 0.95));
+      background: linear-gradient(135deg, rgba(176, 210, 248, 0.9), rgba(173, 203, 244, 0.95));
       border: 1px solid rgba(245, 165, 36, 0.2);
       border-radius: 1.5rem;
       overflow: hidden;
@@ -322,13 +322,13 @@
     .cta-content h2 {
       font-size: 2.5rem;
       font-weight: 800;
-      color: #0b1d3a;
+      color: #1a3a5e;
       margin: 0 0 1rem 0;
     }
 
     .cta-content p {
       font-size: 1.25rem;
-      color: rgba(11, 29, 58, 0.8);
+      color: rgba(26, 58, 94, 0.8);
       margin: 0 0 2rem 0;
       max-width: 600px;
       margin-left: auto;
@@ -359,7 +359,7 @@
 
     .btn-primary {
       background: linear-gradient(135deg, #f5a524, #ff8c00);
-      color: #0b1d3a;
+      color: #1a3a5e;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
@@ -369,29 +369,29 @@
     }
 
     .btn-secondary {
-      background: rgba(11, 29, 58, 0.15);
-      border: 2px solid rgba(11, 29, 58, 0.3);
-      color: #0b1d3a;
+      background: rgba(173, 203, 244, 0.15);
+      border: 2px solid rgba(173, 203, 244, 0.3);
+      color: #1a3a5e;
     }
 
     .btn-secondary:hover {
-      background: rgba(11, 29, 58, 0.25);
+      background: rgba(173, 203, 244, 0.25);
       transform: translateY(-2px);
     }
 
     .cta-section .btn-primary {
-      background: #0b1d3a;
+      background: #1a3a5e;
       color: #f5a524;
     }
 
     .cta-section .btn-secondary {
       background: transparent;
-      border-color: #0b1d3a;
-      color: #0b1d3a;
+      border-color: #1a3a5e;
+      color: #1a3a5e;
     }
 
     .cta-section .btn-secondary:hover {
-      background: rgba(11, 29, 58, 0.1);
+      background: rgba(173, 203, 244, 0.1);
     }
 
     @media (max-width: 1024px) {
