@@ -15,7 +15,7 @@ interface SocialLink {
     <footer class="footer">
       <div class="footer__content">
         <section class="footer__brand">
-          <img src="assets/images/logo.svg" alt="Suelas Toty" class="footer__logo" />
+          <img src="assets/images/logo.png" alt="Suelas Toty" class="footer__logo" />
           <div>
             <h2>Suelas Toty</h2>
             <p>
