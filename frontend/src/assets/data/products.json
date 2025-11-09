@@ -2,41 +2,73 @@
   {
     "reference": "ST-2101",
     "name": "Suelas deportivas NeoFlex",
+    "description": "Diseñadas para máximo rendimiento y comodidad. Ideales para calzado deportivo con tecnología de absorción de impacto.",
     "price": 22.5,
     "currency": "USD",
     "stock": 340,
-    "colors": ["Negro", "Gris", "Blanco"],
+    "colors": ["Negro", "Gris", "Blanco", "Azul"],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1588361861040-71661c59b296?auto=format&fit=crop&w=900&q=80"
+    "image": "/assets/images/products/suela-deportiva.svg",
+    "category": "Deportivo"
   },
   {
     "reference": "ST-3104",
     "name": "Suelas casual UrbanGrip",
+    "description": "Perfectas para uso diario urbano. Diseño versátil con excelente tracción y durabilidad para calzado casual.",
     "price": 18.75,
     "currency": "USD",
     "stock": 120,
-    "colors": ["Caramelo", "Negro"],
+    "colors": ["Caramelo", "Negro", "Marrón"],
     "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80"
+    "image": "/assets/images/products/suela-casual.svg",
+    "category": "Casual"
   },
   {
     "reference": "ST-5110",
     "name": "Suelas sandalia Breeze",
+    "description": "Livianas y cómodas para sandalias de verano. Material flexible con excelente ventilación y confort.",
     "price": 11.4,
     "currency": "USD",
     "stock": 620,
-    "colors": ["Arena", "Azul"],
+    "colors": ["Arena", "Azul", "Blanco", "Coral"],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80"
+    "image": "/assets/images/products/suela-sandalia.svg",
+    "category": "Sandalia"
   },
   {
     "reference": "ST-7202",
     "name": "Suelas seguridad SteelPro",
+    "description": "Máxima protección para calzado industrial. Resistente a aceites, antideslizante y con refuerzo de acero.",
     "price": 31.8,
     "currency": "USD",
     "stock": 45,
     "colors": ["Negro", "Amarillo"],
     "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+    "image": "/assets/images/products/suela-seguridad.svg",
+    "category": "Seguridad"
+  },
+  {
+    "reference": "ST-4205",
+    "name": "Suelas running AeroMax",
+    "description": "Tecnología avanzada para corredores profesionales. Sistema de retorno de energía y amortiguación superior.",
+    "price": 28.9,
+    "currency": "USD",
+    "stock": 215,
+    "colors": ["Azul", "Negro", "Rojo", "Verde"],
+    "status": "Disponible",
+    "image": "/assets/images/products/suela-running.svg",
+    "category": "Running"
+  },
+  {
+    "reference": "ST-6108",
+    "name": "Suelas formal Executive",
+    "description": "Elegancia y distinción para calzado ejecutivo. Diseño refinado con suela de cuero sintético premium.",
+    "price": 24.5,
+    "currency": "USD",
+    "stock": 180,
+    "colors": ["Negro", "Marrón", "Borgoña"],
+    "status": "Disponible",
+    "image": "/assets/images/products/suela-formal.svg",
+    "category": "Formal"
   }
 ]
