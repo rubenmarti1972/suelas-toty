@@ -83,6 +83,7 @@ interface Product {
       .products {
         display: grid;
         gap: 3rem;
+        color: var(--color-text);
       }
       .products__header {
         display: flex;
@@ -94,28 +95,28 @@ interface Product {
       .products__header h1 {
         margin: 0;
         font-size: clamp(2rem, 2.7vw, 2.6rem);
-        color: #1b2a4b;
+        color: var(--color-text);
       }
       .products__header p {
         margin: 0.75rem 0 0;
         max-width: 42rem;
         line-height: 1.7;
-        color: rgba(27, 42, 75, 0.75);
+        color: rgba(244, 247, 250, 0.72);
       }
       .products__cta {
-        background: linear-gradient(135deg, #1f3c88, #2f4f9b);
-        color: #ffffff;
+        background: linear-gradient(135deg, var(--color-accent), #ffc861);
+        color: #0b1d3a;
         border: none;
         border-radius: 999px;
         padding: 0.95rem 2.4rem;
         font-weight: 600;
         cursor: pointer;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-        box-shadow: 0 18px 36px rgba(31, 60, 136, 0.28);
+        box-shadow: 0 26px 52px rgba(3, 8, 18, 0.5);
       }
       .products__cta:hover {
         transform: translateY(-3px);
-        box-shadow: 0 24px 46px rgba(31, 60, 136, 0.3);
+        box-shadow: 0 32px 60px rgba(3, 8, 18, 0.55);
       }
       .products__grid {
         display: grid;
@@ -126,36 +127,38 @@ interface Product {
         position: relative;
         overflow: hidden;
         border-radius: 2rem;
-        border: 1px solid rgba(27, 42, 75, 0.12);
-        background: #f6f7fb;
-        box-shadow: 0 22px 48px rgba(12, 24, 46, 0.14);
+        border: 1px solid rgba(244, 247, 250, 0.08);
+        background: rgba(20, 37, 63, 0.88);
+        box-shadow: 0 32px 72px rgba(3, 8, 18, 0.5);
         display: grid;
         grid-template-rows: auto 1fr;
         transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
       .product-card:hover {
         transform: translateY(-6px);
-        box-shadow: 0 32px 64px rgba(12, 24, 46, 0.18);
+        box-shadow: 0 38px 82px rgba(3, 8, 18, 0.58);
       }
       .product-card__media {
         position: relative;
         display: grid;
         place-items: center;
-        padding: 1.75rem 1.5rem 1.25rem;
-        background: linear-gradient(135deg, #eef1f6 0%, #d9e1ef 100%);
-        min-height: 220px;
+        padding: 2rem 1.5rem 1.5rem;
+        background: linear-gradient(135deg, rgba(20, 37, 63, 0.9), rgba(11, 29, 58, 0.95));
+        min-height: 240px;
       }
       .product-card__media img {
-        width: min(80%, 280px);
-        height: 180px;
+        width: min(88%, 320px);
+        height: 200px;
         object-fit: contain;
-        filter: drop-shadow(0 14px 24px rgba(12, 24, 46, 0.22));
+        object-position: center;
+        filter: drop-shadow(0 20px 40px rgba(3, 8, 18, 0.55));
+        mix-blend-mode: normal;
       }
       .product-card__media[data-status='low'] {
-        background: linear-gradient(135deg, #f0e7d3 0%, #e2d3bb 100%);
+        background: linear-gradient(135deg, rgba(245, 165, 36, 0.24), rgba(20, 37, 63, 0.92));
       }
       .product-card__media[data-status='scheduled'] {
-        background: linear-gradient(135deg, #e5e3f6 0%, #d4d2ed 100%);
+        background: linear-gradient(135deg, rgba(31, 59, 99, 0.85), rgba(20, 37, 63, 0.96));
       }
       .product-card__badge {
         position: absolute;
@@ -169,14 +172,14 @@ interface Product {
         font-size: 0.78rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        background: rgba(31, 60, 136, 0.85);
-        color: #f6f7fb;
+        background: rgba(255, 216, 140, 0.9);
+        color: #0b1d3a;
       }
       .product-card__media[data-status='low'] .product-card__badge {
-        background: rgba(217, 119, 6, 0.85);
+        background: rgba(245, 165, 36, 0.95);
       }
       .product-card__media[data-status='scheduled'] .product-card__badge {
-        background: rgba(79, 70, 229, 0.78);
+        background: rgba(168, 189, 255, 0.85);
       }
       .product-card__reference {
         position: absolute;
@@ -185,11 +188,12 @@ interface Product {
         font-size: 0.82rem;
         letter-spacing: 0.14em;
         text-transform: uppercase;
-        background: rgba(255, 255, 255, 0.75);
-        color: #1b2a4b;
+        background: rgba(244, 247, 250, 0.18);
+        color: rgba(244, 247, 250, 0.85);
         padding: 0.35rem 0.9rem;
         border-radius: 999px;
-        border: 1px solid rgba(27, 42, 75, 0.12);
+        border: 1px solid rgba(244, 247, 250, 0.25);
+        backdrop-filter: blur(6px);
       }
       .product-card__body {
         padding: 1.75rem 1.75rem 2rem;
@@ -204,13 +208,13 @@ interface Product {
       .product-card__header h2 {
         margin: 0;
         font-size: 1.45rem;
-        color: #1b2a4b;
+        color: var(--color-text);
       }
       .product-card__price {
         margin: 0;
         font-size: 1.2rem;
         font-weight: 700;
-        color: #1f3c88;
+        color: rgba(255, 216, 140, 0.92);
       }
       .product-card__colors {
         display: grid;
@@ -220,7 +224,7 @@ interface Product {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.12em;
-        color: rgba(24, 49, 83, 0.6);
+        color: rgba(244, 247, 250, 0.55);
       }
       .product-card__chips {
         display: flex;
@@ -233,8 +237,9 @@ interface Product {
         padding: 0.4rem 0.85rem;
         border-radius: 999px;
         font-size: 0.82rem;
-        background: rgba(31, 60, 136, 0.12);
-        color: #1b2a4b;
+        background: rgba(244, 247, 250, 0.12);
+        color: rgba(244, 247, 250, 0.85);
+        border: 1px solid rgba(244, 247, 250, 0.15);
       }
       .product-card__stats {
         display: grid;
@@ -246,12 +251,12 @@ interface Product {
         font-size: 0.75rem;
         text-transform: uppercase;
         letter-spacing: 0.16em;
-        color: rgba(27, 42, 75, 0.55);
+        color: rgba(244, 247, 250, 0.5);
         margin-bottom: 0.35rem;
       }
       .product-card__stats-value {
         font-weight: 600;
-        color: #1b2a4b;
+        color: var(--color-text);
       }
       .product-card__actions {
         display: flex;
@@ -269,40 +274,40 @@ interface Product {
       }
       .product-card__action {
         border: none;
-        background: linear-gradient(135deg, #1f3c88, #2f4f9b);
-        color: #ffffff;
-        box-shadow: 0 18px 32px rgba(31, 60, 136, 0.25);
+        background: linear-gradient(135deg, var(--color-accent), #ffc861);
+        color: #0b1d3a;
+        box-shadow: 0 24px 48px rgba(3, 8, 18, 0.5);
       }
       .product-card__action:hover {
         transform: translateY(-2px);
-        box-shadow: 0 22px 38px rgba(31, 60, 136, 0.28);
+        box-shadow: 0 28px 58px rgba(3, 8, 18, 0.55);
       }
       .product-card__ghost {
-        border: 1px solid rgba(27, 42, 75, 0.2);
-        background: rgba(27, 42, 75, 0.08);
-        color: #1b2a4b;
+        border: 1px solid rgba(244, 247, 250, 0.25);
+        background: rgba(244, 247, 250, 0.08);
+        color: rgba(244, 247, 250, 0.85);
       }
       .product-card__ghost:hover {
-        background: rgba(27, 42, 75, 0.16);
+        background: rgba(244, 247, 250, 0.16);
         transform: translateY(-2px);
-        box-shadow: 0 12px 24px rgba(12, 24, 46, 0.18);
+        box-shadow: 0 18px 36px rgba(3, 8, 18, 0.5);
       }
       .products__summary {
-        background: #f2f4f9;
+        background: rgba(20, 37, 63, 0.85);
         border-radius: 1.75rem;
         padding: 2.2rem;
-        border: 1px solid rgba(27, 42, 75, 0.12);
-        box-shadow: 0 18px 42px rgba(12, 24, 46, 0.08);
+        border: 1px solid rgba(244, 247, 250, 0.08);
+        box-shadow: 0 26px 60px rgba(3, 8, 18, 0.5);
       }
       .products__summary h2 {
         margin-top: 0;
-        color: #1b2a4b;
+        color: var(--color-text);
       }
       .products__summary ul {
         margin: 0;
         padding-left: 1.2rem;
         line-height: 1.8;
-        color: rgba(27, 42, 75, 0.7);
+        color: rgba(244, 247, 250, 0.72);
       }
       @media (max-width: 640px) {
         .product-card__actions {

@@ -22,15 +22,15 @@ import { FooterComponent } from './core/layout/footer.component';
         display: flex;
         min-height: 100vh;
         flex-direction: column;
-        background: linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
-        color: #1f2933;
+        background: linear-gradient(180deg, rgba(11, 29, 58, 0.85) 0%, rgba(7, 15, 31, 0.95) 60%, #040913 100%);
+        color: var(--color-text);
         font-family: 'Montserrat', 'Segoe UI', sans-serif;
       }
       .app-shell__content {
         flex: 1;
         width: min(1800px, calc(100% - 3rem));
         margin: 0 auto;
-        padding: 2.5rem 0 3.5rem;
+        padding: 2.75rem 0 3.75rem;
       }
       @media (max-width: 768px) {
         .app-shell__content {

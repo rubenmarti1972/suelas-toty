@@ -1,12 +1,13 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   --color-primary: #0b1d3a;
-  --color-secondary: #0f4c75;
-  --color-accent: #2dd4bf;
-  --color-surface: #ffffff;
-  --color-background: #eef6ff;
-  --color-muted: #e0ebff;
-  --color-text: #0f1f2f;
+  --color-secondary: #1f3b63;
+  --color-accent: #f5a524;
+  --color-surface: #14253f;
+  --color-surface-alt: #1c3152;
+  --color-background: #070f1f;
+  --color-muted: rgba(244, 247, 250, 0.65);
+  --color-text: #f4f7fa;
 }
 
 *, *::before, *::after {
@@ -15,7 +16,8 @@
 
 body {
   margin: 0;
-  background-color: var(--color-background);
+  background: radial-gradient(circle at top left, rgba(31, 59, 99, 0.45), transparent 55%),
+    linear-gradient(180deg, var(--color-background) 0%, #040913 100%);
   color: var(--color-text);
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
   line-height: 1.5;
@@ -30,7 +32,7 @@ button {
 }
 
 main {
-  width: min(1200px, calc(100% - 2.5rem));
+  width: min(1800px, calc(100% - 3rem));
   margin: 0 auto 6rem;
   display: block;
 }
