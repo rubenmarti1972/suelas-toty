@@ -1,125 +1,218 @@
-
-    <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">
-          <span class="hero__subtitle">Bienvenido a</span>
-          Suelas Toty
-        </h1>
-        <p class="hero__description">
-          La mejor selección de suelas premium para tu negocio.
-          Calidad garantizada, entrega rápida y precios competitivos.
-        </p>
-        <div class="hero__buttons">
-          <button class="btn-primary" (click)="navigateToProducts()">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="M21 21l-4.35-4.35"></path>
-            </svg>
-            Ver Catálogo Completo
-          </button>
-          <a routerLink="/contacto" class="btn-secondary">
-            Solicitar Cotización
-          </a>
+<section class="hero">
+  <div class="hero__content">
+    <span class="hero__subtitle">Bienvenido a</span>
+    <h1 class="hero__title">Suelas Toty</h1>
+    <p class="hero__description">
+      Somos aliados estratégicos para fabricantes de calzado que buscan suelas modernas, confiables y con un acabado impecable.
+      Diseñamos y producimos con estándares de clase mundial.
+    </p>
+    <div class="hero__buttons">
+      <button class="btn-primary" (click)="navigateToProducts()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="M21 21l-4.35-4.35"></path>
+        </svg>
+        Ver catálogo completo
+      </button>
+      <a routerLink="/contacto" class="btn-secondary">Solicitar cotización</a>
+    </div>
+    <div class="hero__metrics">
+      @for (highlight of heroHighlights; track highlight.label) {
+        <div class="metric">
+          <span class="metric__value">{{ highlight.value }}</span>
+          <span class="metric__label">{{ highlight.label }}</span>
         </div>
+      }
+    </div>
+    <div class="hero__features">
+      <article class="feature">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2 2 7l10 5 10-5-10-5z"></path>
+          <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <div>
+          <strong>6 categorías</strong>
+          <p>Variedad para cada necesidad</p>
+        </div>
+      </article>
+      <article class="feature">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 7h-9M14 17H5M20 7a1 1 0 0 0 1-1 1 1 0 0 0-1-1M14 17a1 1 0 0 0 1-1 1 1 0 0 0-1-1M5 17a1 1 0 0 1-1 1 1 1 0 0 1-1-1M5 17V7M20 7v10"></path>
+        </svg>
+        <div>
+          <strong>Envío ágil</strong>
+          <p>Despacho inmediato en stock</p>
+        </div>
+      </article>
+      <article class="feature">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+        <div>
+          <strong>Calidad premium</strong>
+          <p>Materiales certificados</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="hero__visual">
+    <div class="hero__image-grid">
+      <img src="/assets/images/products/suela-deportiva.svg" alt="Suela deportiva" class="grid-img grid-img-1" />
+      <img src="/assets/images/products/suela-casual.svg" alt="Suela casual" class="grid-img grid-img-2" />
+      <img src="/assets/images/products/suela-running.svg" alt="Suela running" class="grid-img grid-img-3" />
+      <img src="/assets/images/products/suela-formal.svg" alt="Suela formal" class="grid-img grid-img-4" />
+    </div>
+  </div>
+</section>
 
-        <div class="hero__features">
-          <div class="feature">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <div>
-              <strong>6 Categorías</strong>
-              <p>Variedad para cada necesidad</p>
-            </div>
+<section class="featured-products">
+  <div class="section-header">
+    <div>
+      <p class="section-eyebrow">Colección destacada</p>
+      <h2>Modelos listos para producción</h2>
+    </div>
+    <a routerLink="/productos" class="view-all">
+      Ver todos
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+  </div>
+  <div class="products-grid">
+    @for (product of featuredProducts(); track product.reference) {
+      <article class="product-card">
+        <div class="product-image">
+          <img [src]="product.image" [alt]="product.name" />
+          <span class="product-badge" [class.low-stock]="product.status.includes('Bajo')">
+            {{ product.status }}
+          </span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">{{ product.category }}</span>
+          <h3>{{ product.name }}</h3>
+          <p class="product-description">{{ product.description }}</p>
+          <div class="product-colors">
+            @for (color of product.colors.slice(0, 3); track color) {
+              <span class="color-badge">{{ color }}</span>
+            }
+            @if (product.colors.length > 3) {
+              <span class="color-more">+{{ product.colors.length - 3 }}</span>
+            }
           </div>
-          <div class="feature">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20 7h-9M14 17H5M20 7a1 1 0 0 0 1-1 1 1 0 0 0-1-1M14 17a1 1 0 0 0 1-1 1 1 0 0 0-1-1M5 17a1 1 0 0 1-1 1 1 1 0 0 1-1-1M5 17V7M20 7v10"></path>
-            </svg>
-            <div>
-              <strong>Envío Rápido</strong>
-              <p>Despacho inmediato en stock</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="price">\${{ product.price.toFixed(2) }}</span>
+              <span class="unit">/ par</span>
             </div>
-          </div>
-          <div class="feature">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <div>
-              <strong>Calidad Premium</strong>
-              <p>Materiales certificados</p>
-            </div>
+            <button class="btn-add" (click)="navigateToProducts()">Ver detalles</button>
           </div>
         </div>
-      </div>
+      </article>
+    }
+  </div>
+</section>
 
-      <div class="hero__visual">
-        <div class="hero__image-grid">
-          <img src="/assets/images/products/suela-deportiva.svg" alt="Suela Deportiva" class="grid-img grid-img-1" />
-          <img src="/assets/images/products/suela-casual.svg" alt="Suela Casual" class="grid-img grid-img-2" />
-          <img src="/assets/images/products/suela-running.svg" alt="Suela Running" class="grid-img grid-img-3" />
-          <img src="/assets/images/products/suela-formal.svg" alt="Suela Formal" class="grid-img grid-img-4" />
+<section class="objective">
+  <header class="section-heading">
+    <p class="section-heading__eyebrow">Nuestro compromiso</p>
+    <h2>Objetivos que guían cada colección</h2>
+  </header>
+  <ul class="objective__list">
+    @for (bullet of objectiveBullets; track bullet) {
+      <li>
+        <span class="objective__marker" aria-hidden="true"></span>
+        <p>{{ bullet }}</p>
+      </li>
+    }
+  </ul>
+</section>
+
+<section class="purpose" aria-label="Propósito empresarial">
+  <article class="purpose__card">
+    <h3>Misión</h3>
+    <p>{{ mission }}</p>
+  </article>
+  <article class="purpose__card">
+    <h3>Visión</h3>
+    <p>{{ vision }}</p>
+  </article>
+</section>
+
+<section class="values" aria-labelledby="valores-heading">
+  <header class="section-heading section-heading--center">
+    <p class="section-heading__eyebrow">Valores</p>
+    <h2 id="valores-heading">Principios que nos definen</h2>
+    <p class="section-heading__description">
+      Una cultura enfocada en la calidad y en relaciones duraderas con clientes, colaboradores y aliados.
+    </p>
+  </header>
+  <div class="values__grid">
+    @for (value of valuesDetailed; track value.title) {
+      <article class="values__card">
+        <h3>{{ value.title }}</h3>
+        <p>{{ value.description }}</p>
+      </article>
+    }
+  </div>
+</section>
+
+<section class="process" aria-label="Proceso industrial Toty">
+  <header class="section-heading section-heading--center">
+    <p class="section-heading__eyebrow">Metodología</p>
+    <h2>Control total desde el brief hasta la entrega</h2>
+    <p class="section-heading__description">
+      Equipos especializados coordinan el desarrollo técnico, la automatización y la logística para garantizar colecciones memorables.
+    </p>
+  </header>
+  <ol class="process__steps">
+    @for (step of process; track step.order) {
+      <li class="process__step">
+        <span class="process__number">{{ step.order }}</span>
+        <div>
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.detail }}</p>
         </div>
-      </div>
-    </section>
+      </li>
+    }
+  </ol>
+</section>
 
-    <section class="featured-products">
-      <div class="section-header">
-        <h2>Productos Destacados</h2>
-        <a routerLink="/productos" class="view-all">
-          Ver todos
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-
-      <div class="products-grid">
-        @for (product of featuredProducts(); track product.reference) {
-          <div class="product-card">
-            <div class="product-image">
-              <img [src]="product.image" [alt]="product.name" />
-              <span class="product-badge" [class.low-stock]="product.status.includes('Bajo')">
-                {{ product.status }}
-              </span>
-            </div>
-            <div class="product-info">
-              <span class="product-category">{{ product.category }}</span>
-              <h3>{{ product.name }}</h3>
-              <p class="product-description">{{ product.description }}</p>
-              <div class="product-colors">
-                @for (color of product.colors.slice(0, 3); track color) {
-                  <span class="color-badge">{{ color }}</span>
-                }
-                @if (product.colors.length > 3) {
-                  <span class="color-more">+{{ product.colors.length - 3 }}</span>
-                }
-              </div>
-              <div class="product-footer">
-                <div class="product-price">
-                  <span class="price">\${{ product.price.toFixed(2) }}</span>
-                  <span class="unit">/ par</span>
-                </div>
-                <button class="btn-add" (click)="navigateToProducts()">
-                  Ver Detalles
-                </button>
-              </div>
-            </div>
+<section class="differentials" aria-label="Razones para elegir Suelas Toty">
+  <header class="section-heading">
+    <p class="section-heading__eyebrow">Valor estratégico</p>
+    <h2>Mucho más que una fábrica de suelas</h2>
+  </header>
+  <div class="differentials__content">
+    <ul class="differentials__list">
+      @for (differentiator of differentiators; track differentiator.title) {
+        <li>
+          <span class="differentials__icon">{{ differentiator.icon }}</span>
+          <div>
+            <h3>{{ differentiator.title }}</h3>
+            <p>{{ differentiator.detail }}</p>
           </div>
-        }
-      </div>
-    </section>
+        </li>
+      }
+    </ul>
+    <aside class="differentials__cta">
+      <h3>Agenda una visita técnica</h3>
+      <p>
+        Recorre nuestra planta, conoce los laboratorios y descubre cómo optimizar tus próximas colecciones.
+      </p>
+      <a routerLink="/contacto" class="cta-button cta-button--primary">Hablar con ventas</a>
+      <a routerLink="/servicio-al-cliente" class="cta-button cta-button--ghost">Soporte dedicado</a>
+    </aside>
+  </div>
+</section>
 
-    <section class="cta-section">
-      <div class="cta-content">
-        <h2>¿Necesitas grandes volúmenes?</h2>
-        <p>Contamos con soluciones especiales para mayoristas y fabricantes de calzado</p>
-        <div class="cta-buttons">
-          <a routerLink="/contacto" class="btn-primary">Contactar Ventas</a>
-          <a routerLink="/servicio-al-cliente" class="btn-secondary">Soporte Técnico</a>
-        </div>
-      </div>
-    </section>
-  
+<section class="cta-section">
+  <div class="cta-content">
+    <h2>¿Necesitas grandes volúmenes?</h2>
+    <p>Contamos con soluciones especiales para mayoristas y fabricantes de calzado.</p>
+    <div class="cta-buttons">
+      <a routerLink="/contacto" class="btn-primary">Contactar ventas</a>
+      <a routerLink="/servicio-al-cliente" class="btn-secondary">Soporte técnico</a>
+    </div>
+  </div>
+</section>
