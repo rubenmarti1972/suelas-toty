@@ -122,7 +122,7 @@ interface Product {
               </div>
               <div class="product-footer">
                 <div class="product-price">
-                  <span class="price">${{ product.price.toFixed(2) }}</span>
+                  <span class="price">\${{ product.price.toFixed(2) }}</span>
                   <span class="unit">/ par</span>
                 </div>
                 <button class="btn-add" (click)="navigateToProducts()">
