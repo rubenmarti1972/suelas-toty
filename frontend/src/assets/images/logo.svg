@@ -1,18 +1,46 @@
-<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="180" height="72" viewBox="0 0 360 144" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Suelas Toty</title>
+  <desc id="logoDesc">Logotipo profesional de Suelas Toty con gradientes azul y verde agua</desc>
   <defs>
-    <linearGradient id="paint0_linear" x1="12" y1="8" x2="84" y2="88" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2DD4BF" />
-      <stop offset="1" stop-color="#38BDF8" />
-    </linearGradient>
-    <linearGradient id="paint1_linear" x1="24" y1="20" x2="72" y2="76" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1D3A" />
+    <linearGradient id="brandGradient" x1="12" y1="12" x2="348" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1D3A" />
       <stop offset="1" stop-color="#0F4C75" />
     </linearGradient>
+    <linearGradient id="accentGradient" x1="48" y1="24" x2="320" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8" />
+      <stop offset="1" stop-color="#2DD4BF" />
+    </linearGradient>
+    <linearGradient id="monogramGradient" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2DD4BF" />
+      <stop offset="1" stop-color="#38BDF8" />
+    </linearGradient>
+    <clipPath id="clipMonogram">
+      <rect x="24" y="24" width="96" height="96" rx="28" />
+    </clipPath>
   </defs>
-  <rect x="6" y="6" width="84" height="84" rx="24" fill="url(#paint1_linear)" />
-  <rect x="12" y="12" width="72" height="72" rx="20" fill="#0F284A" />
-  <path
-    d="M34 32H24V28H52V32H42V64H34V32ZM58.68 28H66.16L74.48 64H66.96L65.4 56.84H59.36L57.92 64H50.64L58.68 28ZM64.12 50.4L62.64 43.04C62.32 41.44 62.04 39.52 61.76 37.32H61.68C61.36 39.44 61.04 41.32 60.72 42.96L59.32 50.4H64.12ZM30.72 68.4H66.4C70.6 68.4 73.6 71.24 73.6 75.24C73.6 79.16 70.76 82 66.72 82H30.72V68.4Z"
-    fill="url(#paint0_linear)"
-  />
+  <rect x="6" y="6" width="348" height="132" rx="40" fill="url(#brandGradient)" />
+  <rect x="18" y="18" width="324" height="108" rx="34" fill="#06162C" />
+  <g clip-path="url(#clipMonogram)" transform="translate(0,0)">
+    <rect x="24" y="24" width="96" height="96" rx="28" fill="#081D36" />
+    <path
+      d="M66.2 43.6c7.8 0 14.08 2.12 18.64 6.36 4.48 4.16 6.76 9.76 6.76 16.72 0 7.12-2.4 12.88-7.12 17.28-4.64 4.24-11.12 6.36-19.36 6.36H52.6V43.6h13.6Zm-.44 11.92h-3.92v31.12h4.56c4.48 0 7.92-1.16 10.32-3.48 2.48-2.32 3.72-5.52 3.72-9.6 0-4.16-1.24-7.36-3.72-9.6-2.4-2.24-5.84-3.36-10.24-3.36Z"
+      fill="url(#monogramGradient)"
+    />
+    <path
+      d="M69.08 109.2c-12.48 0-22.64-10.16-22.64-22.64 0-12.48 10.16-22.64 22.64-22.64 12.48 0 22.64 10.16 22.64 22.64 0 12.48-10.16 22.64-22.64 22.64Zm0-10.16c6.84 0 12.4-5.56 12.4-12.48 0-6.84-5.56-12.4-12.4-12.4-6.92 0-12.48 5.56-12.48 12.4 0 6.92 5.56 12.48 12.48 12.48Z"
+      fill="rgba(255,255,255,0.06)"
+    />
+  </g>
+  <g transform="translate(140,38)">
+    <text x="0" y="32" fill="#E0F2FF" font-family="'Montserrat', 'Poppins', 'Segoe UI', sans-serif" font-weight="600" font-size="28" letter-spacing="0.28em" textLength="160">
+      SUELAS
+    </text>
+    <text x="0" y="82" fill="url(#accentGradient)" font-family="'Raleway', 'Montserrat', 'Segoe UI', sans-serif" font-weight="700" font-size="60" letter-spacing="0.04em">
+      TOTY
+    </text>
+    <rect x="2" y="92" width="168" height="6" rx="3" fill="url(#accentGradient)" opacity="0.85" />
+    <text x="0" y="118" fill="#9DCDF7" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="500" font-size="18" letter-spacing="0.12em">
+      CALIDAD QUE IMPULSA
+    </text>
+  </g>
 </svg>

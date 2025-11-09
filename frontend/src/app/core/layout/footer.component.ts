@@ -85,12 +85,12 @@ interface SocialLink {
         align-items: center;
       }
       .footer__logo {
-        width: 68px;
-        height: 68px;
-        border-radius: 1.75rem;
-        padding: 0.75rem;
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.18), rgba(56, 189, 248, 0.22));
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        width: clamp(96px, 18vw, 150px);
+        height: auto;
+        border-radius: 2.25rem;
+        padding: 0.4rem 0.9rem;
+        background: linear-gradient(135deg, rgba(45, 212, 191, 0.22), rgba(56, 189, 248, 0.3));
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
       }
       .footer__brand h2 {
         margin: 0 0 0.5rem;

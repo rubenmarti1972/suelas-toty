@@ -79,11 +79,11 @@ interface NavigationLink {
         text-decoration: none;
       }
       .header__logo {
-        width: 62px;
-        height: 62px;
-        border-radius: 1.5rem;
-        padding: 0.5rem;
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.3), rgba(14, 116, 144, 0.2));
+        width: clamp(90px, 12vw, 132px);
+        height: auto;
+        border-radius: 1.75rem;
+        padding: 0.35rem 0.75rem;
+        background: linear-gradient(135deg, rgba(45, 212, 191, 0.28), rgba(56, 189, 248, 0.24));
         box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
       }
       .header__identity {
