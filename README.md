@@ -11,11 +11,12 @@ Esta maqueta implementa la experiencia web descrita para Suelas Toty utilizando 
 
 ```bash
 cd frontend
-npm install
-npm start
+# instala dependencias (elige tu gestor preferido)
+pnpm install    # o npm install
+pnpm start      # o npm start
 ```
 
-El comando `npm start` inicia el servidor de desarrollo (`http://localhost:4200/`). Los scripts adicionales (`npm run build`, `npm test`) quedan disponibles para automatizar builds y pruebas cuando se agregue lógica conectada a servicios reales.
+El comando `pnpm start` (`npm start` en su defecto) inicia el servidor de desarrollo (`http://localhost:4200/`). Los scripts adicionales (`pnpm run build`, `pnpm test`) quedan disponibles para automatizar builds y pruebas cuando se agregue lógica conectada a servicios reales.
 
 ## Estructura del proyecto
 
