@@ -61,17 +61,16 @@ interface NavigationLink {
         align-items: center;
         gap: 1.5rem;
         padding: 1.15rem clamp(1.5rem, 3vw, 3rem);
-        background: var(--color-surface);
-        border: 1px solid rgba(94, 74, 60, 0.12);
+        background: linear-gradient(140deg, #10345a, #1d4f82);
         border-radius: 1.9rem;
-        box-shadow: 0 18px 38px rgba(94, 74, 60, 0.16);
+        box-shadow: 0 20px 42px rgba(16, 52, 90, 0.35);
         position: sticky;
         top: 1.35rem;
         z-index: 50;
         width: min(1800px, calc(100% - 3rem));
         margin: 1.35rem auto 2.75rem;
-        color: var(--color-text);
-        backdrop-filter: blur(14px);
+        color: #f5f8ff;
+        backdrop-filter: blur(16px);
       }
       .header__brand {
         display: inline-flex;
@@ -85,9 +84,9 @@ interface NavigationLink {
         height: auto;
         border-radius: 1.45rem;
         padding: 0.45rem 0.95rem;
-        background: linear-gradient(135deg, rgba(94, 74, 60, 0.12), rgba(210, 182, 150, 0.2));
-        border: 1px solid rgba(94, 74, 60, 0.24);
-        box-shadow: 0 12px 24px rgba(94, 74, 60, 0.16);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 12px 26px rgba(8, 19, 36, 0.45);
       }
       .header__identity {
         display: flex;
@@ -98,14 +97,14 @@ interface NavigationLink {
         margin: 0;
         font-weight: 700;
         font-size: 1.55rem;
-        color: var(--color-primary);
+        color: #ffffff;
         letter-spacing: 0.02em;
       }
       .header__slogan {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: rgba(67, 54, 46, 0.62);
+        color: rgba(245, 248, 255, 0.72);
       }
       .header__nav {
         display: flex;
@@ -118,18 +117,18 @@ interface NavigationLink {
         position: relative;
         text-decoration: none;
         font-weight: 600;
-        color: rgba(67, 54, 46, 0.72);
+        color: rgba(255, 255, 255, 0.82);
         padding: 0.55rem 1.2rem;
         border-radius: 999px;
         transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        background: rgba(210, 182, 150, 0.14);
+        background: rgba(255, 255, 255, 0.12);
       }
       .header__nav-link:hover,
       .header__nav-link--active {
-        background: linear-gradient(135deg, var(--color-accent), #ecd2b6);
-        color: var(--color-primary);
+        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
+        color: #163454;
         transform: translateY(-1px);
-        box-shadow: 0 18px 30px rgba(94, 74, 60, 0.22);
+        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
       }
       .header__actions {
         display: flex;
@@ -141,14 +140,14 @@ interface NavigationLink {
         font-weight: 600;
         padding: 0.7rem 1.65rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, var(--color-accent), #ecd2b6);
-        color: var(--color-primary);
-        box-shadow: 0 18px 32px rgba(94, 74, 60, 0.24);
+        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
+        color: #1a2f45;
+        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cta:hover {
         transform: translateY(-2px);
-        box-shadow: 0 24px 44px rgba(94, 74, 60, 0.26);
+        box-shadow: 0 24px 46px rgba(8, 19, 36, 0.38);
       }
       .header__cart {
         display: inline-flex;
@@ -156,17 +155,17 @@ interface NavigationLink {
         gap: 0.45rem;
         padding: 0.5rem 0.9rem;
         border-radius: 999px;
-        border: 1px solid rgba(149, 120, 96, 0.26);
-        background: rgba(210, 182, 150, 0.14);
-        color: rgba(67, 54, 46, 0.76);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        background: rgba(255, 255, 255, 0.14);
+        color: rgba(255, 255, 255, 0.86);
         cursor: pointer;
         font-weight: 600;
         transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cart:hover {
-        background: rgba(210, 182, 150, 0.2);
+        background: rgba(255, 255, 255, 0.22);
         transform: translateY(-2px);
-        box-shadow: 0 18px 32px rgba(94, 74, 60, 0.24);
+        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
       }
       .header__cart-icon svg {
         width: 22px;
@@ -186,11 +185,11 @@ interface NavigationLink {
         height: 1.5rem;
         padding: 0 0.35rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, var(--color-accent), #ecd2b6);
-        color: var(--color-primary);
+        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
+        color: #1a2f45;
         font-size: 0.8rem;
         font-weight: 700;
-        box-shadow: 0 12px 24px rgba(94, 74, 60, 0.24);
+        box-shadow: 0 14px 28px rgba(8, 19, 36, 0.4);
       }
       @media (max-width: 1024px) {
         .header {
