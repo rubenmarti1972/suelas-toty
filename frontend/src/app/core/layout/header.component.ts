@@ -62,9 +62,9 @@ interface NavigationLink {
         gap: 1.5rem;
         padding: 1.15rem clamp(1.5rem, 3vw, 3rem);
         background: var(--color-surface);
-        border: 1px solid rgba(31, 47, 61, 0.08);
+        border: 1px solid rgba(94, 74, 60, 0.12);
         border-radius: 1.9rem;
-        box-shadow: 0 18px 38px rgba(31, 47, 61, 0.12);
+        box-shadow: 0 18px 38px rgba(94, 74, 60, 0.16);
         position: sticky;
         top: 1.35rem;
         z-index: 50;
@@ -85,9 +85,9 @@ interface NavigationLink {
         height: auto;
         border-radius: 1.45rem;
         padding: 0.45rem 0.95rem;
-        background: linear-gradient(135deg, rgba(31, 47, 61, 0.08), rgba(61, 85, 107, 0.14));
-        border: 1px solid rgba(31, 47, 61, 0.18);
-        box-shadow: 0 12px 24px rgba(31, 47, 61, 0.12);
+        background: linear-gradient(135deg, rgba(94, 74, 60, 0.12), rgba(210, 182, 150, 0.2));
+        border: 1px solid rgba(94, 74, 60, 0.24);
+        box-shadow: 0 12px 24px rgba(94, 74, 60, 0.16);
       }
       .header__identity {
         display: flex;
@@ -105,7 +105,7 @@ interface NavigationLink {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: rgba(32, 43, 55, 0.6);
+        color: rgba(67, 54, 46, 0.62);
       }
       .header__nav {
         display: flex;
@@ -118,18 +118,18 @@ interface NavigationLink {
         position: relative;
         text-decoration: none;
         font-weight: 600;
-        color: rgba(32, 43, 55, 0.7);
+        color: rgba(67, 54, 46, 0.72);
         padding: 0.55rem 1.2rem;
         border-radius: 999px;
         transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        background: rgba(61, 85, 107, 0.08);
+        background: rgba(210, 182, 150, 0.14);
       }
       .header__nav-link:hover,
       .header__nav-link--active {
         background: linear-gradient(135deg, var(--color-accent), #ecd2b6);
         color: var(--color-primary);
         transform: translateY(-1px);
-        box-shadow: 0 18px 30px rgba(31, 47, 61, 0.16);
+        box-shadow: 0 18px 30px rgba(94, 74, 60, 0.22);
       }
       .header__actions {
         display: flex;
@@ -143,12 +143,12 @@ interface NavigationLink {
         border-radius: 999px;
         background: linear-gradient(135deg, var(--color-accent), #ecd2b6);
         color: var(--color-primary);
-        box-shadow: 0 18px 32px rgba(31, 47, 61, 0.18);
+        box-shadow: 0 18px 32px rgba(94, 74, 60, 0.24);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cta:hover {
         transform: translateY(-2px);
-        box-shadow: 0 24px 44px rgba(31, 47, 61, 0.22);
+        box-shadow: 0 24px 44px rgba(94, 74, 60, 0.26);
       }
       .header__cart {
         display: inline-flex;
@@ -156,17 +156,17 @@ interface NavigationLink {
         gap: 0.45rem;
         padding: 0.5rem 0.9rem;
         border-radius: 999px;
-        border: 1px solid rgba(61, 85, 107, 0.2);
-        background: rgba(61, 85, 107, 0.08);
-        color: rgba(32, 43, 55, 0.75);
+        border: 1px solid rgba(149, 120, 96, 0.26);
+        background: rgba(210, 182, 150, 0.14);
+        color: rgba(67, 54, 46, 0.76);
         cursor: pointer;
         font-weight: 600;
         transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cart:hover {
-        background: rgba(61, 85, 107, 0.14);
+        background: rgba(210, 182, 150, 0.2);
         transform: translateY(-2px);
-        box-shadow: 0 18px 32px rgba(31, 47, 61, 0.18);
+        box-shadow: 0 18px 32px rgba(94, 74, 60, 0.24);
       }
       .header__cart-icon svg {
         width: 22px;
@@ -190,7 +190,7 @@ interface NavigationLink {
         color: var(--color-primary);
         font-size: 0.8rem;
         font-weight: 700;
-        box-shadow: 0 12px 24px rgba(31, 47, 61, 0.18);
+        box-shadow: 0 12px 24px rgba(94, 74, 60, 0.24);
       }
       @media (max-width: 1024px) {
         .header {
