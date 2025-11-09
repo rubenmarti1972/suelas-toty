@@ -10,6 +10,7 @@ interface Product {
   stock: number;
   colors: string[];
   status: string;
+  image: string;
 }
 
 @Component({
@@ -31,8 +32,9 @@ interface Product {
 
       <div class="products__grid">
         <article class="product-card" *ngFor="let product of products">
-          <div class="product-card__visual" [attr.data-status]="statusBadge(product.status)">
+          <div class="product-card__media" [attr.data-status]="statusBadge(product.status)">
             <span class="product-card__badge">{{ product.status }}</span>
+            <img [src]="product.image" [alt]="product.name" loading="lazy" />
             <span class="product-card__reference">Ref. {{ product.reference }}</span>
           </div>
           <div class="product-card__body">
@@ -92,16 +94,16 @@ interface Product {
       .products__header h1 {
         margin: 0;
         font-size: clamp(2rem, 2.7vw, 2.6rem);
-        color: #0b1f3a;
+        color: #1b2a4b;
       }
       .products__header p {
         margin: 0.75rem 0 0;
         max-width: 42rem;
         line-height: 1.7;
-        color: rgba(24, 49, 83, 0.72);
+        color: rgba(27, 42, 75, 0.75);
       }
       .products__cta {
-        background: linear-gradient(135deg, #2563eb, #38bdf8);
+        background: linear-gradient(135deg, #1f3c88, #2f4f9b);
         color: #ffffff;
         border: none;
         border-radius: 999px;
@@ -109,11 +111,11 @@ interface Product {
         font-weight: 600;
         cursor: pointer;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-        box-shadow: 0 22px 38px rgba(37, 99, 235, 0.28);
+        box-shadow: 0 18px 36px rgba(31, 60, 136, 0.28);
       }
       .products__cta:hover {
         transform: translateY(-3px);
-        box-shadow: 0 28px 48px rgba(37, 99, 235, 0.32);
+        box-shadow: 0 24px 46px rgba(31, 60, 136, 0.3);
       }
       .products__grid {
         display: grid;
@@ -124,32 +126,41 @@ interface Product {
         position: relative;
         overflow: hidden;
         border-radius: 2rem;
-        border: 1px solid rgba(24, 49, 83, 0.08);
-        background: linear-gradient(160deg, #ffffff 0%, #f5f8ff 70%, #e9f2ff 100%);
-        box-shadow: 0 28px 55px rgba(15, 40, 70, 0.12);
+        border: 1px solid rgba(27, 42, 75, 0.12);
+        background: #f6f7fb;
+        box-shadow: 0 22px 48px rgba(12, 24, 46, 0.14);
         display: grid;
         grid-template-rows: auto 1fr;
         transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
       .product-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 36px 70px rgba(15, 40, 70, 0.18);
+        transform: translateY(-6px);
+        box-shadow: 0 32px 64px rgba(12, 24, 46, 0.18);
       }
-      .product-card__visual {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 1.75rem 1.75rem 1.5rem;
-        color: #ffffff;
-        background: linear-gradient(135deg, #2563eb, #38bdf8);
+      .product-card__media {
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding: 1.75rem 1.5rem 1.25rem;
+        background: linear-gradient(135deg, #eef1f6 0%, #d9e1ef 100%);
+        min-height: 220px;
       }
-      .product-card__visual[data-status='low'] {
-        background: linear-gradient(135deg, #f59e0b, #f97316);
+      .product-card__media img {
+        width: min(80%, 280px);
+        height: 180px;
+        object-fit: contain;
+        filter: drop-shadow(0 14px 24px rgba(12, 24, 46, 0.22));
       }
-      .product-card__visual[data-status='scheduled'] {
-        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      .product-card__media[data-status='low'] {
+        background: linear-gradient(135deg, #f0e7d3 0%, #e2d3bb 100%);
+      }
+      .product-card__media[data-status='scheduled'] {
+        background: linear-gradient(135deg, #e5e3f6 0%, #d4d2ed 100%);
       }
       .product-card__badge {
+        position: absolute;
+        top: 1.1rem;
+        left: 1.1rem;
         display: inline-flex;
         align-items: center;
         gap: 0.4rem;
@@ -158,16 +169,27 @@ interface Product {
         font-size: 0.78rem;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        background: rgba(255, 255, 255, 0.22);
-        backdrop-filter: blur(4px);
+        background: rgba(31, 60, 136, 0.85);
+        color: #f6f7fb;
+      }
+      .product-card__media[data-status='low'] .product-card__badge {
+        background: rgba(217, 119, 6, 0.85);
+      }
+      .product-card__media[data-status='scheduled'] .product-card__badge {
+        background: rgba(79, 70, 229, 0.78);
       }
       .product-card__reference {
-        font-size: 0.85rem;
+        position: absolute;
+        bottom: 1.1rem;
+        right: 1.1rem;
+        font-size: 0.82rem;
         letter-spacing: 0.14em;
         text-transform: uppercase;
-        background: rgba(255, 255, 255, 0.16);
-        padding: 0.4rem 0.9rem;
+        background: rgba(255, 255, 255, 0.75);
+        color: #1b2a4b;
+        padding: 0.35rem 0.9rem;
         border-radius: 999px;
+        border: 1px solid rgba(27, 42, 75, 0.12);
       }
       .product-card__body {
         padding: 1.75rem 1.75rem 2rem;
@@ -182,13 +204,13 @@ interface Product {
       .product-card__header h2 {
         margin: 0;
         font-size: 1.45rem;
-        color: #0b1f3a;
+        color: #1b2a4b;
       }
       .product-card__price {
         margin: 0;
         font-size: 1.2rem;
         font-weight: 700;
-        color: #2563eb;
+        color: #1f3c88;
       }
       .product-card__colors {
         display: grid;
@@ -211,8 +233,8 @@ interface Product {
         padding: 0.4rem 0.85rem;
         border-radius: 999px;
         font-size: 0.82rem;
-        background: rgba(37, 99, 235, 0.12);
-        color: #1d3c6a;
+        background: rgba(31, 60, 136, 0.12);
+        color: #1b2a4b;
       }
       .product-card__stats {
         display: grid;
@@ -224,12 +246,12 @@ interface Product {
         font-size: 0.75rem;
         text-transform: uppercase;
         letter-spacing: 0.16em;
-        color: rgba(24, 49, 83, 0.55);
+        color: rgba(27, 42, 75, 0.55);
         margin-bottom: 0.35rem;
       }
       .product-card__stats-value {
         font-weight: 600;
-        color: #0b1f3a;
+        color: #1b2a4b;
       }
       .product-card__actions {
         display: flex;
@@ -247,40 +269,40 @@ interface Product {
       }
       .product-card__action {
         border: none;
-        background: linear-gradient(135deg, #10b981, #38bdf8);
+        background: linear-gradient(135deg, #1f3c88, #2f4f9b);
         color: #ffffff;
-        box-shadow: 0 18px 32px rgba(16, 185, 129, 0.25);
+        box-shadow: 0 18px 32px rgba(31, 60, 136, 0.25);
       }
       .product-card__action:hover {
         transform: translateY(-2px);
-        box-shadow: 0 22px 38px rgba(16, 185, 129, 0.3);
+        box-shadow: 0 22px 38px rgba(31, 60, 136, 0.28);
       }
       .product-card__ghost {
-        border: 1px solid rgba(37, 99, 235, 0.35);
-        background: rgba(37, 99, 235, 0.08);
-        color: #1d3c6a;
+        border: 1px solid rgba(27, 42, 75, 0.2);
+        background: rgba(27, 42, 75, 0.08);
+        color: #1b2a4b;
       }
       .product-card__ghost:hover {
-        background: rgba(37, 99, 235, 0.16);
+        background: rgba(27, 42, 75, 0.16);
         transform: translateY(-2px);
-        box-shadow: 0 12px 24px rgba(37, 99, 235, 0.18);
+        box-shadow: 0 12px 24px rgba(12, 24, 46, 0.18);
       }
       .products__summary {
-        background: linear-gradient(135deg, #f1f6ff, #ffffff 60%);
+        background: #f2f4f9;
         border-radius: 1.75rem;
         padding: 2.2rem;
-        border: 1px solid rgba(24, 49, 83, 0.08);
-        box-shadow: 0 22px 45px rgba(15, 40, 70, 0.08);
+        border: 1px solid rgba(27, 42, 75, 0.12);
+        box-shadow: 0 18px 42px rgba(12, 24, 46, 0.08);
       }
       .products__summary h2 {
         margin-top: 0;
-        color: #0b1f3a;
+        color: #1b2a4b;
       }
       .products__summary ul {
         margin: 0;
         padding-left: 1.2rem;
         line-height: 1.8;
-        color: rgba(24, 49, 83, 0.7);
+        color: rgba(27, 42, 75, 0.7);
       }
       @media (max-width: 640px) {
         .product-card__actions {

@@ -71,10 +71,10 @@ interface SocialLink {
         margin-top: 5rem;
         padding: 3.5rem 0 2.5rem;
         border-radius: 2.5rem 2.5rem 0 0;
-        background: linear-gradient(160deg, #ffffff 0%, #f1f6ff 45%, #e0edff 100%);
-        color: #0b1f3a;
-        box-shadow: 0 -18px 45px rgba(15, 40, 70, 0.12);
-        border-top: 1px solid rgba(24, 49, 83, 0.08);
+        background: linear-gradient(160deg, #101a2b 0%, #18263a 100%);
+        color: #e5eaf3;
+        box-shadow: 0 -18px 45px rgba(9, 16, 27, 0.55);
+        border-top: 1px solid rgba(133, 149, 178, 0.12);
       }
       .footer__content {
         display: grid;
@@ -86,25 +86,30 @@ interface SocialLink {
         display: flex;
         gap: 1.25rem;
         align-items: center;
+        padding: 1.5rem;
+        border-radius: 1.75rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.06);
       }
       .footer__logo {
         width: clamp(96px, 18vw, 150px);
         height: auto;
         border-radius: 2.25rem;
         padding: 0.5rem 1.1rem;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(232, 242, 255, 0.9));
-        border: 1px solid rgba(24, 49, 83, 0.08);
-        box-shadow: 0 18px 32px rgba(15, 40, 70, 0.18);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(215, 222, 236, 0.85));
+        border: 1px solid rgba(16, 26, 43, 0.12);
+        box-shadow: 0 12px 28px rgba(5, 12, 22, 0.35);
       }
       .footer__brand h2 {
         margin: 0 0 0.5rem;
         font-size: 1.8rem;
-        color: #0b1f3a;
+        color: #f5f7fb;
       }
       .footer__brand p {
         margin: 0;
         max-width: 32rem;
         line-height: 1.7;
+        color: rgba(229, 234, 243, 0.72);
       }
       .footer__mission h3,
       .footer__contact h3,
@@ -113,12 +118,13 @@ interface SocialLink {
         font-size: 1.1rem;
         text-transform: uppercase;
         letter-spacing: 0.12em;
-        color: rgba(37, 99, 235, 0.8);
+        color: #8da2c0;
       }
       .footer__mission p {
         margin: 0;
         max-width: 28rem;
         line-height: 1.7;
+        color: rgba(229, 234, 243, 0.7);
       }
       .footer__contact ul {
         list-style: none;
@@ -143,8 +149,8 @@ interface SocialLink {
         padding: 0.85rem 1rem;
         border-radius: 1rem;
         text-decoration: none;
-        background: rgba(37, 99, 235, 0.08);
-        color: #0b1f3a;
+        background: rgba(255, 255, 255, 0.05);
+        color: #e5eaf3;
         transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
       }
       .footer__social-link img {
@@ -152,21 +158,21 @@ interface SocialLink {
         height: 28px;
       }
       .footer__social-link:hover {
-        background: linear-gradient(135deg, rgba(37, 99, 235, 0.22), rgba(56, 189, 248, 0.28));
+        background: rgba(255, 255, 255, 0.12);
         transform: translateY(-2px);
-        box-shadow: 0 14px 28px rgba(37, 99, 235, 0.18);
+        box-shadow: 0 12px 24px rgba(8, 15, 27, 0.35);
       }
       .footer__bottom {
         margin-top: 3rem;
         padding-top: 2rem;
-        border-top: 1px solid rgba(24, 49, 83, 0.12);
+        border-top: 1px solid rgba(133, 149, 178, 0.18);
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-between;
         align-items: center;
         font-size: 0.9rem;
-        color: rgba(24, 49, 83, 0.7);
+        color: rgba(229, 234, 243, 0.65);
         width: min(1800px, calc(100% - 3rem));
         margin-left: auto;
         margin-right: auto;
