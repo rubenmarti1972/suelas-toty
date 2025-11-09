@@ -103,7 +103,7 @@ interface SocialLink {
       .footer__brand h2 {
         margin: 0 0 0.5rem;
         font-size: 1.8rem;
-        color: #ffffff;
+        color: #f5f7fb;
       }
       .footer__brand p {
         margin: 0;
