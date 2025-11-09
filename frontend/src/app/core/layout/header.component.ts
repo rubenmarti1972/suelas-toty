@@ -109,6 +109,7 @@ interface NavigationLink {
         justify-content: center;
         gap: clamp(0.75rem, 3vw, 1.5rem);
         flex-wrap: wrap;
+        align-items: center;
       }
       .header__nav-link {
         position: relative;
