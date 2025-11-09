@@ -52,10 +52,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "suelas-toty:build:production"
+              "buildTarget": "suelas-toty:build:production"
             },
             "development": {
-              "browserTarget": "suelas-toty:build:development"
+              "buildTarget": "suelas-toty:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -63,7 +63,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "suelas-toty:build"
+            "buildTarget": "suelas-toty:build"
           }
         },
         "test": {
