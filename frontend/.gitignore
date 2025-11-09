@@ -1,0 +1,12 @@
+# Angular build outputs
+/dist
+/.angular
+/node_modules
+
+# Testing
+/coverage
+
+# IDE
+/.idea
+/.vscode
+.DS_Store
