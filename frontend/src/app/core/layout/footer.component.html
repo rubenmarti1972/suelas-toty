@@ -1,0 +1,54 @@
+
+    <footer class="footer">
+      <div class="footer__content">
+        <section class="footer__brand">
+          <img src="assets/images/logo.png" alt="Suelas Toty" class="footer__logo" />
+          <div>
+            <h2>Suelas Toty</h2>
+            <p>
+              Suelas de alto desempeño, procesos sostenibles y un equipo comprometido con la excelencia
+              colombiana.
+            </p>
+          </div>
+        </section>
+        <section class="footer__mission">
+          <h3>Impulsamos pasos seguros</h3>
+          <p>
+            Nuestra promesa es entregar soluciones en suelas con precisión, transparencia y un servicio que
+            acompaña cada lanzamiento.
+          </p>
+        </section>
+        <section class="footer__contact">
+          <h3>Contacto directo</h3>
+          <ul>
+            <li><span class="footer__icon">📞</span> +57 300 000 0000</li>
+            <li><span class="footer__icon">✉️</span> ventas@suelastoty.com</li>
+            <li><span class="footer__icon">📍</span> Medellín, Colombia</li>
+          </ul>
+        </section>
+        <section class="footer__social">
+          <h3>Síguenos</h3>
+          <div class="footer__social-grid">
+            <a
+              *ngFor="let social of socials"
+              [href]="social.url"
+              target="_blank"
+              rel="noopener"
+              class="footer__social-link"
+            >
+              <img [src]="social.icon" [alt]="social.label" loading="lazy" />
+              <span>{{ social.label }}</span>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="footer__bottom">
+        <p>© {{ currentYear }} Suelas Toty. Todos los derechos reservados.</p>
+        <div class="footer__policies">
+          <a href="#terminos">Términos</a>
+          <span aria-hidden="true">•</span>
+          <a href="#privacidad">Privacidad</a>
+        </div>
+      </div>
+    </footer>
+  

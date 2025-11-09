@@ -1,0 +1,31 @@
+
+    <section class="service">
+      <header class="service__header">
+        <h1>Servicio al cliente 360°</h1>
+        <p>
+          Acompañamos a nuestros aliados comerciales antes, durante y después de cada pedido.
+          Nuestro equipo multidisciplinario asegura respuestas ágiles y seguimiento proactivo.
+        </p>
+      </header>
+
+      <div class="service__channels">
+        <article class="service-card" *ngFor="let channel of channels">
+          <h2>{{ channel.title }}</h2>
+          <p>{{ channel.description }}</p>
+          <div class="service-card__meta">
+            <span>Tiempo de respuesta: {{ channel.responseTime }}</span>
+            <span>Contacto: {{ channel.contact }}</span>
+          </div>
+        </article>
+      </div>
+
+      <section class="service__workflow">
+        <h2>Workflow de atención</h2>
+        <ol>
+          <li>Recepción y clasificación automática de tickets por prioridad.</li>
+          <li>Asignación al especialista según tipo de producto o servicio requerido.</li>
+          <li>Seguimiento continuo con reportes compartidos y NPS por pedido.</li>
+        </ol>
+      </section>
+    </section>
+  
