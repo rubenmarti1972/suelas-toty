@@ -48,7 +48,7 @@ interface NavigationLink {
             </svg>
           </span>
           <span class="header__cart-label">Carrito</span>
-          <span class="header__cart-count" aria-live="polite">{{ cartItems }}</span>
+          <span class="header__cart-count" aria-live="polite">{{ cartItems() }}</span>
         </button>
       </div>
     </header>
@@ -61,17 +61,16 @@ interface NavigationLink {
         align-items: center;
         gap: 1.5rem;
         padding: 1.15rem clamp(1.5rem, 3vw, 3rem);
-        background: var(--color-surface);
-        border: 1px solid rgba(12, 47, 98, 0.08);
+        background: linear-gradient(140deg, #10345a, #1d4f82);
         border-radius: 1.9rem;
-        box-shadow: 0 18px 38px rgba(18, 40, 76, 0.12);
+        box-shadow: 0 20px 42px rgba(16, 52, 90, 0.35);
         position: sticky;
         top: 1.35rem;
         z-index: 50;
         width: min(1800px, calc(100% - 3rem));
         margin: 1.35rem auto 2.75rem;
-        color: var(--color-text);
-        backdrop-filter: blur(14px);
+        color: #f5f8ff;
+        backdrop-filter: blur(16px);
       }
       .header__brand {
         display: inline-flex;
@@ -85,9 +84,9 @@ interface NavigationLink {
         height: auto;
         border-radius: 1.45rem;
         padding: 0.45rem 0.95rem;
-        background: linear-gradient(135deg, rgba(12, 47, 98, 0.08), rgba(27, 79, 145, 0.12));
-        border: 1px solid rgba(12, 47, 98, 0.18);
-        box-shadow: 0 12px 24px rgba(27, 39, 63, 0.12);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 12px 26px rgba(8, 19, 36, 0.45);
       }
       .header__identity {
         display: flex;
@@ -98,14 +97,14 @@ interface NavigationLink {
         margin: 0;
         font-weight: 700;
         font-size: 1.55rem;
-        color: var(--color-primary);
+        color: #ffffff;
         letter-spacing: 0.02em;
       }
       .header__slogan {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: rgba(12, 47, 98, 0.65);
+        color: rgba(245, 248, 255, 0.72);
       }
       .header__nav {
         display: flex;
@@ -118,18 +117,18 @@ interface NavigationLink {
         position: relative;
         text-decoration: none;
         font-weight: 600;
-        color: rgba(12, 47, 98, 0.75);
+        color: rgba(255, 255, 255, 0.82);
         padding: 0.55rem 1.2rem;
         border-radius: 999px;
         transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        background: rgba(12, 47, 98, 0.06);
+        background: rgba(255, 255, 255, 0.12);
       }
       .header__nav-link:hover,
       .header__nav-link--active {
-        background: linear-gradient(135deg, rgba(244, 160, 36, 0.9), rgba(255, 199, 97, 0.95));
-        color: var(--color-text);
+        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
+        color: #163454;
         transform: translateY(-1px);
-        box-shadow: 0 18px 30px rgba(18, 40, 76, 0.18);
+        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
       }
       .header__actions {
         display: flex;
@@ -141,14 +140,14 @@ interface NavigationLink {
         font-weight: 600;
         padding: 0.7rem 1.65rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, var(--color-accent), #ffd89a);
-        color: var(--color-primary);
-        box-shadow: 0 18px 32px rgba(18, 40, 76, 0.18);
+        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
+        color: #1a2f45;
+        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cta:hover {
         transform: translateY(-2px);
-        box-shadow: 0 24px 44px rgba(18, 40, 76, 0.22);
+        box-shadow: 0 24px 46px rgba(8, 19, 36, 0.38);
       }
       .header__cart {
         display: inline-flex;
@@ -156,17 +155,17 @@ interface NavigationLink {
         gap: 0.45rem;
         padding: 0.5rem 0.9rem;
         border-radius: 999px;
-        border: 1px solid rgba(12, 47, 98, 0.15);
-        background: rgba(12, 47, 98, 0.06);
-        color: rgba(12, 47, 98, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        background: rgba(255, 255, 255, 0.14);
+        color: rgba(255, 255, 255, 0.86);
         cursor: pointer;
         font-weight: 600;
         transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cart:hover {
-        background: rgba(12, 47, 98, 0.12);
+        background: rgba(255, 255, 255, 0.22);
         transform: translateY(-2px);
-        box-shadow: 0 18px 32px rgba(18, 40, 76, 0.2);
+        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
       }
       .header__cart-icon svg {
         width: 22px;
@@ -186,11 +185,11 @@ interface NavigationLink {
         height: 1.5rem;
         padding: 0 0.35rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, var(--color-accent), #ffd89a);
-        color: var(--color-primary);
+        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
+        color: #1a2f45;
         font-size: 0.8rem;
         font-weight: 700;
-        box-shadow: 0 12px 24px rgba(18, 40, 76, 0.22);
+        box-shadow: 0 14px 28px rgba(8, 19, 36, 0.4);
       }
       @media (max-width: 1024px) {
         .header {
@@ -234,6 +233,7 @@ interface NavigationLink {
 export class HeaderComponent {
   public cartService = inject(CartService);
   public isCartOpen = signal(false);
+  protected readonly cartItems = this.cartService.totalItems;
 
   protected readonly links: NavigationLink[] = [
     { label: 'Inicio', route: '/' },
