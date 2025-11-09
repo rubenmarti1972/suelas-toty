@@ -97,7 +97,7 @@ interface NavigationLink {
         margin: 0;
         font-weight: 700;
         font-size: 1.55rem;
-        color: var(--color-primary);
+        color: #ffffff;
         letter-spacing: 0.02em;
       }
       .header__slogan {
