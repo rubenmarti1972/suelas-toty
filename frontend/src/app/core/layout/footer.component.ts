@@ -69,15 +69,18 @@ interface SocialLink {
     `
       .footer {
         margin-top: 5rem;
-        padding: 3.5rem clamp(1.5rem, 4vw, 3rem) 2rem;
+        padding: 3.5rem 0 2.5rem;
         border-radius: 2.5rem 2.5rem 0 0;
-        background: linear-gradient(160deg, rgba(4, 16, 35, 0.95) 0%, rgba(11, 29, 58, 0.94) 45%, rgba(15, 76, 117, 0.95) 100%);
-        color: rgba(234, 246, 255, 0.95);
-        box-shadow: 0 -18px 40px rgba(5, 18, 36, 0.35);
+        background: linear-gradient(160deg, #ffffff 0%, #f1f6ff 45%, #e0edff 100%);
+        color: #0b1f3a;
+        box-shadow: 0 -18px 45px rgba(15, 40, 70, 0.12);
+        border-top: 1px solid rgba(24, 49, 83, 0.08);
       }
       .footer__content {
         display: grid;
         gap: 2.5rem;
+        width: min(1800px, calc(100% - 3rem));
+        margin: 0 auto;
       }
       .footer__brand {
         display: flex;
@@ -88,14 +91,15 @@ interface SocialLink {
         width: clamp(96px, 18vw, 150px);
         height: auto;
         border-radius: 2.25rem;
-        padding: 0.4rem 0.9rem;
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.22), rgba(56, 189, 248, 0.3));
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+        padding: 0.5rem 1.1rem;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(232, 242, 255, 0.9));
+        border: 1px solid rgba(24, 49, 83, 0.08);
+        box-shadow: 0 18px 32px rgba(15, 40, 70, 0.18);
       }
       .footer__brand h2 {
         margin: 0 0 0.5rem;
         font-size: 1.8rem;
-        color: #ffffff;
+        color: #0b1f3a;
       }
       .footer__brand p {
         margin: 0;
@@ -109,7 +113,7 @@ interface SocialLink {
         font-size: 1.1rem;
         text-transform: uppercase;
         letter-spacing: 0.12em;
-        color: rgba(154, 220, 255, 0.95);
+        color: rgba(37, 99, 235, 0.8);
       }
       .footer__mission p {
         margin: 0;
@@ -139,29 +143,33 @@ interface SocialLink {
         padding: 0.85rem 1rem;
         border-radius: 1rem;
         text-decoration: none;
-        background: rgba(255, 255, 255, 0.08);
-        color: #ffffff;
-        transition: transform 0.2s ease, background 0.2s ease;
+        background: rgba(37, 99, 235, 0.08);
+        color: #0b1f3a;
+        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
       }
       .footer__social-link img {
         width: 28px;
         height: 28px;
       }
       .footer__social-link:hover {
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.35), rgba(56, 189, 248, 0.35));
+        background: linear-gradient(135deg, rgba(37, 99, 235, 0.22), rgba(56, 189, 248, 0.28));
         transform: translateY(-2px);
+        box-shadow: 0 14px 28px rgba(37, 99, 235, 0.18);
       }
       .footer__bottom {
         margin-top: 3rem;
         padding-top: 2rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        border-top: 1px solid rgba(24, 49, 83, 0.12);
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-between;
         align-items: center;
         font-size: 0.9rem;
-        color: rgba(211, 232, 255, 0.75);
+        color: rgba(24, 49, 83, 0.7);
+        width: min(1800px, calc(100% - 3rem));
+        margin-left: auto;
+        margin-right: auto;
       }
       .footer__bottom p {
         margin: 0;

@@ -31,26 +31,36 @@ interface Product {
 
       <div class="products__grid">
         <article class="product-card" *ngFor="let product of products">
-          <header>
-            <h2>{{ product.name }}</h2>
+          <div class="product-card__visual" [attr.data-status]="statusBadge(product.status)">
+            <span class="product-card__badge">{{ product.status }}</span>
             <span class="product-card__reference">Ref. {{ product.reference }}</span>
-          </header>
-          <p class="product-card__price">
-            {{ product.price | currency: product.currency:'symbol':'1.2-2' }} / par
-          </p>
-          <div class="product-card__meta">
-            <div>
-              <h3>Colores</h3>
-              <ul>
-                <li *ngFor="let color of product.colors">{{ color }}</li>
-              </ul>
+          </div>
+          <div class="product-card__body">
+            <header class="product-card__header">
+              <h2>{{ product.name }}</h2>
+              <p class="product-card__price">
+                {{ product.price | currency: product.currency:'symbol':'1.2-2' }} / par
+              </p>
+            </header>
+            <div class="product-card__colors" aria-label="Variaciones de color disponibles">
+              <span class="product-card__label">Colores</span>
+              <div class="product-card__chips">
+                <span class="product-card__chip" *ngFor="let color of product.colors">{{ color }}</span>
+              </div>
             </div>
-            <div>
-              <h3>Inventario</h3>
-              <p>{{ product.stock | number }} unidades</p>
-              <span class="product-card__status" [attr.data-status]="statusBadge(product.status)">
-                {{ product.status }}
-              </span>
+            <div class="product-card__stats">
+              <div>
+                <span class="product-card__stats-label">Inventario disponible</span>
+                <span class="product-card__stats-value">{{ product.stock | number }} unidades</span>
+              </div>
+              <div>
+                <span class="product-card__stats-label">Entrega estimada</span>
+                <span class="product-card__stats-value">{{ leadTime(product.status) }}</span>
+              </div>
+            </div>
+            <div class="product-card__actions">
+              <button type="button" class="product-card__action">Solicitar muestra</button>
+              <button type="button" class="product-card__ghost">Agregar a cotización</button>
             </div>
           </div>
         </article>
@@ -70,113 +80,212 @@ interface Product {
     `
       .products {
         display: grid;
-        gap: 2.5rem;
+        gap: 3rem;
       }
       .products__header {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.5rem;
+        gap: 1.75rem;
         justify-content: space-between;
         align-items: center;
       }
       .products__header h1 {
         margin: 0;
-        color: #183153;
+        font-size: clamp(2rem, 2.7vw, 2.6rem);
+        color: #0b1f3a;
       }
       .products__header p {
-        margin: 0.5rem 0 0;
-        max-width: 38rem;
-        line-height: 1.6;
+        margin: 0.75rem 0 0;
+        max-width: 42rem;
+        line-height: 1.7;
+        color: rgba(24, 49, 83, 0.72);
       }
       .products__cta {
-        background: #183153;
+        background: linear-gradient(135deg, #2563eb, #38bdf8);
         color: #ffffff;
         border: none;
-        border-radius: 0.75rem;
-        padding: 0.9rem 1.8rem;
+        border-radius: 999px;
+        padding: 0.95rem 2.4rem;
         font-weight: 600;
         cursor: pointer;
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 22px 38px rgba(37, 99, 235, 0.28);
       }
       .products__cta:hover {
-        transform: translateY(-2px);
+        transform: translateY(-3px);
+        box-shadow: 0 28px 48px rgba(37, 99, 235, 0.32);
       }
       .products__grid {
         display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       }
       .product-card {
-        background: #ffffff;
-        border-radius: 1.25rem;
-        padding: 1.75rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 2rem;
+        border: 1px solid rgba(24, 49, 83, 0.08);
+        background: linear-gradient(160deg, #ffffff 0%, #f5f8ff 70%, #e9f2ff 100%);
+        box-shadow: 0 28px 55px rgba(15, 40, 70, 0.12);
         display: grid;
-        gap: 1rem;
-        box-shadow: 0 15px 40px rgba(15, 40, 70, 0.1);
+        grid-template-rows: auto 1fr;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
-      .product-card header {
+      .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 36px 70px rgba(15, 40, 70, 0.18);
+      }
+      .product-card__visual {
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1.75rem 1.75rem 1.5rem;
+        color: #ffffff;
+        background: linear-gradient(135deg, #2563eb, #38bdf8);
       }
-      .product-card h2 {
-        margin: 0;
-        color: #12263a;
-        font-size: 1.35rem;
+      .product-card__visual[data-status='low'] {
+        background: linear-gradient(135deg, #f59e0b, #f97316);
+      }
+      .product-card__visual[data-status='scheduled'] {
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      }
+      .product-card__badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.45rem 1rem;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background: rgba(255, 255, 255, 0.22);
+        backdrop-filter: blur(4px);
       }
       .product-card__reference {
         font-size: 0.85rem;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
-        color: #4b5d6b;
+        background: rgba(255, 255, 255, 0.16);
+        padding: 0.4rem 0.9rem;
+        border-radius: 999px;
+      }
+      .product-card__body {
+        padding: 1.75rem 1.75rem 2rem;
+        display: grid;
+        gap: 1.5rem;
+      }
+      .product-card__header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .product-card__header h2 {
+        margin: 0;
+        font-size: 1.45rem;
+        color: #0b1f3a;
       }
       .product-card__price {
         margin: 0;
         font-size: 1.2rem;
         font-weight: 700;
-        color: #33658a;
+        color: #2563eb;
       }
-      .product-card__meta {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: space-between;
+      .product-card__colors {
+        display: grid;
+        gap: 0.75rem;
       }
-      .product-card__meta ul {
-        margin: 0;
-        padding-left: 1rem;
-      }
-      .product-card__status {
-        display: inline-flex;
-        padding: 0.35rem 0.75rem;
-        border-radius: 999px;
-        font-size: 0.8rem;
+      .product-card__label {
+        font-size: 0.85rem;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.12em;
+        color: rgba(24, 49, 83, 0.6);
       }
-      .product-card__status[data-status='ok'] {
-        background: rgba(0, 171, 85, 0.12);
-        color: #007b55;
+      .product-card__chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
       }
-      .product-card__status[data-status='low'] {
-        background: rgba(255, 193, 7, 0.16);
-        color: #b76e00;
+      .product-card__chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.4rem 0.85rem;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        background: rgba(37, 99, 235, 0.12);
+        color: #1d3c6a;
       }
-      .product-card__status[data-status='scheduled'] {
-        background: rgba(51, 101, 138, 0.12);
-        color: #183153;
+      .product-card__stats {
+        display: grid;
+        gap: 1.25rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+      .product-card__stats-label {
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: rgba(24, 49, 83, 0.55);
+        margin-bottom: 0.35rem;
+      }
+      .product-card__stats-value {
+        font-weight: 600;
+        color: #0b1f3a;
+      }
+      .product-card__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+      .product-card__action,
+      .product-card__ghost {
+        flex: 1 1 180px;
+        padding: 0.85rem 1.4rem;
+        border-radius: 999px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+      .product-card__action {
+        border: none;
+        background: linear-gradient(135deg, #10b981, #38bdf8);
+        color: #ffffff;
+        box-shadow: 0 18px 32px rgba(16, 185, 129, 0.25);
+      }
+      .product-card__action:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 22px 38px rgba(16, 185, 129, 0.3);
+      }
+      .product-card__ghost {
+        border: 1px solid rgba(37, 99, 235, 0.35);
+        background: rgba(37, 99, 235, 0.08);
+        color: #1d3c6a;
+      }
+      .product-card__ghost:hover {
+        background: rgba(37, 99, 235, 0.16);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(37, 99, 235, 0.18);
       }
       .products__summary {
-        background: #f8fafc;
-        border-radius: 1.5rem;
-        padding: 2rem;
+        background: linear-gradient(135deg, #f1f6ff, #ffffff 60%);
+        border-radius: 1.75rem;
+        padding: 2.2rem;
+        border: 1px solid rgba(24, 49, 83, 0.08);
+        box-shadow: 0 22px 45px rgba(15, 40, 70, 0.08);
       }
       .products__summary h2 {
         margin-top: 0;
+        color: #0b1f3a;
       }
       .products__summary ul {
         margin: 0;
         padding-left: 1.2rem;
-        line-height: 1.7;
+        line-height: 1.8;
+        color: rgba(24, 49, 83, 0.7);
+      }
+      @media (max-width: 640px) {
+        .product-card__actions {
+          flex-direction: column;
+        }
       }
     `
   ]
@@ -192,5 +301,16 @@ export class ProductsComponent {
       return 'scheduled';
     }
     return 'ok';
+  }
+
+  protected leadTime(status: string): string {
+    const normalized = status.toLowerCase();
+    if (normalized.includes('bajo')) {
+      return '2-3 semanas';
+    }
+    if (normalized.includes('programada')) {
+      return '3-4 semanas';
+    }
+    return 'Despacho inmediato';
   }
 }
