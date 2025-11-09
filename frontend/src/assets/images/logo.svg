@@ -1,6 +1,18 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="40" cy="40" r="38" stroke="#183153" stroke-width="4" fill="#F4F7FB" />
-  <path d="M20 48C24 56 32 62 40 62C52 62 60 52 60 40C60 28 52 18 40 18C32 18 24 24 20 32" stroke="#33658A" stroke-width="4" stroke-linecap="round" />
-  <path d="M26 40C26 33.3726 31.3726 28 38 28H42C48.6274 28 54 33.3726 54 40C54 46.6274 48.6274 52 42 52H38C31.3726 52 26 46.6274 26 40Z" fill="#183153" />
-  <circle cx="40" cy="40" r="6" fill="#F6AD55" />
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="12" y1="8" x2="84" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DD4BF" />
+      <stop offset="1" stop-color="#38BDF8" />
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="24" y1="20" x2="72" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1D3A" />
+      <stop offset="1" stop-color="#0F4C75" />
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="84" height="84" rx="24" fill="url(#paint1_linear)" />
+  <rect x="12" y="12" width="72" height="72" rx="20" fill="#0F284A" />
+  <path
+    d="M34 32H24V28H52V32H42V64H34V32ZM58.68 28H66.16L74.48 64H66.96L65.4 56.84H59.36L57.92 64H50.64L58.68 28ZM64.12 50.4L62.64 43.04C62.32 41.44 62.04 39.52 61.76 37.32H61.68C61.36 39.44 61.04 41.32 60.72 42.96L59.32 50.4H64.12ZM30.72 68.4H66.4C70.6 68.4 73.6 71.24 73.6 75.24C73.6 79.16 70.76 82 66.72 82H30.72V68.4Z"
+    fill="url(#paint0_linear)"
+  />
 </svg>

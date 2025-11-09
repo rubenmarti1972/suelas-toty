@@ -1,0 +1,26 @@
+<svg width="240" height="160" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="galaxia-bg" x1="14" y1="18" x2="226" y2="142" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1D3A" stop-opacity="0.6" />
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="galaxia-sole" x1="72" y1="30" x2="188" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#E0E7FF" />
+    </linearGradient>
+  </defs>
+  <rect x="10" y="14" width="220" height="132" rx="34" fill="url(#galaxia-bg)" />
+  <path
+    d="M60 118C50 94 60 60 90 40C122 20 164 24 192 46C214 66 216 98 200 120C182 142 146 148 112 138C86 130 70 126 60 118Z"
+    fill="url(#galaxia-sole)"
+  />
+  <path
+    d="M90 86C108 72 140 74 162 92"
+    stroke="#6366F1"
+    stroke-width="5"
+    stroke-linecap="round"
+    opacity="0.7"
+  />
+  <path d="M100 104C118 110 140 110 156 102" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+  <circle cx="128" cy="96" r="9" fill="#6366F1" fill-opacity="0.2" />
+</svg>
