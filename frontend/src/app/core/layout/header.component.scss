@@ -5,7 +5,12 @@
         align-items: center;
         gap: 1.5rem;
         padding: 1.25rem clamp(1.75rem, 3vw, 3.25rem);
-        background: linear-gradient(115deg, rgba(255, 255, 255, 0.98) 0%, rgba(235, 246, 255, 0.97) 55%, rgba(214, 241, 255, 0.95) 100%);
+        background: linear-gradient(
+          115deg,
+          rgba(15, 76, 129, 0.16) 0%,
+          rgba(53, 199, 190, 0.12) 48%,
+          rgba(235, 246, 255, 0.95) 100%
+        );
         border: 1px solid rgba(15, 76, 129, 0.12);
         border-radius: 1.9rem;
         box-shadow: 0 10px 30px rgba(15, 76, 129, 0.14);
@@ -25,8 +30,8 @@
         text-decoration: none;
         padding: 0.75rem 1.1rem;
         border-radius: 1.85rem;
-        background: rgba(255, 255, 255, 0.96);
-        border: 1px solid rgba(15, 76, 129, 0.08);
+        background: linear-gradient(135deg, rgba(15, 76, 129, 0.14), rgba(255, 255, 255, 0.92));
+        border: 1px solid rgba(15, 76, 129, 0.1);
         box-shadow: 0 6px 18px rgba(15, 76, 129, 0.1);
         transition: box-shadow 0.2s ease, transform 0.2s ease;
       }
