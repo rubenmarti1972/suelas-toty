@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <linearGradient id="runGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e5c8a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="runGlow">
+      <stop offset="0%" style="stop-color:#f5a524;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#f5a524;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="400" fill="#f4f7fa" rx="15"/>
+
+  <!-- Main sole shape - Performance Running -->
+  <g transform="translate(48, 50)">
+    <!-- Base sole - aerodynamic -->
+    <path d="M 148 15 C 168 15 188 20 200 30 C 212 40 215 55 212 75
+             C 209 95 200 120 188 150 C 176 180 160 210 145 240
+             C 130 270 115 295 98 310 C 81 325 62 330 45 325
+             C 28 320 18 305 15 285 C 12 265 12 240 15 215
+             C 18 185 25 155 35 125 C 45 95 60 70 78 50
+             C 96 30 120 18 143 16 C 145 15 146 15 148 15 Z"
+          fill="url(#runGrad)"
+          stroke="#f5a524"
+          stroke-width="2.5"/>
+
+    <!-- Energy return zones -->
+    <circle cx="110" cy="270" r="22" fill="url(#runGlow)"/>
+    <circle cx="80" cy="250" r="20" fill="url(#runGlow)"/>
+    <circle cx="105" cy="230" r="18" fill="url(#runGlow)"/>
+
+    <!-- Flex grooves - curved for natural foot movement -->
+    <g stroke="#f5a524" stroke-width="3.5" fill="none" opacity="0.7" stroke-linecap="round">
+      <path d="M 120 75 Q 140 75 165 78"/>
+      <path d="M 115 90 Q 135 88 160 90"/>
+      <path d="M 110 105 Q 130 102 155 103"/>
+      <path d="M 105 120 Q 125 117 145 118"/>
+    </g>
+
+    <!-- Medial support structure -->
+    <g opacity="0.5">
+      <path d="M 60 140 L 80 135 L 85 155 L 65 160 Z" fill="#f5a524"/>
+      <path d="M 55 165 L 75 160 L 80 180 L 60 185 Z" fill="#f5a524"/>
+      <path d="M 52 190 L 72 185 L 77 205 L 57 210 Z" fill="#f5a524"/>
+    </g>
+
+    <!-- Rubber outsole pattern -->
+    <g fill="#ffffff" opacity="0.25">
+      <ellipse cx="130" cy="60" rx="15" ry="10"/>
+      <ellipse cx="155" cy="65" rx="12" ry="9"/>
+      <ellipse cx="170" cy="72" rx="10" ry="8"/>
+      <ellipse cx="115" cy="140" rx="14" ry="11"/>
+      <ellipse cx="95" cy="180" rx="13" ry="10"/>
+    </g>
+
+    <!-- Lateral support lines -->
+    <g stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.3">
+      <path d="M 150 100 L 180 95"/>
+      <path d="M 145 120 L 172 115"/>
+      <path d="M 135 145 L 160 142"/>
+    </g>
+
+    <!-- Toe spring curve -->
+    <path d="M 148 15 C 168 15 188 20 200 30"
+          stroke="#ffffff"
+          stroke-width="2"
+          fill="none"
+          opacity="0.4"/>
+  </g>
+
+  <!-- Label -->
+  <text x="150" y="370" font-family="Montserrat, sans-serif" font-size="16" font-weight="600" fill="#0b1d3a" text-anchor="middle">
+    AeroMax Running
+  </text>
+</svg>

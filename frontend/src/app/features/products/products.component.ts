@@ -1,22 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CurrencyPipe, DecimalPipe, NgFor } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import productsData from '../../../assets/data/products.json';
+import { CartService } from '../../core/services/cart.service';
 
 interface Product {
   reference: string;
   name: string;
+  description?: string;
   price: number;
   currency: string;
   stock: number;
   colors: string[];
   status: string;
   image: string;
+  category?: string;
 }
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [NgFor, CurrencyPipe, DecimalPipe],
+  imports: [NgFor, CurrencyPipe, DecimalPipe, FormsModule],
   template: `
     <section class="products">
       <header class="products__header">
@@ -45,9 +49,12 @@ interface Product {
               </p>
             </header>
             <div class="product-card__colors" aria-label="Variaciones de color disponibles">
-              <span class="product-card__label">Colores</span>
+              <span class="product-card__label">Selecciona un color</span>
               <div class="product-card__chips">
-                <span class="product-card__chip" *ngFor="let color of product.colors">{{ color }}</span>
+                <label class="product-card__chip" *ngFor="let color of product.colors" [class.selected]="getSelectedColor(product.reference) === color">
+                  <input type="radio" [name]="'color-' + product.reference" [value]="color" (change)="selectColor(product.reference, color)" style="display: none;" />
+                  {{ color }}
+                </label>
               </div>
             </div>
             <div class="product-card__stats">
@@ -60,9 +67,24 @@ interface Product {
                 <span class="product-card__stats-value">{{ leadTime(product.status) }}</span>
               </div>
             </div>
+            <div class="product-card__quantity">
+              <span class="product-card__label">Cantidad</span>
+              <div class="quantity-selector">
+                <button type="button" (click)="decreaseQuantity(product.reference)" [disabled]="getQuantity(product.reference) <= 1">−</button>
+                <input type="number" [value]="getQuantity(product.reference)" (input)="setQuantity(product.reference, $event)" min="1" max="999" />
+                <button type="button" (click)="increaseQuantity(product.reference)">+</button>
+              </div>
+            </div>
             <div class="product-card__actions">
-              <button type="button" class="product-card__action">Solicitar muestra</button>
-              <button type="button" class="product-card__ghost">Agregar a cotización</button>
+              <button type="button" class="product-card__action" (click)="addToCart(product)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem;">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                Agregar al carrito
+              </button>
+              <button type="button" class="product-card__ghost" (click)="requestSample(product)">Solicitar muestra</button>
             </div>
           </div>
         </article>
@@ -240,6 +262,70 @@ interface Product {
         background: rgba(244, 247, 250, 0.12);
         color: rgba(244, 247, 250, 0.85);
         border: 1px solid rgba(244, 247, 250, 0.15);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .product-card__chip:hover {
+        background: rgba(244, 247, 250, 0.18);
+        border-color: rgba(245, 165, 36, 0.3);
+      }
+      .product-card__chip.selected {
+        background: rgba(245, 165, 36, 0.25);
+        border-color: rgba(245, 165, 36, 0.6);
+        color: #f5a524;
+        font-weight: 600;
+      }
+      .product-card__quantity {
+        display: grid;
+        gap: 0.75rem;
+      }
+      .quantity-selector {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(11, 29, 58, 0.4);
+        border: 1px solid rgba(245, 165, 36, 0.2);
+        border-radius: 999px;
+        padding: 0.4rem;
+        width: fit-content;
+      }
+      .quantity-selector button {
+        width: 36px;
+        height: 36px;
+        border: none;
+        background: rgba(245, 165, 36, 0.2);
+        color: #f5a524;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        font-weight: 600;
+      }
+      .quantity-selector button:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      .quantity-selector button:not(:disabled):hover {
+        background: rgba(245, 165, 36, 0.35);
+        transform: scale(1.1);
+      }
+      .quantity-selector input {
+        width: 60px;
+        text-align: center;
+        background: transparent;
+        border: none;
+        color: #f4f7fa;
+        font-weight: 600;
+        font-size: 1.1rem;
+        outline: none;
+      }
+      .quantity-selector input::-webkit-inner-spin-button,
+      .quantity-selector input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
       }
       .product-card__stats {
         display: grid;
@@ -319,6 +405,19 @@ interface Product {
 })
 export class ProductsComponent {
   protected readonly products: Product[] = productsData;
+  public cartService = inject(CartService);
+
+  // State for selected colors and quantities
+  private selectedColors = signal<Map<string, string>>(new Map());
+  private quantities = signal<Map<string, number>>(new Map());
+
+  constructor() {
+    // Initialize default quantities and colors
+    this.products.forEach(product => {
+      this.quantities().set(product.reference, 1);
+      this.selectedColors().set(product.reference, product.colors[0]);
+    });
+  }
 
   protected statusBadge(status: string): 'ok' | 'low' | 'scheduled' {
     if (status.toLowerCase().includes('bajo')) {
@@ -339,5 +438,63 @@ export class ProductsComponent {
       return '3-4 semanas';
     }
     return 'Despacho inmediato';
+  }
+
+  selectColor(reference: string, color: string): void {
+    this.selectedColors().set(reference, color);
+    this.selectedColors.set(new Map(this.selectedColors()));
+  }
+
+  getSelectedColor(reference: string): string {
+    return this.selectedColors().get(reference) || '';
+  }
+
+  getQuantity(reference: string): number {
+    return this.quantities().get(reference) || 1;
+  }
+
+  setQuantity(reference: string, event: any): void {
+    const value = parseInt(event.target.value, 10);
+    if (!isNaN(value) && value > 0) {
+      this.quantities().set(reference, value);
+      this.quantities.set(new Map(this.quantities()));
+    }
+  }
+
+  increaseQuantity(reference: string): void {
+    const current = this.getQuantity(reference);
+    this.quantities().set(reference, current + 1);
+    this.quantities.set(new Map(this.quantities()));
+  }
+
+  decreaseQuantity(reference: string): void {
+    const current = this.getQuantity(reference);
+    if (current > 1) {
+      this.quantities().set(reference, current - 1);
+      this.quantities.set(new Map(this.quantities()));
+    }
+  }
+
+  addToCart(product: Product): void {
+    const color = this.getSelectedColor(product.reference);
+    const quantity = this.getQuantity(product.reference);
+
+    this.cartService.addToCart({
+      reference: product.reference,
+      name: product.name,
+      price: product.price,
+      currency: product.currency,
+      image: product.image,
+      color: color
+    }, quantity);
+
+    // Show success feedback (optional - you can add a toast notification here)
+    alert(`¡${quantity} ${product.name} (${color}) agregado(s) al carrito!`);
+  }
+
+  requestSample(product: Product): void {
+    // Navigate to contact form or show modal
+    alert(`Solicitud de muestra para ${product.name}. Redirigiendo a contacto...`);
+    // You can implement navigation here
   }
 }

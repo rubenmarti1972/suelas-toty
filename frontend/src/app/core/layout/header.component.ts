@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgFor } from '@angular/common';
+import { CartService } from '../services/cart.service';
+import { CartComponent } from '../../shared/components/cart/cart.component';
 
 interface NavigationLink {
   label: string;
@@ -10,11 +12,11 @@ interface NavigationLink {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgFor],
+  imports: [RouterLink, RouterLinkActive, NgFor, CartComponent],
   template: `
     <header class="header">
       <div class="header__brand" routerLink="/" tabindex="0" role="link">
-        <img src="assets/images/logo.png" alt="Suelas Toty" class="header__logo" />
+        <img src="assets/images/logo.svg" alt="Suelas Toty" class="header__logo" />
         <div class="header__identity">
           <p class="header__name">Suelas Toty</p>
           <span class="header__slogan">Innovación en cada pisada</span>
@@ -32,7 +34,7 @@ interface NavigationLink {
       </nav>
       <div class="header__actions">
         <a routerLink="/contacto" class="header__cta">Solicitar cotización</a>
-        <button type="button" class="header__cart" aria-label="Ver carrito de compras">
+        <button type="button" class="header__cart" aria-label="Ver carrito de compras" (click)="openCart()">
           <span class="header__cart-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false">
               <path
@@ -46,10 +48,14 @@ interface NavigationLink {
             </svg>
           </span>
           <span class="header__cart-label">Carrito</span>
-          <span class="header__cart-count" aria-live="polite">{{ cartItems }}</span>
+          <span class="header__cart-count" aria-live="polite">{{ cartService.totalItems() }}</span>
         </button>
       </div>
     </header>
+
+    @if (isCartOpen()) {
+      <app-cart (close)="closeCart()" />
+    }
   `,
   styles: [
     `
@@ -230,13 +236,21 @@ interface NavigationLink {
   ]
 })
 export class HeaderComponent {
+  public cartService = inject(CartService);
+  public isCartOpen = signal(false);
+
   protected readonly links: NavigationLink[] = [
     { label: 'Inicio', route: '/' },
     { label: 'Catálogo', route: '/productos' },
     { label: 'Servicio al cliente', route: '/servicio-al-cliente' },
-    { label: 'Contacto', route: '/contacto' },
-    { label: 'Inventario', route: '/inventario' },
-    { label: 'Administración', route: '/admin' }
+    { label: 'Contacto', route: '/contacto' }
   ];
-  protected readonly cartItems = 0;
+
+  openCart(): void {
+    this.isCartOpen.set(true);
+  }
+
+  closeCart(): void {
+    this.isCartOpen.set(false);
+  }
 }
