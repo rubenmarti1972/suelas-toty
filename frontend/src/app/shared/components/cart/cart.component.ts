@@ -52,7 +52,7 @@ import { CartService } from '../../../core/services/cart.service';
                   @if (item.color) {
                     <p class="item-color">Color: {{ item.color }}</p>
                   }
-                  <p class="item-price">{{ item.currency }} ${{ item.price.toFixed(2) }}</p>
+                  <p class="item-price">{{ item.currency }} \${{ item.price.toFixed(2) }}</p>
                 </div>
                 <div class="item-actions">
                   <div class="quantity-controls">
@@ -70,7 +70,7 @@ import { CartService } from '../../../core/services/cart.service';
                     </button>
                   </div>
                   <p class="item-subtotal">
-                    ${{ (item.price * item.quantity).toFixed(2) }}
+                    \${{ (item.price * item.quantity).toFixed(2) }}
                   </p>
                   <button
                     class="remove-btn"
@@ -93,15 +93,15 @@ import { CartService } from '../../../core/services/cart.service';
             <div class="cart-summary">
               <div class="summary-row">
                 <span>Subtotal:</span>
-                <span class="amount">${{ cartService.subtotal().toFixed(2) }}</span>
+                <span class="amount">\${{ cartService.subtotal().toFixed(2) }}</span>
               </div>
               <div class="summary-row">
                 <span>IVA (19%):</span>
-                <span class="amount">${{ cartService.tax().toFixed(2) }}</span>
+                <span class="amount">\${{ cartService.tax().toFixed(2) }}</span>
               </div>
               <div class="summary-row total">
                 <span>Total:</span>
-                <span class="amount">${{ cartService.total().toFixed(2) }}</span>
+                <span class="amount">\${{ cartService.total().toFixed(2) }}</span>
               </div>
             </div>
 

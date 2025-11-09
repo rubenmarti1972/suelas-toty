@@ -45,8 +45,8 @@ import { CartService } from '../../core/services/cart.service';
                       <p class="quantity">Cantidad: {{ item.quantity }}</p>
                     </div>
                     <div class="order-item__price">
-                      <span class="unit-price">${{ item.price.toFixed(2) }}</span>
-                      <span class="total-price">${{ (item.price * item.quantity).toFixed(2) }}</span>
+                      <span class="unit-price">\${{ item.price.toFixed(2) }}</span>
+                      <span class="total-price">\${{ (item.price * item.quantity).toFixed(2) }}</span>
                     </div>
                   </div>
                 }
@@ -55,11 +55,11 @@ import { CartService } from '../../core/services/cart.service';
               <div class="order-totals">
                 <div class="total-row">
                   <span>Subtotal:</span>
-                  <span>${{ cartService.subtotal().toFixed(2) }}</span>
+                  <span>\${{ cartService.subtotal().toFixed(2) }}</span>
                 </div>
                 <div class="total-row">
                   <span>IVA (19%):</span>
-                  <span>${{ cartService.tax().toFixed(2) }}</span>
+                  <span>\${{ cartService.tax().toFixed(2) }}</span>
                 </div>
                 <div class="total-row shipping">
                   <span>Envío:</span>
@@ -67,7 +67,7 @@ import { CartService } from '../../core/services/cart.service';
                 </div>
                 <div class="total-row grand-total">
                   <span>Total:</span>
-                  <span>${{ cartService.total().toFixed(2) }}</span>
+                  <span>\${{ cartService.total().toFixed(2) }}</span>
                 </div>
               </div>
             </div>
