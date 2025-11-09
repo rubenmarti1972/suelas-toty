@@ -1,0 +1,125 @@
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__subtitle">Bienvenido a</span>
+          Suelas Toty
+        </h1>
+        <p class="hero__description">
+          La mejor selección de suelas premium para tu negocio.
+          Calidad garantizada, entrega rápida y precios competitivos.
+        </p>
+        <div class="hero__buttons">
+          <button class="btn-primary" (click)="navigateToProducts()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+            Ver Catálogo Completo
+          </button>
+          <a routerLink="/contacto" class="btn-secondary">
+            Solicitar Cotización
+          </a>
+        </div>
+
+        <div class="hero__features">
+          <div class="feature">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <div>
+              <strong>6 Categorías</strong>
+              <p>Variedad para cada necesidad</p>
+            </div>
+          </div>
+          <div class="feature">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 7h-9M14 17H5M20 7a1 1 0 0 0 1-1 1 1 0 0 0-1-1M14 17a1 1 0 0 0 1-1 1 1 0 0 0-1-1M5 17a1 1 0 0 1-1 1 1 1 0 0 1-1-1M5 17V7M20 7v10"></path>
+            </svg>
+            <div>
+              <strong>Envío Rápido</strong>
+              <p>Despacho inmediato en stock</p>
+            </div>
+          </div>
+          <div class="feature">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <div>
+              <strong>Calidad Premium</strong>
+              <p>Materiales certificados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__image-grid">
+          <img src="/assets/images/products/suela-deportiva.svg" alt="Suela Deportiva" class="grid-img grid-img-1" />
+          <img src="/assets/images/products/suela-casual.svg" alt="Suela Casual" class="grid-img grid-img-2" />
+          <img src="/assets/images/products/suela-running.svg" alt="Suela Running" class="grid-img grid-img-3" />
+          <img src="/assets/images/products/suela-formal.svg" alt="Suela Formal" class="grid-img grid-img-4" />
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <div class="section-header">
+        <h2>Productos Destacados</h2>
+        <a routerLink="/productos" class="view-all">
+          Ver todos
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="products-grid">
+        @for (product of featuredProducts(); track product.reference) {
+          <div class="product-card">
+            <div class="product-image">
+              <img [src]="product.image" [alt]="product.name" />
+              <span class="product-badge" [class.low-stock]="product.status.includes('Bajo')">
+                {{ product.status }}
+              </span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">{{ product.category }}</span>
+              <h3>{{ product.name }}</h3>
+              <p class="product-description">{{ product.description }}</p>
+              <div class="product-colors">
+                @for (color of product.colors.slice(0, 3); track color) {
+                  <span class="color-badge">{{ color }}</span>
+                }
+                @if (product.colors.length > 3) {
+                  <span class="color-more">+{{ product.colors.length - 3 }}</span>
+                }
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price">\${{ product.price.toFixed(2) }}</span>
+                  <span class="unit">/ par</span>
+                </div>
+                <button class="btn-add" (click)="navigateToProducts()">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>¿Necesitas grandes volúmenes?</h2>
+        <p>Contamos con soluciones especiales para mayoristas y fabricantes de calzado</p>
+        <div class="cta-buttons">
+          <a routerLink="/contacto" class="btn-primary">Contactar Ventas</a>
+          <a routerLink="/servicio-al-cliente" class="btn-secondary">Soporte Técnico</a>
+        </div>
+      </div>
+    </section>
+  
