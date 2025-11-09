@@ -3,16 +3,6 @@ import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ValuePillComponent } from '../../shared/components/value-pill/value-pill.component';
 
-interface ProductCard {
-  name: string;
-  description: string;
-  price: string;
-  material: string;
-  finish: string;
-  image: string;
-  tags: string[];
-}
-
 interface ProcessStep {
   order: string;
   title: string;
@@ -104,36 +94,6 @@ interface Differentiator {
         <article *ngFor="let value of valuesDetailed" class="values__card">
           <app-value-pill [label]="value.title"></app-value-pill>
           <p>{{ value.description }}</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="catalog" id="catalogo" aria-label="Productos destacados">
-      <header class="section-heading">
-        <p class="section-heading__eyebrow">Catálogo profesional</p>
-        <h2>16 diseños listos para impulsar tu colección</h2>
-        <p class="section-heading__description">
-          Suelas ergonómicas, ligeras y resistentes que optimizan costos y tiempos sin sacrificar estética.
-        </p>
-      </header>
-      <div class="catalog__grid">
-        <article *ngFor="let product of featuredProducts" class="catalog__card">
-          <div class="catalog__image">
-            <img [src]="product.image" [alt]="product.name" loading="lazy" />
-            <div class="catalog__tags">
-              <span *ngFor="let tag of product.tags">{{ tag }}</span>
-            </div>
-          </div>
-          <h3>{{ product.name }}</h3>
-          <p class="catalog__description">{{ product.description }}</p>
-          <div class="catalog__specs">
-            <span>{{ product.material }}</span>
-            <span>{{ product.finish }}</span>
-          </div>
-          <div class="catalog__footer">
-            <span class="catalog__price">{{ product.price }}</span>
-            <button type="button" class="catalog__button">Agregar al carrito</button>
-          </div>
         </article>
       </div>
     </section>
@@ -424,91 +384,7 @@ interface Differentiator {
         line-height: 1.6;
         color: rgba(15, 31, 47, 0.75);
       }
-      .catalog__grid {
-        display: grid;
-        gap: 1.75rem;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      }
-      .catalog__card {
-        background: #ffffff;
-        border-radius: 2rem;
-        padding: 1.75rem 1.5rem;
-        display: grid;
-        gap: 1.1rem;
-        border: 1px solid rgba(11, 29, 58, 0.06);
-        box-shadow: 0 22px 55px rgba(5, 18, 36, 0.1);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-      .catalog__card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 32px 70px rgba(5, 18, 36, 0.18);
-      }
-      .catalog__image {
-        position: relative;
-        background: linear-gradient(160deg, rgba(236, 250, 255, 0.9), rgba(221, 244, 255, 0.5));
-        border-radius: 1.5rem;
-        padding: 1.25rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .catalog__image img {
-        width: clamp(160px, 12vw, 220px);
-        height: auto;
-      }
-      .catalog__tags {
-        position: absolute;
-        inset: auto 1rem -0.75rem 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-      }
-      .catalog__tags span {
-        background: #0f4c75;
-        color: #ffffff;
-        padding: 0.35rem 0.75rem;
-        border-radius: 999px;
-        font-size: 0.75rem;
-        letter-spacing: 0.06em;
-      }
-      .catalog__description {
-        margin: 0;
-        line-height: 1.6;
-        color: rgba(15, 31, 47, 0.72);
-      }
-      .catalog__specs {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem 1rem;
-        color: rgba(15, 31, 47, 0.65);
-        font-size: 0.9rem;
-      }
-      .catalog__footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-      }
-      .catalog__price {
-        font-size: 1.35rem;
-        font-weight: 700;
-        color: var(--color-secondary);
-      }
-      .catalog__button {
-        border: none;
-        border-radius: 999px;
-        padding: 0.65rem 1.35rem;
-        font-weight: 600;
-        cursor: pointer;
-        background: linear-gradient(135deg, #2dd4bf, #38bdf8);
-        color: #041023;
-        box-shadow: 0 18px 38px rgba(45, 212, 191, 0.28);
-        transition: transform 0.2s ease;
-      }
-      .catalog__button:hover {
-        transform: translateY(-2px);
-      }
+      
       .process {
         background: linear-gradient(180deg, rgba(238, 246, 255, 0.7) 0%, rgba(221, 244, 255, 0.35) 100%);
         border-radius: 2.5rem;
@@ -643,13 +519,11 @@ interface Differentiator {
         .hero {
           padding: 2.25rem;
         }
-        .hero__actions,
-        .catalog__footer {
+        .hero__actions {
           flex-direction: column;
           align-items: stretch;
         }
-        .hero__cta,
-        .catalog__button {
+        .hero__cta {
           width: 100%;
         }
       }
@@ -678,152 +552,6 @@ export class HomeComponent {
     { title: 'Servicio', description: 'La satisfacción de nuestros clientes es la razón de ser.' },
     { title: 'Compromiso', description: 'Pertenencia y constancia para servir mejor cada día.' },
     { title: 'Trabajo en equipo', description: 'Colaboramos para alcanzar resultados de calidad.' }
-  ];
-  protected readonly featuredProducts: ProductCard[] = [
-    {
-      name: 'Suela Aurora EVA',
-      description: 'Ligereza extrema y retorno de energía para calzado urbano premium.',
-      price: '$48.900',
-      material: 'EVA de alta densidad',
-      finish: 'Texturizado antideslizante',
-      image: 'assets/images/products/suela-aurora.svg',
-      tags: ['Urbano', 'EVA', 'Ligera']
-    },
-    {
-      name: 'Suela Impacto Gel',
-      description: 'Tecnología de cápsulas de gel para absorción de impacto en calzado deportivo.',
-      price: '$54.500',
-      material: 'Compuesto EVA + Gel',
-      finish: 'Canales de ventilación',
-      image: 'assets/images/products/suela-impacto.svg',
-      tags: ['Deportivo', 'Amortiguación']
-    },
-    {
-      name: 'Suela Sierra Trail',
-      description: 'Agarre multidireccional para terrenos exigentes y climas húmedos.',
-      price: '$62.800',
-      material: 'Caucho vulcanizado',
-      finish: 'Tacos pronunciados',
-      image: 'assets/images/products/suela-sierra.svg',
-      tags: ['Outdoor', 'Tracción']
-    },
-    {
-      name: 'Suela Urbana Flex',
-      description: 'Diseño flexible y silencioso ideal para jornadas laborales extensas.',
-      price: '$49.300',
-      material: 'TPU + Insertos EVA',
-      finish: 'Flexión segmentada',
-      image: 'assets/images/products/suela-urbana.svg',
-      tags: ['Corporativo', 'Confort']
-    },
-    {
-      name: 'Suela Atlántica Pro',
-      description: 'Compuesto resistente a la salinidad para calzado náutico y de playa.',
-      price: '$58.200',
-      material: 'TPR marino',
-      finish: 'Ranuras de drenaje',
-      image: 'assets/images/products/suela-atlantica.svg',
-      tags: ['Náutico', 'Resistente']
-    },
-    {
-      name: 'Suela EcoVerde',
-      description: 'Hasta 45% de material reciclado con certificación de ciclo cerrado.',
-      price: '$46.700',
-      material: 'Compuesto reciclado',
-      finish: 'Grabado eco-friendly',
-      image: 'assets/images/products/suela-ecoverde.svg',
-      tags: ['Sostenible', 'Reciclado']
-    },
-    {
-      name: 'Suela Titan Grip',
-      description: 'Estabilidad reforzada para botas industriales y seguridad ocupacional.',
-      price: '$64.900',
-      material: 'PU bidensidad',
-      finish: 'Resistencia dieléctrica',
-      image: 'assets/images/products/suela-titan.svg',
-      tags: ['Industrial', 'Seguridad']
-    },
-    {
-      name: 'Suela Boreal Kids',
-      description: 'Peso ultraligero y colores brillantes para colecciones infantiles.',
-      price: '$38.400',
-      material: 'EVA expandido',
-      finish: 'Talón amortiguado',
-      image: 'assets/images/products/suela-boreal.svg',
-      tags: ['Infantil', 'Colores']
-    },
-    {
-      name: 'Suela Horizonte Trek',
-      description: 'Sistema de amortiguación gradual para caminatas de larga distancia.',
-      price: '$59.900',
-      material: 'PU + EVA',
-      finish: 'Plataforma híbrida',
-      image: 'assets/images/products/suela-horizonte.svg',
-      tags: ['Trekking', 'Resistente']
-    },
-    {
-      name: 'Suela Marina Soft',
-      description: 'Plantilla anatómica integrada para sandalias premium.',
-      price: '$43.200',
-      material: 'PU suave',
-      finish: 'Agarre marino',
-      image: 'assets/images/products/suela-marina.svg',
-      tags: ['Sandalia', 'Ergonómica']
-    },
-    {
-      name: 'Suela Quantum Air',
-      description: 'Celdas de aire visibles con soporte lateral para sneakers modernos.',
-      price: '$67.500',
-      material: 'TPU inyectado',
-      finish: 'Cámara de aire',
-      image: 'assets/images/products/suela-quantum.svg',
-      tags: ['Sneaker', 'Innovación']
-    },
-    {
-      name: 'Suela Galaxia Sport',
-      description: 'Diseño aerodinámico para disciplinas de alto rendimiento.',
-      price: '$61.400',
-      material: 'EVA comprimido',
-      finish: 'Patrón direccional',
-      image: 'assets/images/products/suela-galaxia.svg',
-      tags: ['Running', 'Performance']
-    },
-    {
-      name: 'Suela Prisma Comfort',
-      description: 'Plantilla termoformada para máximo confort diario.',
-      price: '$44.600',
-      material: 'Memory foam',
-      finish: 'Micro perforaciones',
-      image: 'assets/images/products/suela-prisma.svg',
-      tags: ['Casual', 'Confort']
-    },
-    {
-      name: 'Suela Andes Shield',
-      description: 'Protección contra temperaturas extremas para calzado outdoor.',
-      price: '$65.300',
-      material: 'Caucho + PU',
-      finish: 'Barreras térmicas',
-      image: 'assets/images/products/suela-andes.svg',
-      tags: ['Montaña', 'Protección']
-    },
-    {
-      name: 'Suela Pacífica Ultra',
-      description: 'Flexibilidad y agarre suave para calzado wellness.',
-      price: '$47.900',
-      material: 'TPR flexible',
-      finish: 'Ondas antideslizantes',
-      image: 'assets/images/products/suela-pacifica.svg',
-      tags: ['Wellness', 'Suavidad']
-    },
-    {
-      name: 'Suela Zenith Elite',
-      description: 'Diseño premium para colecciones exclusivas de edición limitada.',
-      price: '$72.000',
-      material: 'TPU cristal',
-      finish: 'Efecto translúcido',
-      image: 'assets/images/products/suela-zenith.svg',
-      tags: ['Edición limitada', 'Lujo']
-    }
   ];
   protected readonly process: ProcessStep[] = [
     {

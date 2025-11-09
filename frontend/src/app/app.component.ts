@@ -28,7 +28,7 @@ import { FooterComponent } from './core/layout/footer.component';
       }
       .app-shell__content {
         flex: 1;
-        width: min(1200px, calc(100% - 3rem));
+        width: min(1800px, calc(100% - 3rem));
         margin: 0 auto;
         padding: 2.5rem 0 3.5rem;
       }
