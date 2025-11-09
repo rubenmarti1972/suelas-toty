@@ -14,12 +14,12 @@ import { Component, Input } from '@angular/core';
         justify-content: center;
         padding: 0.45rem 1.35rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, rgba(45, 212, 191, 0.35), rgba(56, 189, 248, 0.35));
+        background: linear-gradient(135deg, rgba(244, 160, 36, 0.18), rgba(255, 216, 154, 0.3));
         color: var(--color-primary);
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        box-shadow: 0 12px 24px rgba(45, 212, 191, 0.25);
+        box-shadow: 0 12px 26px rgba(18, 40, 76, 0.12);
       }
     `
   ]

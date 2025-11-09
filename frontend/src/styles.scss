@@ -1,12 +1,13 @@
 :root {
   color-scheme: light;
-  --color-primary: #0b1d3a;
-  --color-secondary: #0f4c75;
-  --color-accent: #2dd4bf;
+  --color-primary: #0c2f62;
+  --color-secondary: #1b4f91;
+  --color-accent: #f4a024;
   --color-surface: #ffffff;
-  --color-background: #eef6ff;
-  --color-muted: #e0ebff;
-  --color-text: #0f1f2f;
+  --color-surface-alt: #f1f4f9;
+  --color-background: #eef2f8;
+  --color-muted: #5f6b7c;
+  --color-text: #1c2738;
 }
 
 *, *::before, *::after {
@@ -15,10 +16,10 @@
 
 body {
   margin: 0;
-  background-color: var(--color-background);
+  background: linear-gradient(180deg, var(--color-background) 0%, #ffffff 60%);
   color: var(--color-text);
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a {
@@ -30,8 +31,8 @@ button {
 }
 
 main {
-  width: min(1200px, calc(100% - 2.5rem));
-  margin: 0 auto 6rem;
+  width: min(1800px, calc(100% - 3rem));
+  margin: 0 auto 5.5rem;
   display: block;
 }
 
