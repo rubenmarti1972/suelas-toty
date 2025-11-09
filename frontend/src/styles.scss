@@ -1,13 +1,13 @@
 :root {
   color-scheme: light;
-  --color-primary: #3a2f28;
-  --color-secondary: #8a745f;
-  --color-accent: #dcb892;
+  --color-primary: #0f4c81;
+  --color-secondary: #35c7be;
+  --color-accent: #8fd694;
   --color-surface: #ffffff;
-  --color-surface-alt: #f6efe6;
-  --color-background: #f8f4ee;
-  --color-muted: #7f7166;
-  --color-text: #3f332d;
+  --color-surface-alt: #eef7ff;
+  --color-background: #dff1ff;
+  --color-muted: #5d7aa6;
+  --color-text: #184561;
 }
 
 *, *::before, *::after {
@@ -16,7 +16,7 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, var(--color-background) 0%, #ffffff 70%);
+  background: linear-gradient(180deg, rgba(223, 241, 255, 0.95) 0%, rgba(238, 247, 255, 0.95) 55%, #ffffff 100%);
   color: var(--color-text);
   font-family: 'Montserrat', 'Segoe UI', sans-serif;
   line-height: 1.6;

@@ -61,15 +61,15 @@ interface NavigationLink {
         align-items: center;
         gap: 1.5rem;
         padding: 1.15rem clamp(1.5rem, 3vw, 3rem);
-        background: linear-gradient(140deg, #10345a, #1d4f82);
+        background: linear-gradient(115deg, rgba(255, 255, 255, 0.96) 0%, rgba(227, 243, 255, 0.94) 38%, #0f4c81 100%);
         border-radius: 1.9rem;
-        box-shadow: 0 20px 42px rgba(16, 52, 90, 0.35);
+        box-shadow: 0 20px 48px rgba(15, 76, 129, 0.18);
         position: sticky;
         top: 1.35rem;
         z-index: 50;
         width: min(1800px, calc(100% - 3rem));
         margin: 1.35rem auto 2.75rem;
-        color: #f5f8ff;
+        color: #0f2b45;
         backdrop-filter: blur(16px);
       }
       .header__brand {
@@ -84,9 +84,9 @@ interface NavigationLink {
         height: auto;
         border-radius: 1.45rem;
         padding: 0.45rem 0.95rem;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        box-shadow: 0 12px 26px rgba(8, 19, 36, 0.45);
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(15, 76, 129, 0.2);
+        box-shadow: 0 12px 26px rgba(15, 76, 129, 0.15);
       }
       .header__identity {
         display: flex;
@@ -104,7 +104,7 @@ interface NavigationLink {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: rgba(245, 248, 255, 0.72);
+        color: rgba(24, 69, 97, 0.62);
       }
       .header__nav {
         display: flex;
@@ -117,18 +117,19 @@ interface NavigationLink {
         position: relative;
         text-decoration: none;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.82);
+        color: rgba(255, 255, 255, 0.9);
         padding: 0.55rem 1.2rem;
         border-radius: 999px;
         transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-        background: rgba(255, 255, 255, 0.12);
+        background: rgba(15, 76, 129, 0.35);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
       }
       .header__nav-link:hover,
       .header__nav-link--active {
-        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
-        color: #163454;
+        background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+        color: #0f2b45;
         transform: translateY(-1px);
-        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
+        box-shadow: 0 18px 30px rgba(15, 76, 129, 0.24);
       }
       .header__actions {
         display: flex;
@@ -140,14 +141,14 @@ interface NavigationLink {
         font-weight: 600;
         padding: 0.7rem 1.65rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
-        color: #1a2f45;
-        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
+        background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+        color: #0f2b45;
+        box-shadow: 0 18px 32px rgba(15, 76, 129, 0.22);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cta:hover {
         transform: translateY(-2px);
-        box-shadow: 0 24px 46px rgba(8, 19, 36, 0.38);
+        box-shadow: 0 24px 42px rgba(15, 76, 129, 0.26);
       }
       .header__cart {
         display: inline-flex;
@@ -155,17 +156,18 @@ interface NavigationLink {
         gap: 0.45rem;
         padding: 0.5rem 0.9rem;
         border-radius: 999px;
-        border: 1px solid rgba(255, 255, 255, 0.35);
-        background: rgba(255, 255, 255, 0.14);
-        color: rgba(255, 255, 255, 0.86);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        background: rgba(255, 255, 255, 0.22);
+        color: rgba(15, 43, 69, 0.88);
         cursor: pointer;
         font-weight: 600;
-        transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
       }
       .header__cart:hover {
-        background: rgba(255, 255, 255, 0.22);
+        background: rgba(255, 255, 255, 0.32);
+        color: #0f2b45;
         transform: translateY(-2px);
-        box-shadow: 0 18px 34px rgba(8, 19, 36, 0.35);
+        box-shadow: 0 18px 30px rgba(15, 76, 129, 0.24);
       }
       .header__cart-icon svg {
         width: 22px;
@@ -185,11 +187,11 @@ interface NavigationLink {
         height: 1.5rem;
         padding: 0 0.35rem;
         border-radius: 999px;
-        background: linear-gradient(135deg, #f6ca7f, #ffd89a);
-        color: #1a2f45;
+        background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+        color: #0f2b45;
         font-size: 0.8rem;
         font-weight: 700;
-        box-shadow: 0 14px 28px rgba(8, 19, 36, 0.4);
+        box-shadow: 0 14px 26px rgba(15, 76, 129, 0.25);
       }
       @media (max-width: 1024px) {
         .header {

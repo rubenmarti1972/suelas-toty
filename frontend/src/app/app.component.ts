@@ -22,7 +22,7 @@ import { FooterComponent } from './core/layout/footer.component';
         display: flex;
         min-height: 100vh;
         flex-direction: column;
-        background: linear-gradient(180deg, var(--color-background) 0%, #ffffff 60%, #fdfaf4 100%);
+        background: linear-gradient(180deg, rgba(223, 241, 255, 0.96) 0%, rgba(236, 248, 255, 0.96) 55%, #ffffff 100%);
         color: var(--color-text);
         font-family: 'Montserrat', 'Segoe UI', sans-serif;
       }
