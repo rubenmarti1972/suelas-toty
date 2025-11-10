@@ -5,9 +5,9 @@
         border-radius: 2.5rem 2.5rem 0 0;
         background: linear-gradient(
           320deg,
-          rgba(1, 17, 36, 0.95) 0%,
-          rgba(4, 31, 63, 0.92) 45%,
-          rgba(13, 67, 115, 0.85) 100%
+          #010d20 0%,
+          #041f3f 45%,
+          #0d4373 100%
         );
         color: rgba(233, 245, 255, 0.88);
         box-shadow: 0 -16px 36px rgba(3, 25, 50, 0.4);
@@ -25,9 +25,9 @@
         align-items: center;
         padding: 1.65rem;
         border-radius: 1.9rem;
-        background: linear-gradient(135deg, rgba(5, 37, 70, 0.78), rgba(20, 86, 132, 0.58));
-        border: 1px solid rgba(15, 84, 148, 0.45);
-        box-shadow: 0 12px 30px rgba(3, 25, 50, 0.35);
+        background: linear-gradient(135deg, #052546, #145684);
+        border: 1px solid rgba(15, 84, 148, 0.6);
+        box-shadow: 0 12px 30px rgba(3, 25, 50, 0.45);
         color: #f3f7fb;
       }
       .footer__logo {
@@ -35,9 +35,9 @@
         height: auto;
         border-radius: 2.35rem;
         padding: 0.65rem 1.2rem;
-        background: linear-gradient(135deg, rgba(4, 35, 68, 0.95), rgba(23, 92, 143, 0.82));
-        border: 1px solid rgba(16, 86, 150, 0.42);
-        box-shadow: 0 9px 22px rgba(3, 25, 50, 0.35);
+        background: linear-gradient(135deg, #042344, #175c8f);
+        border: 1px solid rgba(16, 86, 150, 0.55);
+        box-shadow: 0 9px 22px rgba(3, 25, 50, 0.4);
       }
       .footer__brand h2 {
         margin: 0 0 0.5rem;
@@ -91,7 +91,7 @@
         padding: 0.85rem 1rem;
         border-radius: 1rem;
         text-decoration: none;
-        background: rgba(5, 37, 70, 0.48);
+        background: linear-gradient(135deg, #052546, #0c4e87);
         color: rgba(236, 244, 255, 0.94);
         font-weight: 600;
         transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
