@@ -6,7 +6,7 @@
   margin-top: 4.5rem;
   padding: 3.5rem 0 2.75rem;
   border-radius: 2.25rem 2.25rem 0 0;
-  background: linear-gradient(145deg, #010f1f 0%, #052b4d 45%, #0f4c81 100%);
+  background: linear-gradient(145deg, #153a60 0%, #0c466e 45%, #0f4c81 100%);
   color: rgba(235, 245, 255, 0.88);
   border-top: 1px solid rgba(37, 118, 170, 0.4);
   box-shadow: 0 -16px 36px rgba(2, 18, 36, 0.55);
@@ -25,7 +25,7 @@
   align-items: center;
   padding: 1.65rem;
   border-radius: 1.85rem;
-  background: linear-gradient(140deg, rgba(5, 38, 68, 0.92), rgba(15, 82, 126, 0.95));
+  background: linear-gradient(140deg, rgba(18, 76, 122, 0.92), rgba(22, 110, 162, 0.95));
   border: 1px solid rgba(53, 199, 190, 0.32);
   box-shadow: 0 14px 34px rgba(2, 18, 36, 0.6);
   color: #f4faff;
@@ -37,13 +37,13 @@
   justify-content: center;
   border-radius: 2.35rem;
   padding: 0.75rem 1.35rem;
-  background: linear-gradient(145deg, rgba(53, 199, 190, 0.22), rgba(15, 76, 129, 0.28));
+  background: linear-gradient(145deg, rgba(53, 199, 190, 0.36), rgba(18, 110, 166, 0.34));
   border: 1px solid rgba(53, 199, 190, 0.4);
   box-shadow: 0 14px 34px rgba(2, 18, 36, 0.62);
 }
 
 .footer__logo {
-  width: clamp(120px, 22vw, 180px);
+  width: clamp(92px, 18vw, 150px);
   height: auto;
   display: block;
   filter: drop-shadow(0 6px 16px rgba(3, 18, 36, 0.55)) brightness(1.18) contrast(1.08);
