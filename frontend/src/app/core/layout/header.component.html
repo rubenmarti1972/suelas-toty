@@ -1,44 +1,46 @@
 
-    <header class="header">
-      <div class="header__brand" routerLink="/" tabindex="0" role="link">
-        <img src="assets/images/logo.png" alt="Suelas Toty" class="header__logo" />
-        <div class="header__identity">
-          <p class="header__name">Suelas Toty</p>
-          <span class="header__slogan">Innovación en cada pisada</span>
-        </div>
+<header class="header">
+  <div class="header__inner">
+    <div class="header__brand" routerLink="/" tabindex="0" role="link">
+      <img src="assets/images/logo.png" alt="Suelas Toty" class="header__logo" />
+      <div class="header__identity">
+        <p class="header__name">Suelas Toty</p>
+        <span class="header__slogan">Innovación en cada pisada</span>
       </div>
-      <nav class="header__nav" aria-label="Navegación principal">
-        <a
-          *ngFor="let link of links"
-          [routerLink]="link.route"
-          routerLinkActive="header__nav-link--active"
-          class="header__nav-link"
-        >
-          {{ link.label }}
-        </a>
-      </nav>
-      <div class="header__actions">
-        <a routerLink="/contacto" class="header__cta">Solicitar cotización</a>
-        <button type="button" class="header__cart" aria-label="Ver carrito de compras" (click)="openCart()">
-          <span class="header__cart-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path
-                d="M3.5 4h1.9l1.42 8.54a2 2 0 0 0 1.98 1.68h8.48a2 2 0 0 0 1.97-1.58l1.2-5.6H7.1"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-              <circle cx="10" cy="19" r="1.6"></circle>
-              <circle cx="18" cy="19" r="1.6"></circle>
-            </svg>
-          </span>
-          <span class="header__cart-label">Carrito</span>
-          <span class="header__cart-count" aria-live="polite">{{ cartService.totalItems() }}</span>
-        </button>
-      </div>
-    </header>
+    </div>
+    <nav class="header__nav" aria-label="Navegación principal">
+      <a
+        *ngFor="let link of links"
+        [routerLink]="link.route"
+        routerLinkActive="header__nav-link--active"
+        class="header__nav-link"
+      >
+        {{ link.label }}
+      </a>
+    </nav>
+    <div class="header__actions">
+      <a routerLink="/contacto" class="header__cta">Solicitar cotización</a>
+      <button type="button" class="header__cart" aria-label="Ver carrito de compras" (click)="openCart()">
+        <span class="header__cart-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path
+              d="M3.5 4h1.9l1.42 8.54a2 2 0 0 0 1.98 1.68h8.48a2 2 0 0 0 1.97-1.58l1.2-5.6H7.1"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <circle cx="10" cy="19" r="1.6"></circle>
+            <circle cx="18" cy="19" r="1.6"></circle>
+          </svg>
+        </span>
+        <span class="header__cart-label">Carrito</span>
+        <span class="header__cart-count" aria-live="polite">{{ cartItems() }}</span>
+      </button>
+    </div>
+  </div>
+</header>
 
-    @if (isCartOpen()) {
-      <app-cart (close)="closeCart()" />
-    }
-  
+@if (isCartOpen()) {
+  <app-cart (close)="closeCart()" />
+}
+
