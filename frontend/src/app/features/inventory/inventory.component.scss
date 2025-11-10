@@ -1,73 +1,85 @@
+/* Inventory page */
+.inventory {
+  padding: 2rem 0;
+}
 
-      .inventory {
-        display: grid;
-        gap: 2.5rem;
-      }
-      .inventory header h1 {
-        margin: 0;
-        color: #183153;
-      }
-      .inventory header p {
-        margin: 0.75rem 0 0;
-        max-width: 44rem;
-        line-height: 1.65;
-      }
-      .inventory__kpis {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      }
-      .inventory__kpis article {
-        background: #ffffff;
-        border-radius: 1.25rem;
-        padding: 1.75rem;
-        box-shadow: 0 15px 35px rgba(15, 40, 70, 0.08);
-        display: grid;
-        gap: 0.5rem;
-      }
-      .inventory__value {
-        margin: 0;
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #12263a;
-      }
-      .inventory__trend {
-        font-size: 0.85rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        display: inline-flex;
-        width: fit-content;
-        padding: 0.35rem 0.75rem;
-        border-radius: 999px;
-      }
-      .inventory__trend[data-trend='up'] {
-        background: rgba(0, 171, 85, 0.12);
-        color: #007b55;
-      }
-      .inventory__trend[data-trend='down'] {
-        background: rgba(220, 38, 38, 0.12);
-        color: #b4231a;
-      }
-      .inventory__trend[data-trend='flat'] {
-        background: rgba(51, 101, 138, 0.12);
-        color: #183153;
-      }
-      .inventory__description {
-        margin: 0;
-        line-height: 1.5;
-        color: #4b5d6b;
-      }
-      .inventory__process {
-        background: #f8fafc;
-        border-radius: 1.5rem;
-        padding: 2rem;
-      }
-      .inventory__process h2 {
-        margin-top: 0;
-      }
-      .inventory__process ul {
-        margin: 0;
-        padding-left: 1.2rem;
-        line-height: 1.7;
-      }
-    
+.inventory header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.inventory header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.inventory__kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.inventory__kpis article {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.inventory__value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: #222;
+}
+
+.inventory__trend {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.inventory__trend[data-trend='up'] {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.inventory__trend[data-trend='down'] {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.inventory__trend[data-trend='flat'] {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.inventory__description {
+  margin: 0.5rem 0 0 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.inventory__process {
+  background: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.inventory__process h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0;
+  color: #222;
+}
+
+.inventory__process ul {
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  color: #666;
+}

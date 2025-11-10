@@ -1,17 +1,10 @@
-:host {
-  display: contents;
-}
-
+/* Value pill component */
 .value-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.45rem 1.35rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(244, 160, 36, 0.18), rgba(255, 216, 154, 0.3));
-  color: var(--color-primary);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  box-shadow: var(--shadow-sm);
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #e3f2fd;
+  color: #0066cc;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
