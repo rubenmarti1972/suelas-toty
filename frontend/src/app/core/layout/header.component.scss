@@ -7,19 +7,19 @@
         padding: 1.25rem clamp(1.75rem, 3vw, 3.25rem);
         background: linear-gradient(
           295deg,
-          rgba(15, 76, 129, 0.16) 0%,
-          rgba(53, 199, 190, 0.12) 48%,
-          rgba(235, 246, 255, 0.95) 100%
+          rgba(5, 34, 62, 0.88) 0%,
+          rgba(12, 63, 108, 0.78) 50%,
+          rgba(24, 110, 143, 0.72) 100%
         );
-        border: 1px solid rgba(15, 76, 129, 0.12);
+        border: 1px solid rgba(7, 47, 84, 0.28);
         border-radius: 1.9rem;
-        box-shadow: 0 10px 30px rgba(15, 76, 129, 0.14);
+        box-shadow: 0 12px 32px rgba(10, 45, 82, 0.28);
         position: sticky;
         top: 1.35rem;
         z-index: 50;
         width: min(1800px, calc(100% - 3rem));
         margin: 1.35rem auto 2.75rem;
-        color: var(--color-text);
+        color: rgba(233, 245, 255, 0.9);
         backdrop-filter: blur(16px);
       }
       .header__brand {
@@ -30,9 +30,10 @@
         text-decoration: none;
         padding: 0.75rem 1.1rem;
         border-radius: 1.85rem;
-        background: linear-gradient(135deg, rgba(15, 76, 129, 0.14), rgba(255, 255, 255, 0.92));
-        border: 1px solid rgba(15, 76, 129, 0.1);
-        box-shadow: 0 6px 18px rgba(15, 76, 129, 0.1);
+        background: linear-gradient(135deg, rgba(8, 52, 95, 0.65), rgba(32, 119, 162, 0.45));
+        border: 1px solid rgba(6, 46, 83, 0.35);
+        box-shadow: 0 8px 20px rgba(8, 49, 89, 0.28);
+        color: #f3f7fb;
         transition: box-shadow 0.2s ease, transform 0.2s ease;
       }
       .header__brand:hover {
@@ -44,9 +45,9 @@
         height: auto;
         border-radius: 1.6rem;
         padding: 0.55rem 1.1rem;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 248, 255, 0.94));
-        border: 1px solid rgba(15, 76, 129, 0.14);
-        box-shadow: 0 6px 16px rgba(15, 76, 129, 0.12);
+        background: linear-gradient(135deg, rgba(12, 60, 102, 0.92), rgba(40, 128, 170, 0.8));
+        border: 1px solid rgba(7, 47, 84, 0.35);
+        box-shadow: 0 8px 18px rgba(8, 49, 89, 0.28);
       }
       .header__identity {
         display: flex;
@@ -57,14 +58,14 @@
         margin: 0;
         font-weight: 700;
         font-size: 1.55rem;
-        color: var(--color-primary);
+        color: #ffffff;
         letter-spacing: 0.02em;
       }
       .header__slogan {
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        color: rgba(24, 69, 97, 0.66);
+        color: rgba(236, 244, 255, 0.76);
       }
       .header__nav {
         display: flex;
@@ -77,11 +78,11 @@
         position: relative;
         text-decoration: none;
         font-weight: 600;
-        color: var(--color-primary);
+        color: rgba(228, 241, 255, 0.92);
         padding: 0.6rem 1.35rem;
         border-radius: 999px;
         transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-        background: rgba(15, 76, 129, 0.08);
+        background: rgba(15, 76, 129, 0.28);
       }
       .header__nav-link:hover,
       .header__nav-link--active {
@@ -115,15 +116,15 @@
         gap: 0.45rem;
         padding: 0.55rem 1rem;
         border-radius: 999px;
-        border: 1px solid rgba(15, 76, 129, 0.18);
-        background: rgba(15, 76, 129, 0.08);
-        color: var(--color-primary);
+        border: 1px solid rgba(7, 47, 84, 0.4);
+        background: rgba(8, 52, 95, 0.35);
+        color: rgba(228, 241, 255, 0.92);
         cursor: pointer;
         font-weight: 600;
         transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
       }
       .header__cart:hover {
-        background: rgba(15, 76, 129, 0.14);
+        background: rgba(12, 64, 112, 0.48);
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(15, 76, 129, 0.18);
       }
