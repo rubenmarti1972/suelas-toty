@@ -1,19 +1,70 @@
-/* Estilos globales - Reset */
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  color-scheme: light;
+
+  /* Main Colors */
+  --color-primary: #0f4c81;
+  --color-secondary: #35c7be;
+  --color-accent: #8fd694;
+  --color-warning: #f4a024;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef7ff;
+  --color-background: #dff1ff;
+  --color-muted: #5d7aa6;
+  --color-text: #184561;
+
+  /* Text Color Variations */
+  --color-text-secondary: rgba(28, 39, 56, 0.68);
+  --color-text-muted: rgba(28, 39, 56, 0.55);
+  --color-text-light: rgba(28, 39, 56, 0.5);
+
+  /* Border Colors */
+  --color-border: rgba(12, 47, 98, 0.08);
+  --color-border-medium: rgba(12, 47, 98, 0.15);
+  --color-border-strong: rgba(12, 47, 98, 0.2);
+
+  /* Background Overlays */
+  --color-overlay-light: rgba(12, 47, 98, 0.08);
+  --color-overlay-medium: rgba(12, 47, 98, 0.75);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(180deg, rgba(223, 241, 255, 0.96) 0%, rgba(236, 248, 255, 0.96) 55%, #ffffff 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-accent), #ffd89a);
+  --gradient-warning: linear-gradient(135deg, #f0a030, #ffd08a);
+  --gradient-info: linear-gradient(135deg, #b9d6ff, #d7e6ff);
+
+  /* Shadows */
+  --shadow-sm: 0 12px 26px rgba(18, 40, 76, 0.1);
+  --shadow-md: 0 20px 44px rgba(18, 40, 76, 0.18);
+  --shadow-lg: 0 22px 48px rgba(18, 40, 76, 0.12);
+  --shadow-xl: 0 22px 52px rgba(18, 40, 76, 0.12);
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  margin: 0;
+  background: var(--gradient-primary);
+  color: var(--color-text);
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: #f5f5f5;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
 }
 
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  width: min(1800px, calc(100% - 3rem));
+  margin: 0 auto 5.5rem;
+  display: block;
+}
+
+main:focus {
+  outline: none;
 }

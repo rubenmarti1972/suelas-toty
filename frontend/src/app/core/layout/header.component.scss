@@ -1,75 +1,238 @@
-/* Header */
-header {
-  background: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+:host {
+  display: block;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(130deg, #163d66 0%, #0a416a 45%, #0f4c81 100%);
+  color: #f4faff;
+  border-bottom: 1px solid rgba(33, 110, 160, 0.45);
+  box-shadow: 0 12px 28px rgba(3, 18, 36, 0.55);
+  backdrop-filter: blur(10px);
 }
 
 .header__inner {
-  max-width: 1200px;
+  width: min(1800px, calc(100% - 2.5rem));
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
+  gap: clamp(1rem, 3vw, 1.75rem);
+  padding: 0.9rem 0;
 }
 
 .header__brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 1rem;
   text-decoration: none;
-  color: #333;
+  padding: 0.65rem 1.1rem;
+  border-radius: 1.35rem;
+  background: linear-gradient(140deg, rgba(18, 76, 122, 0.9), rgba(20, 102, 152, 0.96));
+  border: 1px solid rgba(53, 199, 190, 0.32);
+  box-shadow: 0 10px 26px rgba(2, 18, 36, 0.55);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: inherit;
+}
+
+.header__brand:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(2, 18, 36, 0.65);
+}
+
+.header__logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.65rem;
+  border-radius: 1.1rem;
+  background: linear-gradient(140deg, rgba(53, 199, 190, 0.36), rgba(18, 96, 152, 0.38));
+  border: 1px solid rgba(53, 199, 190, 0.45);
+  box-shadow: 0 12px 26px rgba(2, 18, 36, 0.55);
+}
+
+.header__brand:hover .header__logo-wrap {
+  box-shadow: 0 16px 32px rgba(2, 18, 36, 0.65);
 }
 
 .header__logo {
-  height: 50px;
+  height: 38px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(3, 18, 36, 0.55)) brightness(1.18) contrast(1.08);
+}
+
+.header__identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .header__name {
-  font-size: 1.5rem;
-  font-weight: bold;
   margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .header__slogan {
-  font-size: 0.8rem;
   margin: 0;
-  color: #666;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(214, 234, 248, 0.72);
 }
 
 .header__nav {
   display: flex;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: clamp(0.65rem, 3vw, 1.35rem);
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header__nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: #333;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  font-weight: 600;
+  padding: 0.55rem 1.15rem;
+  border-radius: 0.85rem;
+  color: rgba(235, 245, 255, 0.92);
+  background: linear-gradient(135deg, rgba(15, 76, 129, 0.75), rgba(93, 122, 166, 0.65));
+  border: 1px solid rgba(53, 199, 190, 0.35);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  &:hover, &--active {
-    background: #f0f0f0;
-    color: #0066cc;
-  }
+.header__nav-link:hover,
+.header__nav-link--active {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  color: #02111f;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(6, 30, 50, 0.55);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.header__cta {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.65rem 1.6rem;
+  border-radius: 0.95rem;
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+  color: #02111f;
+  border: 1px solid rgba(53, 199, 190, 0.45);
+  box-shadow: 0 14px 30px rgba(4, 28, 54, 0.55);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 38px rgba(4, 28, 54, 0.62);
 }
 
 .header__cart {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: #0066cc;
-  color: #fff;
-  border-radius: 4px;
+  gap: 0.45rem;
+  padding: 0.55rem 1.05rem;
+  border-radius: 0.95rem;
+  border: 1px solid rgba(53, 199, 190, 0.32);
+  background: linear-gradient(140deg, rgba(3, 30, 54, 0.9), rgba(9, 64, 98, 0.92));
+  color: rgba(235, 245, 255, 0.9);
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 24px rgba(2, 18, 36, 0.55);
+}
 
-  &:hover {
-    background: #0052a3;
-  }
+.header__cart:hover {
+  background: linear-gradient(140deg, rgba(5, 44, 78, 0.95), rgba(13, 90, 128, 0.95));
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(2, 18, 36, 0.65);
 }
 
 .header__cart-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.header__cart-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.header__cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+  color: #02111f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(6, 30, 50, 0.55);
+}
+
+@media (max-width: 1100px) {
+  .header__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+    text-align: left;
+  }
+
+  .header__brand {
+    justify-self: flex-start;
+  }
+
+  .header__nav {
+    justify-content: flex-start;
+  }
+
+  .header__actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__inner {
+    width: min(1800px, calc(100% - 1.5rem));
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header__nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header__cta,
+  .header__cart {
+    width: 100%;
+    justify-content: center;
+  }
 }
