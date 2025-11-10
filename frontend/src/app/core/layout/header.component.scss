@@ -6,10 +6,10 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: linear-gradient(130deg, #163d66 0%, #0a416a 45%, #0f4c81 100%);
-  color: #f4faff;
-  border-bottom: 1px solid rgba(33, 110, 160, 0.45);
-  box-shadow: 0 12px 28px rgba(3, 18, 36, 0.55);
+  background: linear-gradient(130deg, #2a5a8a 0%, #3678a8 45%, #4a8cc0 100%);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(53, 199, 190, 0.55);
+  box-shadow: 0 12px 28px rgba(3, 18, 36, 0.35);
   backdrop-filter: blur(10px);
 }
 
@@ -30,9 +30,9 @@
   text-decoration: none;
   padding: 0.65rem 1.1rem;
   border-radius: 1.35rem;
-  background: linear-gradient(140deg, rgba(18, 76, 122, 0.9), rgba(20, 102, 152, 0.96));
-  border: 1px solid rgba(53, 199, 190, 0.32);
-  box-shadow: 0 10px 26px rgba(2, 18, 36, 0.55);
+  background: linear-gradient(140deg, rgba(74, 140, 192, 0.55), rgba(84, 160, 210, 0.6));
+  border: 1px solid rgba(53, 199, 190, 0.5);
+  box-shadow: 0 8px 22px rgba(2, 18, 36, 0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: inherit;
 }
@@ -46,11 +46,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.35rem 0.65rem;
-  border-radius: 1.1rem;
-  background: linear-gradient(140deg, rgba(53, 199, 190, 0.36), rgba(18, 96, 152, 0.38));
-  border: 1px solid rgba(53, 199, 190, 0.45);
-  box-shadow: 0 12px 26px rgba(2, 18, 36, 0.55);
+  padding: 0.5rem 0.95rem;
+  border-radius: 1.3rem;
+  background: linear-gradient(140deg, rgba(53, 199, 190, 0.4), rgba(18, 96, 152, 0.42));
+  border: 1px solid rgba(53, 199, 190, 0.5);
+  box-shadow: 0 14px 30px rgba(2, 18, 36, 0.6);
 }
 
 .header__brand:hover .header__logo-wrap {
@@ -58,10 +58,10 @@
 }
 
 .header__logo {
-  height: 38px;
+  height: 56px;
   width: auto;
   display: block;
-  filter: drop-shadow(0 4px 12px rgba(3, 18, 36, 0.55)) brightness(1.18) contrast(1.08);
+  filter: drop-shadow(0 6px 16px rgba(3, 18, 36, 0.6)) brightness(1.22) contrast(1.12);
 }
 
 .header__identity {
@@ -76,6 +76,7 @@
   font-size: 1.5rem;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .header__slogan {
@@ -83,7 +84,7 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  color: rgba(214, 234, 248, 0.72);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .header__nav {
@@ -103,9 +104,9 @@
   font-weight: 600;
   padding: 0.55rem 1.15rem;
   border-radius: 0.85rem;
-  color: rgba(235, 245, 255, 0.92);
-  background: linear-gradient(135deg, rgba(15, 76, 129, 0.75), rgba(93, 122, 166, 0.65));
-  border: 1px solid rgba(53, 199, 190, 0.35);
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(53, 199, 190, 0.25), rgba(143, 214, 148, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.3);
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
