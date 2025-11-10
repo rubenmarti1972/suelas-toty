@@ -31,14 +31,22 @@
   color: #f4faff;
 }
 
-.footer__logo {
-  width: clamp(108px, 20vw, 170px);
-  height: auto;
+.footer__logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 2.35rem;
-  padding: 0.65rem 1.2rem;
-  background: linear-gradient(135deg, rgba(6, 52, 90, 0.95), rgba(19, 118, 150, 0.95));
-  border: 1px solid rgba(53, 199, 190, 0.38);
-  box-shadow: 0 12px 28px rgba(2, 18, 36, 0.55);
+  padding: 0.75rem 1.35rem;
+  background: linear-gradient(145deg, rgba(53, 199, 190, 0.22), rgba(15, 76, 129, 0.28));
+  border: 1px solid rgba(53, 199, 190, 0.4);
+  box-shadow: 0 14px 34px rgba(2, 18, 36, 0.62);
+}
+
+.footer__logo {
+  width: clamp(120px, 22vw, 180px);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 6px 16px rgba(3, 18, 36, 0.55)) brightness(1.18) contrast(1.08);
 }
 
 .footer__brand h2 {

@@ -46,22 +46,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.35rem 0.6rem;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(224, 242, 255, 0.95), rgba(167, 214, 255, 0.8));
-  border: 1px solid rgba(162, 210, 255, 0.75);
-  box-shadow: 0 10px 24px rgba(6, 30, 50, 0.45);
+  padding: 0.4rem 0.75rem;
+  border-radius: 1.1rem;
+  background: linear-gradient(140deg, rgba(53, 199, 190, 0.24), rgba(15, 76, 129, 0.28));
+  border: 1px solid rgba(53, 199, 190, 0.45);
+  box-shadow: 0 12px 26px rgba(2, 18, 36, 0.55);
 }
 
 .header__brand:hover .header__logo-wrap {
-  box-shadow: 0 14px 30px rgba(6, 30, 50, 0.55);
+  box-shadow: 0 16px 32px rgba(2, 18, 36, 0.65);
 }
 
 .header__logo {
-  height: 34px;
+  height: 36px;
   width: auto;
   display: block;
-  filter: drop-shadow(0 0 6px rgba(6, 24, 46, 0.3));
+  filter: drop-shadow(0 4px 12px rgba(3, 18, 36, 0.55)) brightness(1.18) contrast(1.08);
 }
 
 .header__identity {
