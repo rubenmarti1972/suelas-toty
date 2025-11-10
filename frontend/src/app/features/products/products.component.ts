@@ -66,7 +66,7 @@ interface Product {
             </div>
             <div class="product-card__actions">
               <button type="button" class="product-card__action">Solicitar muestra</button>
-              <button type="button" class="product-card__ghost">Agregar a cotización</button>
+              <button type="button" class="product-card__action--quote">Agregar a cotización</button>
             </div>
           </div>
         </article>
