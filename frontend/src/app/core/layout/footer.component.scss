@@ -21,12 +21,12 @@
 
 .footer__brand {
   display: flex;
-  gap: 1.35rem;
+  gap: 1.75rem;
   align-items: center;
-  padding: 1.65rem;
+  padding: 2rem;
   border-radius: 1.85rem;
-  background: linear-gradient(140deg, rgba(18, 76, 122, 0.92), rgba(22, 110, 162, 0.95));
-  border: 1px solid rgba(53, 199, 190, 0.32);
+  background: linear-gradient(140deg, rgba(18, 76, 122, 0.95), rgba(22, 110, 162, 0.98));
+  border: 1px solid rgba(53, 199, 190, 0.4);
   box-shadow: 0 14px 34px rgba(2, 18, 36, 0.6);
   color: #f4faff;
 }
@@ -36,30 +36,32 @@
   align-items: center;
   justify-content: center;
   border-radius: 2.35rem;
-  padding: 0.75rem 1.35rem;
+  padding: 1rem 1.75rem;
   background: linear-gradient(145deg, rgba(53, 199, 190, 0.36), rgba(18, 110, 166, 0.34));
   border: 1px solid rgba(53, 199, 190, 0.4);
   box-shadow: 0 14px 34px rgba(2, 18, 36, 0.62);
 }
 
 .footer__logo {
-  width: clamp(92px, 18vw, 150px);
+  width: clamp(140px, 24vw, 220px);
   height: auto;
   display: block;
   filter: drop-shadow(0 6px 16px rgba(3, 18, 36, 0.55)) brightness(1.18) contrast(1.08);
 }
 
 .footer__brand h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.8rem;
+  margin: 0 0 0.65rem;
+  font-size: 1.9rem;
   color: #ffffff;
+  letter-spacing: 0.01em;
 }
 
 .footer__brand p {
   margin: 0;
   max-width: 32rem;
-  line-height: 1.7;
-  color: rgba(214, 234, 248, 0.78);
+  line-height: 1.75;
+  color: rgba(235, 245, 255, 0.88);
+  font-size: 1rem;
 }
 
 .footer__mission h3,
