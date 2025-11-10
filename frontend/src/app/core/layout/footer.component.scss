@@ -5,13 +5,13 @@
         border-radius: 2.5rem 2.5rem 0 0;
         background: linear-gradient(
           320deg,
-          rgba(5, 34, 62, 0.92) 0%,
-          rgba(14, 69, 117, 0.82) 48%,
-          rgba(24, 110, 143, 0.78) 100%
+          rgba(1, 17, 36, 0.95) 0%,
+          rgba(4, 31, 63, 0.92) 45%,
+          rgba(13, 67, 115, 0.85) 100%
         );
         color: rgba(233, 245, 255, 0.88);
-        box-shadow: 0 -14px 32px rgba(10, 45, 82, 0.26);
-        border-top: 1px solid rgba(7, 47, 84, 0.28);
+        box-shadow: 0 -16px 36px rgba(3, 25, 50, 0.4);
+        border-top: 1px solid rgba(10, 60, 110, 0.28);
       }
       .footer__content {
         display: grid;
@@ -25,9 +25,9 @@
         align-items: center;
         padding: 1.65rem;
         border-radius: 1.9rem;
-        background: linear-gradient(135deg, rgba(8, 52, 95, 0.65), rgba(32, 119, 162, 0.45));
-        border: 1px solid rgba(6, 46, 83, 0.35);
-        box-shadow: 0 10px 26px rgba(8, 49, 89, 0.28);
+        background: linear-gradient(135deg, rgba(5, 37, 70, 0.78), rgba(20, 86, 132, 0.58));
+        border: 1px solid rgba(15, 84, 148, 0.45);
+        box-shadow: 0 12px 30px rgba(3, 25, 50, 0.35);
         color: #f3f7fb;
       }
       .footer__logo {
@@ -35,9 +35,9 @@
         height: auto;
         border-radius: 2.35rem;
         padding: 0.65rem 1.2rem;
-        background: linear-gradient(135deg, rgba(12, 60, 102, 0.92), rgba(40, 128, 170, 0.8));
-        border: 1px solid rgba(7, 47, 84, 0.35);
-        box-shadow: 0 8px 18px rgba(8, 49, 89, 0.28);
+        background: linear-gradient(135deg, rgba(4, 35, 68, 0.95), rgba(23, 92, 143, 0.82));
+        border: 1px solid rgba(16, 86, 150, 0.42);
+        box-shadow: 0 9px 22px rgba(3, 25, 50, 0.35);
       }
       .footer__brand h2 {
         margin: 0 0 0.5rem;
@@ -91,8 +91,8 @@
         padding: 0.85rem 1rem;
         border-radius: 1rem;
         text-decoration: none;
-        background: rgba(8, 52, 95, 0.35);
-        color: rgba(228, 241, 255, 0.92);
+        background: rgba(5, 37, 70, 0.48);
+        color: rgba(236, 244, 255, 0.94);
         font-weight: 600;
         transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
       }
@@ -101,7 +101,7 @@
         height: 28px;
       }
       .footer__social-link:hover {
-        background: linear-gradient(135deg, rgba(12, 64, 112, 0.92), rgba(40, 128, 170, 0.88));
+        background: linear-gradient(135deg, rgba(9, 57, 103, 0.95), rgba(27, 128, 162, 0.92));
         color: #ffffff;
         transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(15, 76, 129, 0.22);
