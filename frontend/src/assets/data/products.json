@@ -1,134 +1,151 @@
 [
   {
-    "reference": "ST-2101",
-    "name": "Suelas deportivas NeoFlex",
-    "description": "Diseñadas para máximo rendimiento y comodidad. Ideales para calzado deportivo con tecnología de absorción de impacto.",
-    "price": 22.5,
+    "reference": "ST-THOMAS-34",
+    "name": "Suela Thomas Bicolor",
+    "description": "Material Expanson X PVC de alto agarre. Numeración unisex 34 al 42.",
+    "price": 24.9,
     "currency": "USD",
-    "stock": 340,
-    "colors": ["Negro", "Gris", "Blanco"],
+    "stock": 320,
+    "colors": [
+      "Martil Crepe",
+      "Martil Negro",
+      "Negro Crepe"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1588361861040-71661c59b296?auto=format&fit=crop&w=900&q=80"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Thomas%20Bicolor%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Thomas%20Bicolor%20referencia%20ST-THOMAS-34.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%230f4c81%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%231d7ec7%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Thomas%20Bicolor%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-THOMAS-34%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
   },
   {
-    "reference": "ST-3104",
-    "name": "Suelas casual UrbanGrip",
-    "description": "Perfectas para uso diario urbano. Diseño versátil con excelente tracción y durabilidad para calzado casual.",
-    "price": 18.75,
-    "currency": "USD",
-    "stock": 120,
-    "colors": ["Caramelo", "Negro"],
-    "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-5110",
-    "name": "Suelas sandalia Breeze",
-    "description": "Livianas y cómodas para sandalias de verano. Material flexible con excelente ventilación y confort.",
-    "price": 11.4,
-    "currency": "USD",
-    "stock": 620,
-    "colors": ["Arena", "Azul"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-7202",
-    "name": "Suelas seguridad SteelPro",
-    "description": "Máxima protección para calzado industrial. Resistente a aceites, antideslizante y con refuerzo de acero.",
-    "price": 31.8,
-    "currency": "USD",
-    "stock": 45,
-    "colors": ["Negro", "Amarillo"],
-    "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-4305",
-    "name": "Suelas running ProRunner",
-    "description": "Especialmente diseñadas para corredores profesionales. Máxima amortiguación y retorno de energía.",
-    "price": 28.9,
-    "currency": "USD",
-    "stock": 280,
-    "colors": ["Negro", "Azul", "Rojo"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-6120",
-    "name": "Suelas botas montaña TrekMax",
-    "description": "Resistentes y duraderas para terrenos difíciles. Excelente agarre en superficies húmedas y rocosas.",
-    "price": 35.2,
-    "currency": "USD",
-    "stock": 195,
-    "colors": ["Marrón", "Negro", "Verde"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-8410",
-    "name": "Suelas niños KidSafe",
-    "description": "Diseñadas especialmente para calzado infantil. Antideslizantes y con soporte para el desarrollo del pie.",
-    "price": 15.6,
-    "currency": "USD",
-    "stock": 450,
-    "colors": ["Rosa", "Azul", "Verde", "Amarillo"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-9205",
-    "name": "Suelas formal ElegantPro",
-    "description": "Elegantes y discretas para calzado de vestir. Diseño fino con excelente agarre y confort para uso prolongado.",
-    "price": 24.3,
-    "currency": "USD",
-    "stock": 165,
-    "colors": ["Negro", "Café", "Gris"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-1015",
-    "name": "Suelas ortopédicas ComfortCare",
-    "description": "Con soporte anatómico para problemas plantares. Recomendadas por podólogos para calzado correctivo.",
-    "price": 42.5,
-    "currency": "USD",
-    "stock": 85,
-    "colors": ["Beige", "Negro"],
-    "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1603787081207-362bcef7f5ad?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-2830",
-    "name": "Suelas basketball CourtGrip",
-    "description": "Diseño especial para canchas de baloncesto. Máximo agarre y durabilidad para movimientos laterales.",
-    "price": 32.8,
-    "currency": "USD",
-    "stock": 220,
-    "colors": ["Negro", "Blanco", "Rojo"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-3645",
-    "name": "Suelas eco-friendly GreenStep",
-    "description": "Fabricadas con materiales reciclados y biodegradables. Mismo rendimiento con conciencia ambiental.",
+    "reference": "ST-LEBRON-43",
+    "name": "Suela Lebron Bicolor",
+    "description": "Material Expanson X PVC para alto rendimiento. Numeración unisex 34 al 43.",
     "price": 26.4,
     "currency": "USD",
-    "stock": 310,
-    "colors": ["Verde", "Marrón", "Gris"],
+    "stock": 210,
+    "colors": [
+      "Blanco Negro",
+      "Blanco Cristal",
+      "Negro Negro"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=900&q=80"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Lebron%20Bicolor%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Lebron%20Bicolor%20referencia%20ST-LEBRON-43.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%231d7ec7%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%2335c7be%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Lebron%20Bicolor%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-LEBRON-43%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
   },
   {
-    "reference": "ST-5525",
-    "name": "Suelas fútbol SpeedKick",
-    "description": "Optimizadas para césped natural y sintético. Configuración de tacos intercambiables para mejor tracción.",
-    "price": 29.7,
+    "reference": "ST-RENAW-42",
+    "name": "Suela Renaw",
+    "description": "Material Expanson ultra liviano con soporte anatómico. Numeración unisex 34 al 42.",
+    "price": 28.7,
     "currency": "USD",
-    "stock": 75,
-    "colors": ["Negro", "Naranja"],
+    "stock": 180,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Renaw%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Renaw%20referencia%20ST-RENAW-42.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23234b6e%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%233a81bf%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Renaw%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-RENAW-42%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+  },
+  {
+    "reference": "ST-YERRY-40",
+    "name": "Suela Yerry",
+    "description": "Material Expanson ultra liviano ideal para dama. Numeración 34 al 40.",
+    "price": 27.5,
+    "currency": "USD",
+    "stock": 150,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Yerry%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Yerry%20referencia%20ST-YERRY-40.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%230f4c81%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%2335c7be%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Yerry%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-YERRY-40%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+  },
+  {
+    "reference": "ST-OMEGA-42",
+    "name": "Suela Omega",
+    "description": "Material Expanson ultra liviano con alta resiliencia. Numeración unisex 33 al 42.",
+    "price": 29.9,
+    "currency": "USD",
+    "stock": 200,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Omega%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Omega%20referencia%20ST-OMEGA-42.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%231d7ec7%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%230f4c81%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Omega%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-OMEGA-42%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+  },
+  {
+    "reference": "ST-ULTRON4K-42",
+    "name": "Suela Ultron 4K",
+    "description": "Material Expanson ultra liviano con tacos robustos. Numeración unisex 34 al 42.",
+    "price": 31.5,
+    "currency": "USD",
+    "stock": 130,
+    "colors": [
+      "Blanco",
+      "Marfil",
+      "Negro"
+    ],
     "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?auto=format&fit=crop&w=900&q=80"
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Ultron%204K%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Ultron%204K%20referencia%20ST-ULTRON4K-42.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2335c7be%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%231d7ec7%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Ultron%204K%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-ULTRON4K-42%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+  },
+  {
+    "reference": "ST-BALEN-40",
+    "name": "Suela Balen",
+    "description": "Material Expanson ultra liviano para dama. Numeración 34 al 40.",
+    "price": 30.1,
+    "currency": "USD",
+    "stock": 160,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Balen%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Balen%20referencia%20ST-BALEN-40.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%230f4c81%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23182f48%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Balen%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-BALEN-40%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+  },
+  {
+    "reference": "ST-AXXUS-40",
+    "name": "Suela Axxus",
+    "description": "Material Expanson ultra liviano con diseño angular. Numeración dama 34 al 40.",
+    "price": 28.1,
+    "currency": "USD",
+    "stock": 170,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Axxus%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Axxus%20referencia%20ST-AXXUS-40.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%233a81bf%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%231d7ec7%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Axxus%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-AXXUS-40%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+  },
+  {
+    "reference": "ST-ZOOM-42",
+    "name": "Suela Zoom",
+    "description": "Material Expanson ultra liviano con flexión dinámica. Numeración unisex 34 al 42.",
+    "price": 27.9,
+    "currency": "USD",
+    "stock": 190,
+    "colors": [
+      "Negro",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Zoom%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Zoom%20referencia%20ST-ZOOM-42.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23234b6e%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%2335c7be%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Zoom%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-ZOOM-42%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+  },
+  {
+    "reference": "ST-JOSS-42",
+    "name": "Suela Joss",
+    "description": "Material Expanson ultra liviano de alto confort. Numeración dama 37 al 42.",
+    "price": 26.8,
+    "currency": "USD",
+    "stock": 220,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Bajo inventario",
+    "image": "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20640%20480%27%20role%3D%27img%27%20aria-labelledby%3D%27title%20desc%27%3E%3Ctitle%3ESuela%20Joss%3C%2Ftitle%3E%3Cdesc%3EIlustraci%C3%B3n%20representativa%20para%20Suela%20Joss%20referencia%20ST-JOSS-42.%3C%2Fdesc%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%230f4c81%27%2F%3E%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%2335c7be%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%27640%27%20height%3D%27480%27%20fill%3D%27url%28%23g%29%27%20rx%3D%2748%27%2F%3E%3Cg%20fill%3D%27rgba%28255%2C255%2C255%2C0.82%29%27%20font-family%3D%27Montserrat%2CArial%2Csans-serif%27%20text-anchor%3D%27middle%27%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2745%25%27%20font-size%3D%2742%27%20font-weight%3D%27600%27%3ESuela%20Joss%3C%2Ftext%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2760%25%27%20font-size%3D%2728%27%3ERef.%20ST-JOSS-42%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"
   }
 ]
