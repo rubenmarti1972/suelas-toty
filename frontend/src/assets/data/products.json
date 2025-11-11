@@ -5,29 +5,60 @@
     "description": "Material Expanson X PVC de alto agarre. Numeración unisex 34 al 42.",
     "price": 24.9,
     "currency": "USD",
-    "stock": 320,
+    "stock": 340,
     "colors": [
-      "Martil Crepe",
-      "Martil Negro",
-      "Negro Crepe"
+      "Negro",
+      "Gris",
+      "Blanco"
     ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1528701800489-20be3c02bab4?auto=format&fit=crop&w=640&q=80"
+    "image": "assets/images/products/catalog/st-2101.svg",
+    "originalImage": "assets/images/products/originals/st-2101.svg"
   },
   {
-    "reference": "ST-LEBRON-43",
-    "name": "Suela Lebron Bicolor",
-    "description": "Material Expanson X PVC para alto rendimiento. Numeración unisex 34 al 43.",
-    "price": 26.4,
+    "reference": "ST-3104",
+    "name": "Suelas casual UrbanGrip",
+    "description": "Perfectas para uso diario urbano. Diseño versátil con excelente tracción y durabilidad para calzado casual.",
+    "price": 18.75,
     "currency": "USD",
-    "stock": 210,
+    "stock": 120,
     "colors": [
-      "Blanco Negro",
-      "Blanco Cristal",
-      "Negro Negro"
+      "Caramelo",
+      "Negro"
+    ],
+    "status": "Bajo inventario",
+    "image": "assets/images/products/catalog/st-3104.svg",
+    "originalImage": "assets/images/products/originals/st-3104.svg"
+  },
+  {
+    "reference": "ST-5110",
+    "name": "Suelas sandalia Breeze",
+    "description": "Livianas y cómodas para sandalias de verano. Material flexible con excelente ventilación y confort.",
+    "price": 11.4,
+    "currency": "USD",
+    "stock": 620,
+    "colors": [
+      "Arena",
+      "Azul"
     ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1517949908114-720226b55b6c?auto=format&fit=crop&w=640&q=80"
+    "image": "assets/images/products/catalog/st-5110.svg",
+    "originalImage": "assets/images/products/originals/st-5110.svg"
+  },
+  {
+    "reference": "ST-7202",
+    "name": "Suelas seguridad SteelPro",
+    "description": "Máxima protección para calzado industrial. Resistente a aceites, antideslizante y con refuerzo de acero.",
+    "price": 31.8,
+    "currency": "USD",
+    "stock": 45,
+    "colors": [
+      "Negro",
+      "Amarillo"
+    ],
+    "status": "Producción programada",
+    "image": "assets/images/products/catalog/st-7202.svg",
+    "originalImage": "assets/images/products/originals/st-7202.svg"
   },
   {
     "reference": "ST-RENAW-42",
@@ -35,14 +66,15 @@
     "description": "Material Expanson ultra liviano con soporte anatómico. Numeración unisex 34 al 42.",
     "price": 28.7,
     "currency": "USD",
-    "stock": 180,
+    "stock": 280,
     "colors": [
       "Negro",
-      "Marfil",
-      "Blanco"
+      "Azul",
+      "Rojo"
     ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1588361861040-716e1c7e37d6?auto=format&fit=crop&w=640&q=80"
+    "image": "assets/images/products/catalog/st-4305.svg",
+    "originalImage": "assets/images/products/originals/st-4305.svg"
   },
   {
     "reference": "ST-YERRY-40",
@@ -50,14 +82,15 @@
     "description": "Material Expanson ultra liviano ideal para dama. Numeración 34 al 40.",
     "price": 27.5,
     "currency": "USD",
-    "stock": 150,
+    "stock": 195,
     "colors": [
+      "Marrón",
       "Negro",
-      "Marfil",
-      "Blanco"
+      "Verde"
     ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=640&q=80"
+    "image": "assets/images/products/catalog/st-6120.svg",
+    "originalImage": "assets/images/products/originals/st-6120.svg"
   },
   {
     "reference": "ST-OMEGA-42",
@@ -65,14 +98,16 @@
     "description": "Material Expanson ultra liviano con alta resiliencia. Numeración unisex 33 al 42.",
     "price": 29.9,
     "currency": "USD",
-    "stock": 200,
+    "stock": 450,
     "colors": [
-      "Negro",
-      "Marfil",
-      "Blanco"
+      "Rosa",
+      "Azul",
+      "Verde",
+      "Amarillo"
     ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=640&q=80"
+    "image": "assets/images/products/catalog/st-8410.svg",
+    "originalImage": "assets/images/products/originals/st-8410.svg"
   },
   {
     "reference": "ST-ULTRON4K-42",
@@ -80,14 +115,15 @@
     "description": "Material Expanson ultra liviano con tacos robustos. Numeración unisex 34 al 42.",
     "price": 31.5,
     "currency": "USD",
-    "stock": 130,
+    "stock": 165,
     "colors": [
-      "Blanco",
-      "Marfil",
-      "Negro"
+      "Negro",
+      "Café",
+      "Gris"
     ],
-    "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=640&q=80"
+    "status": "Disponible",
+    "image": "assets/images/products/catalog/st-9205.svg",
+    "originalImage": "assets/images/products/originals/st-9205.svg"
   },
   {
     "reference": "ST-BALEN-40",
@@ -95,14 +131,14 @@
     "description": "Material Expanson ultra liviano para dama. Numeración 34 al 40.",
     "price": 30.1,
     "currency": "USD",
-    "stock": 160,
+    "stock": 85,
     "colors": [
-      "Negro",
-      "Marfil",
-      "Blanco"
+      "Beige",
+      "Negro"
     ],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=640&q=80"
+    "status": "Bajo inventario",
+    "image": "assets/images/products/catalog/st-1015.svg",
+    "originalImage": "assets/images/products/originals/st-1015.svg"
   },
   {
     "reference": "ST-AXXUS-40",
@@ -110,14 +146,15 @@
     "description": "Material Expanson ultra liviano con diseño angular. Numeración dama 34 al 40.",
     "price": 28.1,
     "currency": "USD",
-    "stock": 170,
+    "stock": 220,
     "colors": [
       "Negro",
-      "Marfil",
-      "Blanco"
+      "Blanco",
+      "Rojo"
     ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=640&q=80"
+    "image": "assets/images/products/catalog/st-2830.svg",
+    "originalImage": "assets/images/products/originals/st-2830.svg"
   },
   {
     "reference": "ST-ZOOM-42",
@@ -125,13 +162,15 @@
     "description": "Material Expanson ultra liviano con flexión dinámica. Numeración unisex 34 al 42.",
     "price": 27.9,
     "currency": "USD",
-    "stock": 190,
+    "stock": 310,
     "colors": [
-      "Negro",
-      "Blanco"
+      "Verde",
+      "Marrón",
+      "Gris"
     ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1520256862855-398228c41684?auto=format&fit=crop&w=640&q=80"
+    "image": "assets/images/products/catalog/st-3645.svg",
+    "originalImage": "assets/images/products/originals/st-3645.svg"
   },
   {
     "reference": "ST-JOSS-42",
@@ -139,13 +178,13 @@
     "description": "Material Expanson ultra liviano de alto confort. Numeración dama 37 al 42.",
     "price": 26.8,
     "currency": "USD",
-    "stock": 220,
+    "stock": 75,
     "colors": [
       "Negro",
-      "Marfil",
-      "Blanco"
+      "Naranja"
     ],
-    "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=640&q=80"
+    "status": "Producción programada",
+    "image": "assets/images/products/catalog/st-5525.svg",
+    "originalImage": "assets/images/products/originals/st-5525.svg"
   }
 ]

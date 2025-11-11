@@ -117,9 +117,9 @@
 }
 .product-card__media img {
   display: block;
-  max-width: 92%;
-  height: auto;
-  max-height: 220px;                 /* límite duro de altura */
+  inline-size: min(92%, 360px);
+  block-size: auto;
+  max-block-size: 220px;             /* límite duro de altura */
   object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 14px 28px rgba(15, 76, 129, 0.22));
@@ -331,17 +331,6 @@
   justify-items: center;
   width: 100%;
   padding-top: 0.25rem;
-}
-
-@media (min-width: 768px) {
-  .product-card__actions {
-    flex-direction: row;
-  }
-
-  .product-card__action,
-  .product-card__ghost {
-    flex: 1 1 0;
-  }
 }
 
 /* CTA principal - Agregar al carrito */

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='640' height='480' viewBox='0 0 640 480'>
+  <defs>
+    <linearGradient id='grad-ST-2830' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#17BECF'/>
+      <stop offset='100%' stop-color='#3FCFE0'/>
+    </linearGradient>
+    <filter id='shadow' x='-20%' y='-20%' width='140%' height='140%'>
+      <feDropShadow dx='0' dy='12' stdDeviation='20' flood-color='#000000' flood-opacity='0.25'/>
+    </filter>
+  </defs>
+  <rect width='640' height='480' fill='url(#grad-ST-2830)' rx='25'/>
+  <g transform='translate(51.20,96.00)'>
+    <path d='M0,144.00 Q192.00,0 384.00,96.00 T588.80,86.40 L499.20,220.80 Q294.40,288.00 76.80,249.60 Z' fill='rgba(255,255,255,0.35)' filter='url(#shadow)'/>
+    <path d='M38.40,216.00 Q204.80,120.00 422.40,153.60 T563.20,134.40 Q524.80,249.60 307.20,297.60 T25.60,278.40 Z' fill='rgba(255,255,255,0.55)'/>
+  </g>
+  <text x='320.00' y='374.40' fill='#ffffff' font-family='"Montserrat", sans-serif' font-size='57' text-anchor='middle' font-weight='600'>AeroSoft</text>
+  <text x='320.00' y='432.00' fill='#ffffff' font-family='"Montserrat", sans-serif' font-size='38' text-anchor='middle' font-weight='400'>ST-2830</text>
+</svg>
