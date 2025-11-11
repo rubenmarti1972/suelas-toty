@@ -81,8 +81,10 @@
     @for (product of featuredProducts(); track product.reference) {
       <article class="product-card">
         <div class="product-info">
-          <span class="product-category">{{ product.category }}</span>
-          <h3>{{ product.name }}</h3>
+          <div class="product-header">
+            <span class="product-category">{{ product.category }}</span>
+            <h3>{{ product.name }}</h3>
+          </div>
           <div class="product-image">
             <img [src]="product.image" [alt]="product.name" />
             <span class="product-badge" [class.low-stock]="product.status.includes('Bajo')">
