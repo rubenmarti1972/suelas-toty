@@ -2,12 +2,12 @@
   display: block;
 }
 
-/* Fondo un poco más claro, dentro de la paleta */
+/* Header con gradiente más claro en la izquierda */
 .header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: linear-gradient(130deg, #1a507f 0%, #165b8c 45%, #1b6aa3 100%);
+  background: linear-gradient(90deg, #4a8ec2 0%, #2678b5 50%, #1b6aa3 100%);
   color: #f4faff;
   border-bottom: 1px solid rgba(33, 110, 160, 0.45);
   box-shadow: 0 12px 28px rgba(3, 18, 36, 0.55);
@@ -24,40 +24,39 @@
   padding: 0.9rem 0;
 }
 
-/* Marca con ligero realce */
+/* Marca sin card */
 .header__brand {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
   text-decoration: none;
-  padding: 0.7rem 1.15rem;
-  border-radius: 1.35rem;
-  background: linear-gradient(140deg, rgba(18, 96, 152, 0.88), rgba(20, 122, 172, 0.94));
-  border: 1px solid rgba(53, 199, 190, 0.32);
-  box-shadow: 0 10px 26px rgba(2, 18, 36, 0.5);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transition: opacity 0.2s ease;
   color: inherit;
 }
 
 .header__brand:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 32px rgba(2, 18, 36, 0.6);
+  opacity: 0.9;
 }
 
-/* Logo más grande */
+/* Logo sin wrap/card */
 .header__logo-wrap {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.45rem 0.8rem; /* un poco más de aire */
-  border-radius: 1.1rem;
-  background: linear-gradient(140deg, rgba(53, 199, 190, 0.36), rgba(18, 96, 152, 0.38));
-  border: 1px solid rgba(53, 199, 190, 0.45);
-  box-shadow: 0 12px 26px rgba(2, 18, 36, 0.55);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .header__brand:hover .header__logo-wrap {
-  box-shadow: 0 16px 32px rgba(2, 18, 36, 0.65);
+  box-shadow: none;
 }
 
 .header__logo {
