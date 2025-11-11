@@ -1,0 +1,38 @@
+.company-info-card {
+  background: linear-gradient(145deg, rgba(15, 76, 129, 0.92), rgba(24, 116, 134, 0.82));
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 16px 32px rgba(12, 47, 98, 0.22);
+  padding: 1.75rem;
+  color: #f4fbff;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.company-info-card h3 {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.company-info-card p {
+  margin: 0;
+  color: rgba(236, 248, 255, 0.88);
+  line-height: 1.7;
+}
+
+.company-info-card--compact {
+  text-align: center;
+  padding: 1.5rem 1.75rem;
+  max-width: 340px;
+  margin-inline: auto;
+}
+
+.company-info-card--compact h3 {
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+}
+
+.company-info-card--compact p {
+  font-size: 0.95rem;
+}

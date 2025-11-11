@@ -1,0 +1,61 @@
+<section class="about-hero">
+  <div class="about-hero__content">
+    <p class="about-hero__eyebrow">Quiénes somos</p>
+    <h1>Innovación, tecnología y confianza en cada suela</h1>
+    <p>
+      Somos una empresa colombiana comprometida con el desarrollo sostenible del sector calzado.
+      Nuestra experiencia industrial se combina con un equipo humano que entiende las necesidades de cada colección.
+    </p>
+  </div>
+  <div class="about-hero__card company-info-card">
+    <h3>Nuestro compromiso</h3>
+    <p>
+      Trabajamos junto a fabricantes para crear soluciones duraderas, eficientes y responsables.
+      Cada proyecto integra calidad certificada, procesos limpios y equipos con visión de futuro.
+    </p>
+  </div>
+</section>
+
+<section class="about-section">
+  <header class="section-heading">
+    <p class="section-heading__eyebrow">Nuestro compromiso</p>
+    <h2>Objetivos que guían cada colección</h2>
+  </header>
+  <ul class="objective__list">
+    @for (bullet of objectives; track bullet) {
+      <li>
+        <span class="objective__marker" aria-hidden="true"></span>
+        <p>{{ bullet }}</p>
+      </li>
+    }
+  </ul>
+</section>
+
+<section class="about-section purpose" aria-label="Propósito corporativo">
+  <article class="purpose__card company-info-card company-info-card--compact">
+    <h3>Misión</h3>
+    <p>{{ mission }}</p>
+  </article>
+  <article class="purpose__card company-info-card company-info-card--compact">
+    <h3>Visión</h3>
+    <p>{{ vision }}</p>
+  </article>
+</section>
+
+<section class="about-section values" aria-labelledby="about-values-heading">
+  <header class="section-heading section-heading--center">
+    <p class="section-heading__eyebrow">Valores</p>
+    <h2 id="about-values-heading">Principios que nos definen</h2>
+    <p class="section-heading__description">
+      Una cultura enfocada en la calidad y en relaciones duraderas con clientes, colaboradores y aliados.
+    </p>
+  </header>
+  <div class="values__grid">
+    @for (value of values; track value.title) {
+      <article class="values__card company-info-card">
+        <h3>{{ value.title }}</h3>
+        <p>{{ value.description }}</p>
+      </article>
+    }
+  </div>
+</section>
