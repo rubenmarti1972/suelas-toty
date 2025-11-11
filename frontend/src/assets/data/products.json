@@ -1,9 +1,9 @@
 [
   {
-    "reference": "ST-2101",
-    "name": "Suelas deportivas NeoFlex",
-    "description": "Diseñadas para máximo rendimiento y comodidad. Ideales para calzado deportivo con tecnología de absorción de impacto.",
-    "price": 22.5,
+    "reference": "ST-THOMAS-34",
+    "name": "Suela Thomas Bicolor",
+    "description": "Material Expanson X PVC de alto agarre. Numeración unisex 34 al 42.",
+    "price": 24.9,
     "currency": "USD",
     "stock": 340,
     "colors": [
@@ -61,10 +61,10 @@
     "originalImage": "assets/images/products/originals/st-7202.svg"
   },
   {
-    "reference": "ST-4305",
-    "name": "Suelas running ProRunner",
-    "description": "Especialmente diseñadas para corredores profesionales. Máxima amortiguación y retorno de energía.",
-    "price": 28.9,
+    "reference": "ST-RENAW-42",
+    "name": "Suela Renaw",
+    "description": "Material Expanson ultra liviano con soporte anatómico. Numeración unisex 34 al 42.",
+    "price": 28.7,
     "currency": "USD",
     "stock": 280,
     "colors": [
@@ -77,10 +77,10 @@
     "originalImage": "assets/images/products/originals/st-4305.svg"
   },
   {
-    "reference": "ST-6120",
-    "name": "Suelas botas montaña TrekMax",
-    "description": "Resistentes y duraderas para terrenos difíciles. Excelente agarre en superficies húmedas y rocosas.",
-    "price": 35.2,
+    "reference": "ST-YERRY-40",
+    "name": "Suela Yerry",
+    "description": "Material Expanson ultra liviano ideal para dama. Numeración 34 al 40.",
+    "price": 27.5,
     "currency": "USD",
     "stock": 195,
     "colors": [
@@ -93,10 +93,10 @@
     "originalImage": "assets/images/products/originals/st-6120.svg"
   },
   {
-    "reference": "ST-8410",
-    "name": "Suelas niños KidSafe",
-    "description": "Diseñadas especialmente para calzado infantil. Antideslizantes y con soporte para el desarrollo del pie.",
-    "price": 15.6,
+    "reference": "ST-OMEGA-42",
+    "name": "Suela Omega",
+    "description": "Material Expanson ultra liviano con alta resiliencia. Numeración unisex 33 al 42.",
+    "price": 29.9,
     "currency": "USD",
     "stock": 450,
     "colors": [
@@ -110,10 +110,10 @@
     "originalImage": "assets/images/products/originals/st-8410.svg"
   },
   {
-    "reference": "ST-9205",
-    "name": "Suelas formal ElegantPro",
-    "description": "Elegantes y discretas para calzado de vestir. Diseño fino con excelente agarre y confort para uso prolongado.",
-    "price": 24.3,
+    "reference": "ST-ULTRON4K-42",
+    "name": "Suela Ultron 4K",
+    "description": "Material Expanson ultra liviano con tacos robustos. Numeración unisex 34 al 42.",
+    "price": 31.5,
     "currency": "USD",
     "stock": 165,
     "colors": [
@@ -126,10 +126,10 @@
     "originalImage": "assets/images/products/originals/st-9205.svg"
   },
   {
-    "reference": "ST-1015",
-    "name": "Suelas ortopédicas ComfortCare",
-    "description": "Con soporte anatómico para problemas plantares. Recomendadas por podólogos para calzado correctivo.",
-    "price": 42.5,
+    "reference": "ST-BALEN-40",
+    "name": "Suela Balen",
+    "description": "Material Expanson ultra liviano para dama. Numeración 34 al 40.",
+    "price": 30.1,
     "currency": "USD",
     "stock": 85,
     "colors": [
@@ -141,10 +141,10 @@
     "originalImage": "assets/images/products/originals/st-1015.svg"
   },
   {
-    "reference": "ST-2830",
-    "name": "Suelas basketball CourtGrip",
-    "description": "Diseño especial para canchas de baloncesto. Máximo agarre y durabilidad para movimientos laterales.",
-    "price": 32.8,
+    "reference": "ST-AXXUS-40",
+    "name": "Suela Axxus",
+    "description": "Material Expanson ultra liviano con diseño angular. Numeración dama 34 al 40.",
+    "price": 28.1,
     "currency": "USD",
     "stock": 220,
     "colors": [
@@ -157,10 +157,10 @@
     "originalImage": "assets/images/products/originals/st-2830.svg"
   },
   {
-    "reference": "ST-3645",
-    "name": "Suelas eco-friendly GreenStep",
-    "description": "Fabricadas con materiales reciclados y biodegradables. Mismo rendimiento con conciencia ambiental.",
-    "price": 26.4,
+    "reference": "ST-ZOOM-42",
+    "name": "Suela Zoom",
+    "description": "Material Expanson ultra liviano con flexión dinámica. Numeración unisex 34 al 42.",
+    "price": 27.9,
     "currency": "USD",
     "stock": 310,
     "colors": [
@@ -173,10 +173,10 @@
     "originalImage": "assets/images/products/originals/st-3645.svg"
   },
   {
-    "reference": "ST-5525",
-    "name": "Suelas fútbol SpeedKick",
-    "description": "Optimizadas para césped natural y sintético. Configuración de tacos intercambiables para mejor tracción.",
-    "price": 29.7,
+    "reference": "ST-JOSS-42",
+    "name": "Suela Joss",
+    "description": "Material Expanson ultra liviano de alto confort. Numeración dama 37 al 42.",
+    "price": 26.8,
     "currency": "USD",
     "stock": 75,
     "colors": [
