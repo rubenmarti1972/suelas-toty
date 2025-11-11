@@ -329,12 +329,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  width: 100%;
 }
 
 /* CTA principal - Agregar al carrito */
 .product-card__action {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #ffffff;
@@ -344,12 +345,10 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(15, 76, 129, 0.2);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  text-align: center;
 }
 .product-card__action svg {
   margin-right: 0.5rem;
@@ -370,22 +369,20 @@
 /* Ghost - Solicitar muestra */
 .product-card__ghost {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1rem;
   border-radius: 999px;
-  border: 2px solid rgba(15, 76, 129, 0.35);
-  background: #ffffff;
+  border: 2px solid var(--color-primary);
+  background: var(--color-surface);
   color: var(--color-primary);
   font-weight: 600;
   font-size: 0.875rem;
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 2px 8px rgba(15, 76, 129, 0.1);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  text-align: center;
 }
 .product-card__ghost:hover {
   background: var(--color-surface-alt);
