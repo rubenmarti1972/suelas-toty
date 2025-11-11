@@ -21,17 +21,17 @@
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: clamp(0.75rem, 2.5vw, 1.5rem);
-  padding: clamp(0.35rem, 1.5vw, 0.65rem) 0;
+  padding: clamp(0.2rem, 1vw, 0.45rem) 0;
 }
 
 /* Marca sin card */
 .header__brand {
   display: inline-flex;
   align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  gap: 0.35rem;
   text-decoration: none;
-  padding: 0.25rem 0.5rem;
+  padding: 0.15rem 0.4rem;
   border-radius: 0;
   background: transparent;
   border: none;
@@ -62,26 +62,10 @@
 }
 
 .header__logo {
-  height: clamp(85px, 11vw, 140px);
+  height: clamp(60px, 8vw, 110px);
   width: auto;
   display: block;
   filter: drop-shadow(0 4px 12px rgba(3, 18, 36, 0.5)) brightness(1.05) contrast(1.05);
-}
-
-/* Identidad */
-.header__identity {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header__tagline {
-  margin: 0;
-  font-weight: 700;
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 /* Nav */
@@ -100,7 +84,7 @@
   justify-content: center;
   text-decoration: none;
   font-weight: 600;
-  padding: 0.55rem 1.15rem;
+  padding: 0.45rem 1.05rem;
   border-radius: 0.85rem;
   color: rgba(235, 245, 255, 0.94);
   background: linear-gradient(135deg, rgba(15, 76, 129, 0.72), rgba(93, 122, 166, 0.62));
@@ -129,7 +113,7 @@
 .header__cta {
   text-decoration: none;
   font-weight: 700;
-  padding: 0.65rem 1.6rem;
+  padding: 0.55rem 1.5rem;
   border-radius: 0.95rem;
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
   color: #ffffff; /* antes: #02111f */
@@ -148,7 +132,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.55rem 1.05rem;
+  padding: 0.5rem 0.95rem;
   border-radius: 0.95rem;
   border: 1px solid rgba(53, 199, 190, 0.32);
   background: linear-gradient(140deg, rgba(3, 30, 54, 0.9), rgba(9, 64, 98, 0.92));
@@ -215,10 +199,9 @@
   .header__cta, .header__cart { width: 100%; justify-content: center; }
 
   /* Logo un poco más contenido en móviles para no desbordar */
-  .header__logo { height: clamp(100px, 15vw, 140px); }
+  .header__logo { height: clamp(70px, 14vw, 100px); }
 }
 
-/* Logo aún mayor en pantallas grandes */
 @media (min-width: 1200px) {
-  .header__logo { height: clamp(180px, 20vw, 260px); }
+  .header__logo { height: clamp(90px, 7vw, 130px); }
 }
