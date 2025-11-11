@@ -20,23 +20,25 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: clamp(1rem, 3vw, 1.75rem);
-  padding: 0.9rem 0;
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  padding: clamp(0.35rem, 1.5vw, 0.65rem) 0;
 }
 
 /* Marca sin card */
 .header__brand {
   display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0;
   background: transparent;
   border: none;
   box-shadow: none;
   transition: opacity 0.2s ease;
   color: inherit;
+  text-align: center;
 }
 
 .header__brand:hover {
@@ -60,33 +62,26 @@
 }
 
 .header__logo {
-  height: clamp(140px, 18vw, 220px); /* Logo grande en header */
+  height: clamp(85px, 11vw, 140px);
   width: auto;
   display: block;
-  filter: drop-shadow(0 4px 12px rgba(3, 18, 36, 0.5)) brightness(1.1) contrast(1.05);
+  filter: drop-shadow(0 4px 12px rgba(3, 18, 36, 0.5)) brightness(1.05) contrast(1.05);
 }
 
 /* Identidad */
 .header__identity {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  align-items: center;
 }
 
-.header__name {
+.header__tagline {
   margin: 0;
   font-weight: 700;
-  font-size: 1.55rem;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-
-.header__slogan {
-  margin: 0;
-  font-size: 0.8rem;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: rgba(214, 234, 248, 0.78);
+  color: #ffffff;
 }
 
 /* Nav */
