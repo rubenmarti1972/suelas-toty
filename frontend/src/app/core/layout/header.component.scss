@@ -61,7 +61,7 @@
 }
 
 .header__logo {
-  height: 48px;           /* ↑ antes: 38px */
+  height: clamp(140px, 18vw, 220px); /* Logo grande en header */
   width: auto;
   display: block;
   filter: drop-shadow(0 4px 12px rgba(3, 18, 36, 0.5)) brightness(1.1) contrast(1.05);
@@ -221,10 +221,10 @@
   .header__cta, .header__cart { width: 100%; justify-content: center; }
 
   /* Logo un poco más contenido en móviles para no desbordar */
-  .header__logo { height: 44px; }
+  .header__logo { height: clamp(100px, 15vw, 140px); }
 }
 
 /* Logo aún mayor en pantallas grandes */
 @media (min-width: 1200px) {
-  .header__logo { height: 56px; }
+  .header__logo { height: clamp(180px, 20vw, 260px); }
 }

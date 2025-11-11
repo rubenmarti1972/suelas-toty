@@ -312,15 +312,18 @@
 
 /* CTA principal */
 .product-card__action {
-  flex: 1 1 180px;
-  padding: 0.85rem 1.4rem;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0.65rem 1rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: #ffffff;
   font-weight: 600;
+  font-size: 0.9rem;
   border: none;
+  cursor: pointer;
   transition: 0.25s ease;
-  box-shadow: 0 12px 26px rgba(15, 76, 129, 0.18);
+  box-shadow: 0 8px 18px rgba(15, 76, 129, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -339,15 +342,18 @@
 
 /* Ghost */
 .product-card__ghost {
-  flex: 1 1 180px;
-  padding: 0.85rem 1.4rem;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0.65rem 1rem;
   border-radius: 999px;
   border: 1px solid rgba(15, 76, 129, 0.22);
   background: var(--color-surface);
   color: #365f84;
   font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
   transition: 0.25s ease;
-  box-shadow: 0 6px 16px rgba(15, 76, 129, 0.12);
+  box-shadow: 0 4px 12px rgba(15, 76, 129, 0.12);
 }
 .product-card__ghost:hover {
   background: var(--color-surface-alt);
@@ -358,15 +364,18 @@
 
 /* Cotización (color distinto) */
 .product-card__action--quote {
-  flex: 1 1 180px;
-  padding: 0.85rem 1.4rem;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0.65rem 1rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--color-accent), #6ebe7a);
   color: #ffffff;
   font-weight: 600;
+  font-size: 0.9rem;
   border: none;
+  cursor: pointer;
   transition: 0.25s ease;
-  box-shadow: 0 10px 24px rgba(40, 120, 80, 0.25);
+  box-shadow: 0 8px 18px rgba(40, 120, 80, 0.25);
 }
 .product-card__action--quote:hover {
   transform: translateY(-2px);
