@@ -6,9 +6,14 @@
     "price": 22.5,
     "currency": "USD",
     "stock": 340,
-    "colors": ["Negro", "Gris", "Blanco"],
+    "colors": [
+      "Negro",
+      "Gris",
+      "Blanco"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1588361861040-71661c59b296?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-2101.svg",
+    "originalImage": "assets/images/products/originals/st-2101.svg"
   },
   {
     "reference": "ST-3104",
@@ -17,9 +22,13 @@
     "price": 18.75,
     "currency": "USD",
     "stock": 120,
-    "colors": ["Caramelo", "Negro"],
+    "colors": [
+      "Caramelo",
+      "Negro"
+    ],
     "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-3104.svg",
+    "originalImage": "assets/images/products/originals/st-3104.svg"
   },
   {
     "reference": "ST-5110",
@@ -28,9 +37,13 @@
     "price": 11.4,
     "currency": "USD",
     "stock": 620,
-    "colors": ["Arena", "Azul"],
+    "colors": [
+      "Arena",
+      "Azul"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-5110.svg",
+    "originalImage": "assets/images/products/originals/st-5110.svg"
   },
   {
     "reference": "ST-7202",
@@ -39,9 +52,13 @@
     "price": 31.8,
     "currency": "USD",
     "stock": 45,
-    "colors": ["Negro", "Amarillo"],
+    "colors": [
+      "Negro",
+      "Amarillo"
+    ],
     "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-7202.svg",
+    "originalImage": "assets/images/products/originals/st-7202.svg"
   },
   {
     "reference": "ST-4305",
@@ -50,9 +67,14 @@
     "price": 28.9,
     "currency": "USD",
     "stock": 280,
-    "colors": ["Negro", "Azul", "Rojo"],
+    "colors": [
+      "Negro",
+      "Azul",
+      "Rojo"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-4305.svg",
+    "originalImage": "assets/images/products/originals/st-4305.svg"
   },
   {
     "reference": "ST-6120",
@@ -61,9 +83,14 @@
     "price": 35.2,
     "currency": "USD",
     "stock": 195,
-    "colors": ["Marrón", "Negro", "Verde"],
+    "colors": [
+      "Marrón",
+      "Negro",
+      "Verde"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-6120.svg",
+    "originalImage": "assets/images/products/originals/st-6120.svg"
   },
   {
     "reference": "ST-8410",
@@ -72,9 +99,15 @@
     "price": 15.6,
     "currency": "USD",
     "stock": 450,
-    "colors": ["Rosa", "Azul", "Verde", "Amarillo"],
+    "colors": [
+      "Rosa",
+      "Azul",
+      "Verde",
+      "Amarillo"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-8410.svg",
+    "originalImage": "assets/images/products/originals/st-8410.svg"
   },
   {
     "reference": "ST-9205",
@@ -83,9 +116,14 @@
     "price": 24.3,
     "currency": "USD",
     "stock": 165,
-    "colors": ["Negro", "Café", "Gris"],
+    "colors": [
+      "Negro",
+      "Café",
+      "Gris"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-9205.svg",
+    "originalImage": "assets/images/products/originals/st-9205.svg"
   },
   {
     "reference": "ST-1015",
@@ -94,9 +132,13 @@
     "price": 42.5,
     "currency": "USD",
     "stock": 85,
-    "colors": ["Beige", "Negro"],
+    "colors": [
+      "Beige",
+      "Negro"
+    ],
     "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1603787081207-362bcef7f5ad?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-1015.svg",
+    "originalImage": "assets/images/products/originals/st-1015.svg"
   },
   {
     "reference": "ST-2830",
@@ -105,9 +147,14 @@
     "price": 32.8,
     "currency": "USD",
     "stock": 220,
-    "colors": ["Negro", "Blanco", "Rojo"],
+    "colors": [
+      "Negro",
+      "Blanco",
+      "Rojo"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-2830.svg",
+    "originalImage": "assets/images/products/originals/st-2830.svg"
   },
   {
     "reference": "ST-3645",
@@ -116,9 +163,14 @@
     "price": 26.4,
     "currency": "USD",
     "stock": 310,
-    "colors": ["Verde", "Marrón", "Gris"],
+    "colors": [
+      "Verde",
+      "Marrón",
+      "Gris"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-3645.svg",
+    "originalImage": "assets/images/products/originals/st-3645.svg"
   },
   {
     "reference": "ST-5525",
@@ -127,8 +179,12 @@
     "price": 29.7,
     "currency": "USD",
     "stock": 75,
-    "colors": ["Negro", "Naranja"],
+    "colors": [
+      "Negro",
+      "Naranja"
+    ],
     "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?auto=format&fit=crop&w=900&q=80"
+    "image": "assets/images/products/catalog/st-5525.svg",
+    "originalImage": "assets/images/products/originals/st-5525.svg"
   }
 ]
