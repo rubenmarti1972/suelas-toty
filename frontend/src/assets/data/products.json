@@ -12,8 +12,8 @@
       "Blanco"
     ],
     "status": "Disponible",
-    "image": "assets/images/products/catalog/st-2101.svg",
-    "originalImage": "assets/images/products/originals/st-2101.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-1.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-1.webp"
   },
   {
     "reference": "ST-3104",
@@ -27,8 +27,8 @@
       "Negro"
     ],
     "status": "Bajo inventario",
-    "image": "assets/images/products/catalog/st-3104.svg",
-    "originalImage": "assets/images/products/originals/st-3104.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-2.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-2.webp"
   },
   {
     "reference": "ST-5110",
@@ -42,8 +42,8 @@
       "Azul"
     ],
     "status": "Disponible",
-    "image": "assets/images/products/catalog/st-5110.svg",
-    "originalImage": "assets/images/products/originals/st-5110.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-3.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-3.webp"
   },
   {
     "reference": "ST-7202",
@@ -57,8 +57,8 @@
       "Amarillo"
     ],
     "status": "Producción programada",
-    "image": "assets/images/products/catalog/st-7202.svg",
-    "originalImage": "assets/images/products/originals/st-7202.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-4.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-4.webp"
   },
   {
     "reference": "ST-RENAW-42",
@@ -73,8 +73,8 @@
       "Rojo"
     ],
     "status": "Disponible",
-    "image": "assets/images/products/catalog/st-4305.svg",
-    "originalImage": "assets/images/products/originals/st-4305.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-5.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-5.webp"
   },
   {
     "reference": "ST-YERRY-40",
@@ -89,8 +89,8 @@
       "Verde"
     ],
     "status": "Disponible",
-    "image": "assets/images/products/catalog/st-6120.svg",
-    "originalImage": "assets/images/products/originals/st-6120.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-6.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-6.webp"
   },
   {
     "reference": "ST-OMEGA-42",
@@ -106,8 +106,8 @@
       "Amarillo"
     ],
     "status": "Disponible",
-    "image": "assets/images/products/catalog/st-8410.svg",
-    "originalImage": "assets/images/products/originals/st-8410.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-7.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-7.webp"
   },
   {
     "reference": "ST-ULTRON4K-42",
@@ -122,8 +122,8 @@
       "Gris"
     ],
     "status": "Disponible",
-    "image": "assets/images/products/catalog/st-9205.svg",
-    "originalImage": "assets/images/products/originals/st-9205.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-8.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-8.webp"
   },
   {
     "reference": "ST-BALEN-40",
@@ -137,8 +137,8 @@
       "Negro"
     ],
     "status": "Bajo inventario",
-    "image": "assets/images/products/catalog/st-1015.svg",
-    "originalImage": "assets/images/products/originals/st-1015.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-9.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-9.webp"
   },
   {
     "reference": "ST-AXXUS-40",
@@ -153,8 +153,8 @@
       "Rojo"
     ],
     "status": "Disponible",
-    "image": "assets/images/products/catalog/st-2830.svg",
-    "originalImage": "assets/images/products/originals/st-2830.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-10.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-10.webp"
   },
   {
     "reference": "ST-ZOOM-42",
@@ -184,7 +184,7 @@
       "Naranja"
     ],
     "status": "Producción programada",
-    "image": "assets/images/products/catalog/st-5525.svg",
-    "originalImage": "assets/images/products/originals/st-5525.svg"
+    "image": "assets/images/products/catalog/suela-coleccion-1.webp",
+    "originalImage": "assets/images/products/originals/suela-coleccion-1.webp"
   }
 ]
