@@ -80,15 +80,17 @@
   <div class="products-grid">
     @for (product of featuredProducts(); track product.reference) {
       <article class="product-card">
-        <div class="product-image">
-          <img [src]="product.image" [alt]="product.name" />
-          <span class="product-badge" [class.low-stock]="product.status.includes('Bajo')">
-            {{ product.status }}
-          </span>
-        </div>
         <div class="product-info">
-          <span class="product-category">{{ product.category }}</span>
-          <h3>{{ product.name }}</h3>
+          <div class="product-header">
+            <span class="product-category">{{ product.category }}</span>
+            <h3>{{ product.name }}</h3>
+          </div>
+          <div class="product-image">
+            <img [src]="product.image" [alt]="product.name" />
+            <span class="product-badge" [class.low-stock]="product.status.includes('Bajo')">
+              {{ product.status }}
+            </span>
+          </div>
           <p class="product-description">{{ product.description }}</p>
           <div class="product-colors">
             @for (color of product.colors.slice(0, 3); track color) {
@@ -127,11 +129,11 @@
 </section>
 
 <section class="purpose" aria-label="Propósito empresarial">
-  <article class="purpose__card">
+  <article class="purpose__card company-info-card company-info-card--compact">
     <h3>Misión</h3>
     <p>{{ mission }}</p>
   </article>
-  <article class="purpose__card">
+  <article class="purpose__card company-info-card company-info-card--compact">
     <h3>Visión</h3>
     <p>{{ vision }}</p>
   </article>
@@ -147,7 +149,7 @@
   </header>
   <div class="values__grid">
     @for (value of valuesDetailed; track value.title) {
-      <article class="values__card">
+      <article class="values__card company-info-card">
         <h3>{{ value.title }}</h3>
         <p>{{ value.description }}</p>
       </article>

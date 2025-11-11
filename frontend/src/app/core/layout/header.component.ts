@@ -23,9 +23,9 @@ export class HeaderComponent {
 
   protected readonly links: NavigationLink[] = [
     { label: 'Inicio', route: '/' },
-    { label: 'Quiénes somos', route: '/' },
     { label: 'Catálogo', route: '/productos' },
     { label: 'Servicio al cliente', route: '/servicio-al-cliente' },
+    { label: 'Quiénes somos', route: '/quienes-somos' },
     { label: 'Contacto', route: '/contacto' }
   ];
 
