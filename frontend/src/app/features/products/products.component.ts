@@ -65,8 +65,8 @@ interface Product {
               </div>
             </div>
             <div class="product-card__actions">
-              <button type="button" class="product-card__action">Solicitar muestra</button>
-              <button type="button" class="product-card__action--quote">Agregar a cotización</button>
+              <button type="button" class="product-card__action" (click)="addToCart(product)">Agregar al carrito</button>
+              <button type="button" class="product-card__ghost">Solicitar muestra</button>
             </div>
           </div>
         </article>
@@ -118,5 +118,22 @@ export class ProductsComponent {
       return '3-4 semanas';
     }
     return 'Despacho inmediato';
+  }
+
+  protected addToCart(product: Product): void {
+    const selectedColor = this.selectedColors().get(product.reference) || product.colors[0];
+    const quantity = this.quantities().get(product.reference) || 1;
+
+    this.cartService.addToCart(
+      {
+        reference: product.reference,
+        name: product.name,
+        price: product.price,
+        currency: product.currency,
+        image: product.image,
+        color: selectedColor
+      },
+      quantity
+    );
   }
 }

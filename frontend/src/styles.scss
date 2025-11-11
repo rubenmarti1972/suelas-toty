@@ -7,8 +7,8 @@
   --color-accent: #8fd694;
   --color-warning: #f4a024;
   --color-surface: #ffffff;
-  --color-surface-alt: #eef7ff;
-  --color-background: #dff1ff;
+  --color-surface-alt: #e3f2ff;
+  --color-background: #c5e3ff;
   --color-muted: #5d7aa6;
   --color-text: #184561;
 
@@ -27,7 +27,7 @@
   --color-overlay-medium: rgba(12, 47, 98, 0.75);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(180deg, rgba(223, 241, 255, 0.96) 0%, rgba(236, 248, 255, 0.96) 55%, #ffffff 100%);
+  --gradient-primary: linear-gradient(180deg, rgba(197, 227, 255, 0.92) 0%, rgba(227, 242, 255, 0.94) 55%, rgba(240, 248, 255, 0.96) 100%);
   --gradient-accent: linear-gradient(135deg, var(--color-accent), #ffd89a);
   --gradient-warning: linear-gradient(135deg, #f0a030, #ffd08a);
   --gradient-info: linear-gradient(135deg, #b9d6ff, #d7e6ff);

@@ -306,7 +306,7 @@
    =========================== */
 .product-card__actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.75rem;
 }
 
@@ -417,7 +417,5 @@
 }
 
 @media (max-width: 640px) {
-  .product-card__actions {
-    flex-direction: column;
-  }
+  /* Botones ya están en columna por defecto */
 }

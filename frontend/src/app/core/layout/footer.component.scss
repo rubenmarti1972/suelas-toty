@@ -4,13 +4,13 @@
   border-radius: 2.5rem 2.5rem 0 0;
   background: linear-gradient(
     320deg,
-    rgba(10, 52, 96, 0.96) 0%,
-    rgba(18, 82, 138, 0.94) 45%,
-    rgba(36, 118, 176, 0.90) 100%
+    rgba(41, 128, 185, 0.85) 0%,
+    rgba(52, 152, 219, 0.80) 45%,
+    rgba(93, 173, 226, 0.75) 100%
   );
-  color: rgba(233, 245, 255, 0.9);
-  box-shadow: 0 -16px 36px rgba(3, 25, 50, 0.4);
-  border-top: 1px solid rgba(20, 80, 150, 0.32);
+  color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 -16px 36px rgba(3, 25, 50, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 .footer__content {
   display: grid;
@@ -22,16 +22,16 @@
   display: flex;
   gap: 1.35rem;
   align-items: center;
-  padding: 1.65rem;
-  border-radius: 1.9rem;
-  background: rgba(255, 255, 255, 0.18); /* ← antes era azul oscuro */
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 10px 24px rgba(0, 25, 50, 0.25); /* Sombra mucho más suave */
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
   color: #ffffff;
 }
 .footer__logo {
-  width: clamp(80px, 16vw, 120px); /* más pequeño */
+  width: clamp(180px, 24vw, 280px); /* mucho más grande */
   height: auto;
   padding: 0;                    /* sin relleno */
   background: none;              /* sin tarjeta */
