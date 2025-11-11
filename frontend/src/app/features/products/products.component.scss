@@ -326,15 +326,17 @@
    ACCIONES
    =========================== */
 .product-card__actions {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
   width: 100%;
+  padding-top: 0.25rem;
 }
 
 /* CTA principal - Agregar al carrito */
 .product-card__action {
-  width: 100%;
+  inline-size: min(100%, 16.5rem);
+  box-sizing: border-box;
   padding: 0.8rem 1rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
@@ -345,10 +347,11 @@
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(15, 76, 129, 0.2);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 0 auto;
 }
 .product-card__action svg {
   margin-right: 0.5rem;
@@ -368,27 +371,28 @@
 
 /* Ghost - Solicitar muestra */
 .product-card__ghost {
-  width: 100%;
+  inline-size: min(100%, 16.5rem);
+  box-sizing: border-box;
   padding: 0.8rem 1rem;
   border-radius: 999px;
-  border: 2px solid var(--color-primary);
-  background: var(--color-surface);
-  color: var(--color-primary);
+  border: none;
+  background: linear-gradient(135deg, var(--color-primary), #184561);
+  color: #ffffff;
   font-weight: 600;
   font-size: 0.875rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(15, 76, 129, 0.1);
-  display: flex;
+  box-shadow: 0 4px 14px rgba(15, 76, 129, 0.24);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: 0 auto;
 }
 .product-card__ghost:hover {
-  background: var(--color-surface-alt);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(15, 76, 129, 0.2);
-  border-color: var(--color-primary);
+  filter: brightness(1.05);
+  box-shadow: 0 10px 24px rgba(15, 76, 129, 0.32);
 }
 .product-card__ghost:active {
   transform: translateY(0);
@@ -396,9 +400,8 @@
 
 /* Cotización (color distinto) */
 .product-card__action--quote {
-  flex: 0 0 auto;
-  width: 100%;
-  padding: 0.65rem 1rem;
+  width: min(100%, 16rem);
+  padding: 0.65rem 1.15rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--color-accent), #6ebe7a);
   color: #ffffff;
@@ -408,6 +411,7 @@
   cursor: pointer;
   transition: 0.25s ease;
   box-shadow: 0 8px 18px rgba(40, 120, 80, 0.25);
+  margin: 0 auto;
 }
 .product-card__action--quote:hover {
   transform: translateY(-2px);

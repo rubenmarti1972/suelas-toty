@@ -1,134 +1,151 @@
 [
   {
-    "reference": "ST-2101",
-    "name": "Suelas deportivas NeoFlex",
-    "description": "Diseñadas para máximo rendimiento y comodidad. Ideales para calzado deportivo con tecnología de absorción de impacto.",
-    "price": 22.5,
+    "reference": "ST-THOMAS-34",
+    "name": "Suela Thomas Bicolor",
+    "description": "Material Expanson X PVC de alto agarre. Numeración unisex 34 al 42.",
+    "price": 24.9,
     "currency": "USD",
-    "stock": 340,
-    "colors": ["Negro", "Gris", "Blanco"],
+    "stock": 320,
+    "colors": [
+      "Martil Crepe",
+      "Martil Negro",
+      "Negro Crepe"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1588361861040-71661c59b296?auto=format&fit=crop&w=900&q=80"
+    "image": "https://images.unsplash.com/photo-1528701800489-20be3c02bab4?auto=format&fit=crop&w=640&q=80"
   },
   {
-    "reference": "ST-3104",
-    "name": "Suelas casual UrbanGrip",
-    "description": "Perfectas para uso diario urbano. Diseño versátil con excelente tracción y durabilidad para calzado casual.",
-    "price": 18.75,
-    "currency": "USD",
-    "stock": 120,
-    "colors": ["Caramelo", "Negro"],
-    "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-5110",
-    "name": "Suelas sandalia Breeze",
-    "description": "Livianas y cómodas para sandalias de verano. Material flexible con excelente ventilación y confort.",
-    "price": 11.4,
-    "currency": "USD",
-    "stock": 620,
-    "colors": ["Arena", "Azul"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-7202",
-    "name": "Suelas seguridad SteelPro",
-    "description": "Máxima protección para calzado industrial. Resistente a aceites, antideslizante y con refuerzo de acero.",
-    "price": 31.8,
-    "currency": "USD",
-    "stock": 45,
-    "colors": ["Negro", "Amarillo"],
-    "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-4305",
-    "name": "Suelas running ProRunner",
-    "description": "Especialmente diseñadas para corredores profesionales. Máxima amortiguación y retorno de energía.",
-    "price": 28.9,
-    "currency": "USD",
-    "stock": 280,
-    "colors": ["Negro", "Azul", "Rojo"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-6120",
-    "name": "Suelas botas montaña TrekMax",
-    "description": "Resistentes y duraderas para terrenos difíciles. Excelente agarre en superficies húmedas y rocosas.",
-    "price": 35.2,
-    "currency": "USD",
-    "stock": 195,
-    "colors": ["Marrón", "Negro", "Verde"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-8410",
-    "name": "Suelas niños KidSafe",
-    "description": "Diseñadas especialmente para calzado infantil. Antideslizantes y con soporte para el desarrollo del pie.",
-    "price": 15.6,
-    "currency": "USD",
-    "stock": 450,
-    "colors": ["Rosa", "Azul", "Verde", "Amarillo"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-9205",
-    "name": "Suelas formal ElegantPro",
-    "description": "Elegantes y discretas para calzado de vestir. Diseño fino con excelente agarre y confort para uso prolongado.",
-    "price": 24.3,
-    "currency": "USD",
-    "stock": 165,
-    "colors": ["Negro", "Café", "Gris"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-1015",
-    "name": "Suelas ortopédicas ComfortCare",
-    "description": "Con soporte anatómico para problemas plantares. Recomendadas por podólogos para calzado correctivo.",
-    "price": 42.5,
-    "currency": "USD",
-    "stock": 85,
-    "colors": ["Beige", "Negro"],
-    "status": "Bajo inventario",
-    "image": "https://images.unsplash.com/photo-1603787081207-362bcef7f5ad?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-2830",
-    "name": "Suelas basketball CourtGrip",
-    "description": "Diseño especial para canchas de baloncesto. Máximo agarre y durabilidad para movimientos laterales.",
-    "price": 32.8,
-    "currency": "USD",
-    "stock": 220,
-    "colors": ["Negro", "Blanco", "Rojo"],
-    "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    "reference": "ST-3645",
-    "name": "Suelas eco-friendly GreenStep",
-    "description": "Fabricadas con materiales reciclados y biodegradables. Mismo rendimiento con conciencia ambiental.",
+    "reference": "ST-LEBRON-43",
+    "name": "Suela Lebron Bicolor",
+    "description": "Material Expanson X PVC para alto rendimiento. Numeración unisex 34 al 43.",
     "price": 26.4,
     "currency": "USD",
-    "stock": 310,
-    "colors": ["Verde", "Marrón", "Gris"],
+    "stock": 210,
+    "colors": [
+      "Blanco Negro",
+      "Blanco Cristal",
+      "Negro Negro"
+    ],
     "status": "Disponible",
-    "image": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=900&q=80"
+    "image": "https://images.unsplash.com/photo-1517949908114-720226b55b6c?auto=format&fit=crop&w=640&q=80"
   },
   {
-    "reference": "ST-5525",
-    "name": "Suelas fútbol SpeedKick",
-    "description": "Optimizadas para césped natural y sintético. Configuración de tacos intercambiables para mejor tracción.",
-    "price": 29.7,
+    "reference": "ST-RENAW-42",
+    "name": "Suela Renaw",
+    "description": "Material Expanson ultra liviano con soporte anatómico. Numeración unisex 34 al 42.",
+    "price": 28.7,
     "currency": "USD",
-    "stock": 75,
-    "colors": ["Negro", "Naranja"],
+    "stock": 180,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "https://images.unsplash.com/photo-1588361861040-716e1c7e37d6?auto=format&fit=crop&w=640&q=80"
+  },
+  {
+    "reference": "ST-YERRY-40",
+    "name": "Suela Yerry",
+    "description": "Material Expanson ultra liviano ideal para dama. Numeración 34 al 40.",
+    "price": 27.5,
+    "currency": "USD",
+    "stock": 150,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=640&q=80"
+  },
+  {
+    "reference": "ST-OMEGA-42",
+    "name": "Suela Omega",
+    "description": "Material Expanson ultra liviano con alta resiliencia. Numeración unisex 33 al 42.",
+    "price": 29.9,
+    "currency": "USD",
+    "stock": 200,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=640&q=80"
+  },
+  {
+    "reference": "ST-ULTRON4K-42",
+    "name": "Suela Ultron 4K",
+    "description": "Material Expanson ultra liviano con tacos robustos. Numeración unisex 34 al 42.",
+    "price": 31.5,
+    "currency": "USD",
+    "stock": 130,
+    "colors": [
+      "Blanco",
+      "Marfil",
+      "Negro"
+    ],
     "status": "Producción programada",
-    "image": "https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?auto=format&fit=crop&w=900&q=80"
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=640&q=80"
+  },
+  {
+    "reference": "ST-BALEN-40",
+    "name": "Suela Balen",
+    "description": "Material Expanson ultra liviano para dama. Numeración 34 al 40.",
+    "price": 30.1,
+    "currency": "USD",
+    "stock": 160,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=640&q=80"
+  },
+  {
+    "reference": "ST-AXXUS-40",
+    "name": "Suela Axxus",
+    "description": "Material Expanson ultra liviano con diseño angular. Numeración dama 34 al 40.",
+    "price": 28.1,
+    "currency": "USD",
+    "stock": 170,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=640&q=80"
+  },
+  {
+    "reference": "ST-ZOOM-42",
+    "name": "Suela Zoom",
+    "description": "Material Expanson ultra liviano con flexión dinámica. Numeración unisex 34 al 42.",
+    "price": 27.9,
+    "currency": "USD",
+    "stock": 190,
+    "colors": [
+      "Negro",
+      "Blanco"
+    ],
+    "status": "Disponible",
+    "image": "https://images.unsplash.com/photo-1520256862855-398228c41684?auto=format&fit=crop&w=640&q=80"
+  },
+  {
+    "reference": "ST-JOSS-42",
+    "name": "Suela Joss",
+    "description": "Material Expanson ultra liviano de alto confort. Numeración dama 37 al 42.",
+    "price": 26.8,
+    "currency": "USD",
+    "stock": 220,
+    "colors": [
+      "Negro",
+      "Marfil",
+      "Blanco"
+    ],
+    "status": "Bajo inventario",
+    "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=640&q=80"
   }
 ]
