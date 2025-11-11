@@ -1,8 +1,6 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import productsData from '../../../assets/data/products.json';
-import imagesManifest from '../../../assets/images/products/manifest.json';
-
 interface ProcessStep {
   order: string;
   title: string;
@@ -19,8 +17,6 @@ type Product = (typeof productsData)[number];
 
 type FeaturedProduct = Product & { category: string };
 
-type ImageManifest = Record<string, { catalog: string; original?: string }>;
-
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -32,12 +28,6 @@ export class HomeComponent {
   private readonly router = inject(Router);
 
   private readonly products = signal<Product[]>(productsData as Product[]);
-  private readonly images = imagesManifest as ImageManifest;
-
-  protected readonly heroImageRosalia =
-    this.images['RE-ROSALIA']?.original ?? this.images['RE-ROSALIA']?.catalog ?? '';
-  protected readonly heroImageCross =
-    this.images['REF-CROSS']?.original ?? this.images['REF-CROSS']?.catalog ?? '';
 
   private readonly categoryMap: Record<string, string> = {
     'ST-2101': 'Línea deportiva',

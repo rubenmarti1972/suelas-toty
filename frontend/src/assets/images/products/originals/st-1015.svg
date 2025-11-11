@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900' viewBox='0 0 1200 900'>
+  <defs>
+    <linearGradient id='grad-ST-1015' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#BCBD22'/>
+      <stop offset='100%' stop-color='#D4D643'/>
+    </linearGradient>
+    <filter id='shadow' x='-20%' y='-20%' width='140%' height='140%'>
+      <feDropShadow dx='0' dy='12' stdDeviation='20' flood-color='#000000' flood-opacity='0.25'/>
+    </filter>
+  </defs>
+  <rect width='1200' height='900' fill='url(#grad-ST-1015)' rx='48'/>
+  <g transform='translate(96.00,180.00)'>
+    <path d='M0,270.00 Q360.00,0 720.00,180.00 T1104.00,162.00 L936.00,414.00 Q552.00,540.00 144.00,468.00 Z' fill='rgba(255,255,255,0.35)' filter='url(#shadow)'/>
+    <path d='M72.00,405.00 Q384.00,225.00 792.00,288.00 T1056.00,252.00 Q984.00,468.00 576.00,558.00 T48.00,522.00 Z' fill='rgba(255,255,255,0.55)'/>
+  </g>
+  <text x='600.00' y='702.00' fill='#ffffff' font-family='"Montserrat", sans-serif' font-size='108' text-anchor='middle' font-weight='600'>CityWalk</text>
+  <text x='600.00' y='810.00' fill='#ffffff' font-family='"Montserrat", sans-serif' font-size='72' text-anchor='middle' font-weight='400'>ST-1015</text>
+</svg>

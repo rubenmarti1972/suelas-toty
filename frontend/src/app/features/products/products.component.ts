@@ -14,7 +14,7 @@ interface Product {
   colors: string[];
   status: string;
   image: string;
-  imageOriginal?: string;
+  originalImage?: string;
 }
 
 @Component({
