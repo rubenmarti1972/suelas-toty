@@ -1,7 +1,6 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import productsData from '../../../assets/data/products.json';
-
 interface ProcessStep {
   order: string;
   title: string;
